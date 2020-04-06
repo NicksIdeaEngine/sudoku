@@ -1,2 +1,70 @@
 @import 'colors/gruvbox-dark.scss';
 
+body {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  background-color: $bg0_h;
+  color: $fg0;
+}
+
+.page {
+  margin: 1em auto;
+  padding: 0.5em;
+  max-width: 70em;
+  border: 4px solid $dark_blue;
+}
+
+.page-header {
+  text-align: center;
+  color: $blue;
+}
+
+.game-board {
+  border: 4px solid $dark_yellow;
+}
+
+.page-footer {
+  text-align: center;
+  margin: 1em auto;
+  
+  > img {
+    margin: 1em 0 0;
+  }
+}
+
+.sudoku-board {
+  display: block;
+  padding: 1em;
+}
+
+.region-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.region-row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.sudoku-tile {
+  display: flex;
+  justify-content: center;
+  border: 5px solid $bg4;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 0.5em;
+
+  > .sudoku-tile-text {
+    font-size: 2em;
+  }
+
+  &:hover {
+    border: 5px solid $fg0;
+    cursor: pointer;
+  }
+
+  &:active {
+    border: 5px solid $yellow;
+  }
+}

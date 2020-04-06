@@ -1,23 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import GameBoard from './components/GameBoard';
 
-class App extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      test: 'up and running',
-    };
-  }
-
-  render() {
-    const { test } = this.state;
-    return (
-      <div className="page">
-        <h1>This Is Header One</h1>
-        <p>{test}</p>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="page">
+      <Header />
+      <GameBoard />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
