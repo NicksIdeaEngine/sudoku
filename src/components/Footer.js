@@ -3,9 +3,13 @@ import React from 'react';
 function Footer() {
   return (
     <footer className="page-footer">
-      <span className="page-footer-text">Copyright 2020 Nobody</span>
+      <small className="page-footer-text">Copyright 2020 Nobody</small>
       <br />
-      <img src="https://placedog.net/500/500?random" alt="" />
+      <img
+        className="page-footer-img"
+        src="https://placedog.net/750/500?random"
+        alt=""
+      />
     </footer>
   );
 }

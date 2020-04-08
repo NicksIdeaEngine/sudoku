@@ -1,20 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SudokuBoard from './SudokuBoard';
 
-class GameBoard extends Component {
-  constructor() {
-    super();
-
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <div className="game-board">
-        <SudokuBoard />
-      </div>
-    );
-  }
+function GameBoard() {
+  return (
+    <main className="game-board">
+      <SudokuBoard />
+    </main>
+  );
 }
 
 export default GameBoard;

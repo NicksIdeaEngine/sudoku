@@ -19,9 +19,10 @@
   "private": true,
   "scripts": {
     "clean-dist": "rimraf dist/*",
+    "clean-public": "rimraf public/*",
     "predev": "npm run clean-dist",
     "dev": "webpack --env.development --config webpack.config.js",
-    "prebuild": "npm run clean-dist",
+    "prebuild": "npm run clean-public",
     "build": "webpack --env.production --config webpack.config.js",
     "devserver": "webpack-dev-server --env.development --config webpack.config.js"
   },
@@ -38,8 +39,21 @@
     "singleQuote": true,
     "trailingComma": "all"
   },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "last 2 versions"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "core-js": "^3.6.4",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },

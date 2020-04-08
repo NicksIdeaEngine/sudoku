@@ -1,28 +1,15 @@
-const puzzle = [
-  {
-    id: 0,
-    value: 7,
-    row: 3,
-    column: 7,
-    region: 1,
-    candidates: [5, 8, 9],
-  },
-  {
-    id: 1,
-    value: 2,
-    row: 3,
-    column: 8,
-    region: 1,
-    candidates: [3, 4, 9],
-  },
-  {
-    id: 2,
-    value: 1,
-    row: 3,
-    column: 9,
-    region: 1,
-    candidates: [1, 5],
-  },
+const hardSudoku = [
+  '000592000007163500030000060240010073790306018310080095070000020002871300000234000',
+  '300769001060000030000381000045010260000294000087030910000973000030000050400658002',
+  '740902051900000007001405200305207904000000000604103502008701300100000008420806015',
 ];
 
-export default puzzle;
+const randomSudoku = () => {
+  const sudokuChoices = hardSudoku;
+  const randomIndex = Math.floor(
+    Math.random() * Math.floor(sudokuChoices.length),
+  );
+  return sudokuChoices[randomIndex];
+};
+
+export default randomSudoku();
