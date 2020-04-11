@@ -16,6 +16,7 @@ module.exports = (env) => ({
       warnings: true,
     },
   },
+  devtool: 'inline-source-map',
   entry: [path.join(PATH_SOURCE, './index.js')],
   output: {
     path: PATH_DIST,

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Tile extends Component {
   constructor(props) {
@@ -47,5 +47,20 @@ class Tile extends Component {
     );
   }
 }
+
+Tile.propTypes = {
+  row: PropTypes.number.isRequired,
+  column: PropTypes.number.isRequired,
+  region: PropTypes.number.isRequired,
+  value: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+  candidates: PropTypes.arrayOf(PropTypes.number).isRequired,
+  classNames: PropTypes.string.isRequired,
+  style: PropTypes.shape({
+    left: PropTypes.string,
+    top: PropTypes.string,
+  }).isRequired,
+  handleClick: PropTypes.func.isRequired,
+};
 
 export default Tile;

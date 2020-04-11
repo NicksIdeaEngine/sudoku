@@ -1,7 +1,7 @@
-/* eslint-disable no-console */
 function buildBoard() {
   const newBoard = [];
   let classNames = [];
+  const candidates = [];
   let region = 1;
   let id = 0;
   let style = {};
@@ -52,6 +52,7 @@ function buildBoard() {
         region,
         classNames: classNames.join(' '),
         style,
+        candidates,
       });
       id += 1;
     }

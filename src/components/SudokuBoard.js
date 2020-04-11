@@ -1,6 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable no-console */
 import React, { Component } from 'react';
 import getNewSudoku from '../lib/getNewSudoku';
 import buildBoard from '../lib/buildBoard';
@@ -62,9 +59,11 @@ class SudokuBoard extends Component {
   }
 
   render() {
-    const { currentBoard, startingSequence } = this.state;
+    const { currentBoard } = this.state;
     let { solvedSequence } = this.state;
+
     if (solvedSequence === '') solvedSequence = '12345';
+
     const boardDisplay = currentBoard.map((tile) => {
       const {
         id,
