@@ -16,7 +16,7 @@ module.exports = (env) => ({
       warnings: true,
     },
   },
-  entry: [path.join(PATH_SOURCE, './main.js')],
+  entry: [path.join(PATH_SOURCE, './index.js')],
   output: {
     path: PATH_DIST,
     filename: 'js/[name].[hash].js',

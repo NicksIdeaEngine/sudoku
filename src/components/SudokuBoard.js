@@ -1,102 +1,70 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable no-console */
 import React, { Component } from 'react';
-import tilesData from '../data/puzzleData';
+import getNewSudoku from '../lib/getNewSudoku';
+import buildBoard from '../lib/buildBoard';
 import Tile from './Tile';
+
+const newSudoku = getNewSudoku();
 
 class SudokuBoard extends Component {
   constructor() {
     super();
 
+    const { startingSequence, solvedSequence } = newSudoku;
+
     this.state = {
-      sudokuSequence: tilesData,
+      startingSequence,
+      solvedSequence,
       currentBoard: [],
     };
     this.handleClick = this.handleClick.bind(this);
+    this.startNewGame = this.startNewGame.bind(this);
   }
 
   componentDidMount() {
-    this.setState((prevState) => {
-      const splitSequence = prevState.sudokuSequence.split('');
-      const { currentBoard } = prevState;
-      let classNames = [];
-      let region = 1;
-      let id = 0;
-      let style = {};
-      let offset = 0;
-
-      for (let row = 1; row <= 9; row += 1) {
-        for (let column = 1; column <= 9; column += 1) {
-          classNames = [];
-          offset = 0;
-          style = { left: '', top: '' };
-          classNames.push('sudoku-tile');
-          if (column === 1) {
-            classNames.push('sudoku-tile-outer-left');
-          } else {
-            offset = (column - 1) * -0.2;
-            style.left = `${offset}em`;
-          }
-          if (column === 9) classNames.push('sudoku-tile-outer-right');
-          if (row === 1) {
-            classNames.push('sudoku-tile-outer-top');
-          } else {
-            offset = (row - 1) * -0.2;
-            style.top = `${offset}em`;
-          }
-          if (row === 9) classNames.push('sudoku-tile-outer-bottom');
-          if (column === 3 || column === 6) {
-            classNames.push('sudoku-tile-inner-right');
-          }
-          if (column === 4 || column === 7) {
-            classNames.push('sudoku-tile-inner-left');
-          }
-          if (row === 3 || row === 6) {
-            classNames.push('sudoku-tile-inner-bottom');
-          }
-          if (row === 4 || row === 7) {
-            classNames.push('sudoku-tile-inner-top');
-          }
-
-          region = Math.ceil(column / 3) + Math.floor((row - 1) / 3) * 3;
-
-          currentBoard.push({
-            id,
-            value: splitSequence[id],
-            row,
-            column,
-            region,
-            classNames: classNames.join(' '),
-            style,
-          });
-          id += 1;
-        }
-      }
-
+    const newBoard = buildBoard();
+    this.setState(() => {
       return {
-        currentBoard,
+        currentBoard: newBoard,
       };
     });
+    this.startNewGame();
   }
 
   handleClick(id) {
     this.setState((prevState) => {
       const { currentBoard } = prevState;
-      const newValue = 1;
+      const { value } = currentBoard[id];
+      const oldValue = value ? parseInt(value, 10) : 0;
+      let newValue = 0;
 
-      if (currentBoard[id].value !== '9') {
-        toString(parseInt((currentBoard[id].value += 1), 10));
-      } else {
-        currentBoard[id].value = toString(newValue);
+      if (oldValue !== 9) {
+        newValue = oldValue + 1;
       }
 
-      return {
-        currentBoard,
-      };
+      currentBoard[id].value = newValue.toString();
+
+      return { currentBoard };
+    });
+  }
+
+  startNewGame() {
+    this.setState((prevState) => {
+      const { currentBoard, startingSequence } = prevState;
+      const splitSequence = startingSequence.split('');
+      splitSequence.forEach((e, i) => {
+        currentBoard[i].value = e;
+      });
+      return { currentBoard };
     });
   }
 
   render() {
-    const { currentBoard } = this.state;
+    const { currentBoard, startingSequence } = this.state;
+    let { solvedSequence } = this.state;
+    if (solvedSequence === '') solvedSequence = '12345';
     const boardDisplay = currentBoard.map((tile) => {
       const {
         id,
