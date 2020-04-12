@@ -52,15 +52,11 @@ body {
   margin: 0;
 
   &-container {
-    max-width: 37.75em;
+    max-width: 35.1em;
     display: flex;
     flex-wrap: wrap;
-    top: 0.8em;
-    left: 0.8em;
-    position: relative;
     align-items: center;
     margin: 0 auto;
-    padding: 0;
     border: 0.2em solid $aqua;
   }
 

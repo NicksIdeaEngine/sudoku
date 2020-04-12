@@ -1,14 +1,4 @@
 /* eslint-disable no-unused-vars */
-function calculateStyles(maxRows = 9, maxColumns = 9, regionSize = 3) {
-  const tileWidth = 3.5;
-  const tileBorderWidth = 0.2;
-  const offset = 0.2;
-  // const boardContainerWidth;
-
-  // .sudoku-tile { width: 3.5em; height: 3.5em; }
-  // .sudoku-container { max-width: 26.75em; }
-}
-
 function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {
   const newBoard = [];
   let id = 0;
@@ -20,7 +10,6 @@ function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {
   let style = {};
   let offset = 0;
   const candidates = [];
-  // const newContainerStyles = calculateStyles();
 
   for (row = 1; row <= maxRows; row += 1) {
     for (column = 1; column <= maxColumns; column += 1) {
@@ -73,10 +62,7 @@ function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {
     }
   }
 
-  const newContainerStyles = calculateStyles();
-
-  return { newBoard, newContainerStyles };
-  // return { newBoard };
+  return newBoard;
 }
 
-export { calculateStyles, buildBoard };
+export default buildBoard;

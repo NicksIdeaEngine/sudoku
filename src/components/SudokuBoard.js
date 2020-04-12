@@ -2,39 +2,34 @@
 /* eslint-disable no-console */
 import React, { Component } from 'react';
 import newStandardSudoku from '../lib/getNewSudoku';
-import { calculateStyles, buildBoard } from '../lib/buildBoard';
+import buildBoard from '../lib/buildBoard';
 import Tile from './Tile';
 
 class SudokuBoard extends Component {
   constructor() {
     super();
 
-    const {
-      startingSequence,
-      solvedSequence,
-      sizeParameters,
-    } = newStandardSudoku;
+    const { startingSequence, solvedSequence } = newStandardSudoku;
 
     this.state = {
       startingSequence,
       solvedSequence,
       currentBoard: [],
-      containerStyles: [],
-      sizeParameters,
     };
+
     this.handleClick = this.handleClick.bind(this);
     this.startNewGame = this.startNewGame.bind(this);
   }
 
   componentDidMount() {
-    const { newBoard, newContainerStyles } = buildBoard();
+    const newBoard = buildBoard();
 
     this.setState(() => {
       return {
         currentBoard: newBoard,
-        containerStyles: newContainerStyles,
       };
     });
+
     this.startNewGame();
   }
 
@@ -68,7 +63,7 @@ class SudokuBoard extends Component {
   }
 
   render() {
-    const { currentBoard, containerStyles, sizeParameters } = this.state;
+    const { currentBoard } = this.state;
     let { solvedSequence } = this.state;
 
     if (solvedSequence === '') solvedSequence = '12345';
@@ -104,10 +99,6 @@ class SudokuBoard extends Component {
     return (
       <section className="sudoku">
         <div className="sudoku-container">{tileBatch}</div>
-        <br />
-        <div className="container-styles">{containerStyles}</div>
-        <br />
-        {typeof sizeParameters}
       </section>
     );
   }
