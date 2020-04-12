@@ -1,3 +1,7 @@
+const maxRows = 9;
+const maxColumns = 9;
+const regionSize = 3;
+
 const veryEasy = [
   {
     startingSequence:
@@ -152,16 +156,23 @@ const ultraExtreme = [
   },
 ];
 
-const allSudokus = [
-  veryEasy,
-  easy,
-  moderate,
-  challenging,
-  tricky,
-  hard,
-  veryHard,
-  extreme,
-  ultraExtreme,
-];
+const standardSudokus = {
+  gameData: [
+    veryEasy,
+    easy,
+    moderate,
+    challenging,
+    tricky,
+    hard,
+    veryHard,
+    extreme,
+    ultraExtreme,
+  ],
+  sizeParameters: {
+    maxRows,
+    maxColumns,
+    regionSize,
+  },
+};
 
-export default allSudokus;
+export default standardSudokus;

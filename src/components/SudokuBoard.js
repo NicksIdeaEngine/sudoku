@@ -1,30 +1,38 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-console */
 import React, { Component } from 'react';
-import getNewSudoku from '../lib/getNewSudoku';
-import buildBoard from '../lib/buildBoard';
+import newStandardSudoku from '../lib/getNewSudoku';
+import { calculateStyles, buildBoard } from '../lib/buildBoard';
 import Tile from './Tile';
-
-const newSudoku = getNewSudoku();
 
 class SudokuBoard extends Component {
   constructor() {
     super();
 
-    const { startingSequence, solvedSequence } = newSudoku;
+    const {
+      startingSequence,
+      solvedSequence,
+      sizeParameters,
+    } = newStandardSudoku;
 
     this.state = {
       startingSequence,
       solvedSequence,
       currentBoard: [],
+      containerStyles: [],
+      sizeParameters,
     };
     this.handleClick = this.handleClick.bind(this);
     this.startNewGame = this.startNewGame.bind(this);
   }
 
   componentDidMount() {
-    const newBoard = buildBoard();
+    const { newBoard, newContainerStyles } = buildBoard();
+
     this.setState(() => {
       return {
         currentBoard: newBoard,
+        containerStyles: newContainerStyles,
       };
     });
     this.startNewGame();
@@ -54,46 +62,52 @@ class SudokuBoard extends Component {
       splitSequence.forEach((e, i) => {
         currentBoard[i].value = e;
       });
+
       return { currentBoard };
     });
   }
 
   render() {
-    const { currentBoard } = this.state;
+    const { currentBoard, containerStyles, sizeParameters } = this.state;
     let { solvedSequence } = this.state;
 
     if (solvedSequence === '') solvedSequence = '12345';
 
-    const boardDisplay = currentBoard.map((tile) => {
+    const tileBatch = currentBoard.map((tile) => {
       const {
         id,
         row,
         column,
         region,
-        value,
-        candidates,
         classNames,
         style,
+        candidates,
+        value,
       } = tile;
 
       return (
         <Tile
           key={id}
+          id={id}
           row={row}
           column={column}
           region={region}
-          value={value === '0' ? '' : value}
-          id={id}
-          candidates={candidates}
           classNames={classNames}
           style={style}
+          candidates={candidates}
+          value={value === '0' ? '' : value}
           handleClick={this.handleClick}
         />
       );
     });
+
     return (
       <section className="sudoku">
-        <div className="sudoku-container">{boardDisplay}</div>
+        <div className="sudoku-container">{tileBatch}</div>
+        <br />
+        <div className="container-styles">{containerStyles}</div>
+        <br />
+        {typeof sizeParameters}
       </section>
     );
   }

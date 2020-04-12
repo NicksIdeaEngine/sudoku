@@ -48,19 +48,20 @@ body {
 
 .sudoku {
   display: block;
-  padding: 0.5em;
-  margin: 0 auto;
-  max-width: 35.75em;
+  padding: 0;
+  margin: 0;
 
   &-container {
+    max-width: 37.75em;
     display: flex;
     flex-wrap: wrap;
     top: 0.8em;
     left: 0.8em;
     position: relative;
     align-items: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    border: 0.2em solid $aqua;
   }
 
   &-row {

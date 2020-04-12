@@ -1,17 +1,20 @@
-import allSudokus from '../data/sudokuData';
+import standardSudokus from '../data/sudokuData';
 
-const newSudoku = (difficulty) => {
+const newStandardSudoku = (difficulty) => {
+  const { gameData, sizeParameters } = standardSudokus;
   const sudokuDifficulty = !difficulty
-    ? Math.floor(Math.random() * Math.floor(allSudokus.length))
+    ? Math.floor(Math.random() * Math.floor(gameData.length))
     : difficulty;
 
-  const sudokuChoices = allSudokus[sudokuDifficulty];
+  const sudokuChoices = gameData[sudokuDifficulty];
 
   const randomIndex = Math.floor(
     Math.random() * Math.floor(sudokuChoices.length),
   );
 
-  return sudokuChoices[randomIndex];
+  const { startingSequence, solvedSequence } = sudokuChoices[randomIndex];
+
+  return { startingSequence, solvedSequence, sizeParameters };
 };
 
-export default newSudoku;
+export default newStandardSudoku();

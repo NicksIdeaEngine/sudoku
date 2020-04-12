@@ -1,16 +1,29 @@
-function buildBoard() {
+/* eslint-disable no-unused-vars */
+function calculateStyles(maxRows = 9, maxColumns = 9, regionSize = 3) {
+  const tileWidth = 3.5;
+  const tileBorderWidth = 0.2;
+  const offset = 0.2;
+  // const boardContainerWidth;
+
+  // .sudoku-tile { width: 3.5em; height: 3.5em; }
+  // .sudoku-container { max-width: 26.75em; }
+}
+
+function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {
   const newBoard = [];
-  let classNames = [];
-  const candidates = [];
-  let region = 1;
   let id = 0;
-  let style = {};
-  let offset = 0;
+  const value = '';
   let row = 1;
   let column = 1;
+  let region = 1;
+  let classNames = [];
+  let style = {};
+  let offset = 0;
+  const candidates = [];
+  // const newContainerStyles = calculateStyles();
 
-  for (row = 1; row <= 9; row += 1) {
-    for (column = 1; column <= 9; column += 1) {
+  for (row = 1; row <= maxRows; row += 1) {
+    for (column = 1; column <= maxColumns; column += 1) {
       classNames = [];
       offset = 0;
       style = { left: '', top: '' };
@@ -42,23 +55,28 @@ function buildBoard() {
         classNames.push('sudoku-tile-inner-top');
       }
 
-      region = Math.ceil(column / 3) + Math.floor((row - 1) / 3) * 3;
+      region =
+        Math.ceil(column / regionSize) +
+        Math.floor((row - 1) / regionSize) * regionSize;
 
       newBoard.push({
         id,
-        value: '',
         row,
         column,
         region,
         classNames: classNames.join(' '),
         style,
         candidates,
+        value,
       });
       id += 1;
     }
   }
 
-  return newBoard;
+  const newContainerStyles = calculateStyles();
+
+  return { newBoard, newContainerStyles };
+  // return { newBoard };
 }
 
-export default buildBoard;
+export { calculateStyles, buildBoard };
