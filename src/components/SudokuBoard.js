@@ -43,7 +43,7 @@ class SudokuBoard extends Component {
       if (oldValue !== 9) {
         newValue = oldValue + 1;
       }
-
+      console.log('what');
       currentBoard[id].value = newValue.toString();
 
       return { currentBoard };

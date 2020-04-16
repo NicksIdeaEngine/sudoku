@@ -1,5 +1,5 @@
-// @import 'colors/gruvbox-dark.scss';
-@import 'colors/gruvbox-light.scss';
+@import 'colors/gruvbox-dark.scss';
+// @import 'colors/gruvbox-light.scss';
 
 $page-background: $bg0_h;
 $page-color: $fg0;
@@ -16,7 +16,6 @@ $tile-height: 3.5em;
 $tile-text-size: 2.75em;
 
 body {
-  font-size: 20px;
   font-family: Roboto, sans-serif;
   background-color: $page-background;
   color: $page-color;
@@ -52,7 +51,7 @@ body {
   margin: 0;
 
   &-container {
-    max-width: 35.1em;
+    max-width: 31.9em;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -79,6 +78,7 @@ body {
 
     &-text {
       font-size: $tile-text-size;
+      color: $page-color;
     }
 
     &:hover {
