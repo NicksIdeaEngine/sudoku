@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 import React, { Component } from 'react';
@@ -10,55 +9,54 @@ class SudokuBoard extends Component {
   constructor() {
     super();
 
-    const { startingSequence } = newStandardSudoku;
+    const { startingSequence, solvedSequence } = newStandardSudoku;
 
     this.state = {
       startingSequence,
+      solvedSequence,
       currentBoard: [],
     };
 
     this.handleClick = this.handleClick.bind(this);
+    this.startNewGame = this.startNewGame.bind(this);
   }
 
   componentDidMount() {
     const newBoard = buildBoard();
-    let row;
 
-    this.setState((prevState) => {
-      const { startingSequence } = prevState;
-      const splitSequence = startingSequence.split('');
-      splitSequence.forEach((e, i) => {
-        row = Math.floor(i / 9);
-        newBoard[row].props.children[i % 9].value = e;
-      });
-
+    this.setState(() => {
       return {
         currentBoard: newBoard,
       };
     });
+
+    this.startNewGame();
   }
 
   handleClick(id) {
     this.setState((prevState) => {
       const { currentBoard } = prevState;
-      const row = Math.floor(id / 9);
-      const rowMod = id % 9;
-      const rowContents = currentBoard[row].props.children;
-      const tile = rowContents[rowMod];
-      const { value } = tile;
+      const { value } = currentBoard[id];
       const oldValue = value ? parseInt(value, 10) : 0;
       let newValue = 0;
 
       if (oldValue !== 9) {
         newValue = oldValue + 1;
       }
-      tile.value = newValue.toString();
+      console.log('what');
+      currentBoard[id].value = newValue.toString();
 
-      currentBoard[row].props.children[rowMod].value = tile.value;
+      return { currentBoard };
+    });
+  }
 
-      currentBoard[row].props.children[
-        rowMod
-      ].className = `${currentBoard[row].props.children[rowMod].className} sudoku-td-highlight`;
+  startNewGame() {
+    this.setState((prevState) => {
+      const { currentBoard, startingSequence } = prevState;
+      const splitSequence = startingSequence.split('');
+      splitSequence.forEach((e, i) => {
+        currentBoard[i].value = e;
+      });
 
       return { currentBoard };
     });
@@ -66,41 +64,41 @@ class SudokuBoard extends Component {
 
   render() {
     const { currentBoard } = this.state;
+    let { solvedSequence } = this.state;
 
-    const fullBoard = currentBoard.map((rowOfTiles) => {
-      const rowID = rowOfTiles.props.id;
-      const rowClassName = rowOfTiles.props.className;
-      const rowContents = rowOfTiles.props.children;
-      const tileBatch = rowContents.map((tile) => {
-        const { id, row, column, region, className, candidates, value } = tile;
+    if (solvedSequence === '') solvedSequence = '12345';
 
-        return (
-          <Tile
-            key={`tile-${id}`}
-            id={id}
-            row={row}
-            column={column}
-            region={region}
-            className={className}
-            candidates={candidates}
-            value={value === '0' ? '' : value}
-            handleClick={this.handleClick}
-          />
-        );
-      });
+    const tileBatch = currentBoard.map((tile) => {
+      const {
+        id,
+        row,
+        column,
+        region,
+        classNames,
+        style,
+        candidates,
+        value,
+      } = tile;
 
       return (
-        <tr key={rowID} id={rowID} className={rowClassName}>
-          {tileBatch}
-        </tr>
+        <Tile
+          key={id}
+          id={id}
+          row={row}
+          column={column}
+          region={region}
+          classNames={classNames}
+          style={style}
+          candidates={candidates}
+          value={value === '0' ? '' : value}
+          handleClick={this.handleClick}
+        />
       );
     });
 
     return (
       <section className="sudoku">
-        <table className="sudoku-container">
-          <tbody>{fullBoard}</tbody>
-        </table>
+        <div className="sudoku-container">{tileBatch}</div>
       </section>
     );
   }

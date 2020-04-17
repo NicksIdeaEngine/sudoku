@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { Component } from 'react';
@@ -19,38 +18,32 @@ class Tile extends Component {
       value,
       id,
       candidates,
-      className,
+      classNames,
+      style,
       handleClick,
     } = this.props;
 
-    let tileText = (
-      <input
-        type="text"
-        id={`tile-${id}-input`}
-        className="sudoku-tile-text"
-        maxLength="1"
-      />
-    );
+    let tileText = '';
 
-    if (value >= 1 && value <= 9) {
+    if (value >= 1 || value <= 9) {
       tileText = value;
-    } else if (candidates.length > 0) {
+    } else {
       tileText = candidates;
     }
-
     return (
-      <td
-        className={className}
+      <div
+        className={classNames}
         value={value}
+        style={style}
         row={row}
         column={column}
         region={region}
-        id={`tile-${id}`}
+        id={id}
         candidates={candidates}
         onClick={() => handleClick(id)}
       >
         <div className="sudoku-tile-text">{tileText}</div>
-      </td>
+      </div>
     );
   }
 }
@@ -62,7 +55,11 @@ Tile.propTypes = {
   value: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
   candidates: PropTypes.arrayOf(PropTypes.number).isRequired,
-  className: PropTypes.string.isRequired,
+  classNames: PropTypes.string.isRequired,
+  style: PropTypes.shape({
+    left: PropTypes.string,
+    top: PropTypes.string,
+  }).isRequired,
   handleClick: PropTypes.func.isRequired,
 };
 
