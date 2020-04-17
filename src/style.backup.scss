@@ -1,12 +1,12 @@
-// @import 'colors/gruvbox-dark.scss';
-@import 'colors/gruvbox-light.scss';
+@import 'colors/gruvbox-dark.scss';
+// @import 'colors/gruvbox-light.scss';
 
 $page-background: $bg0_h;
 $page-color: $fg0;
 $header-color: $blue;
-$tile-border-thin: 0.2em solid $bg4;
+$tile-border-thin: 0.2em dotted $bg4;
 $tile-border-thin-hover: 0.2em solid $red;
-$tile-border-inner-edge: 0.2em solid $dark_blue;
+$tile-border-inner-edge: 0.2em dotted $dark_blue;
 $tile-border-inner-edge-hover: 0.2em solid $red;
 $tile-border-outer-edge: 0.2em solid $fg2;
 $tile-border-outer-edge-hover: 0.2em solid $red;
@@ -16,19 +16,15 @@ $tile-height: 3.5em;
 $tile-text-size: 2.75em;
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   background-color: $page-background;
   color: $page-color;
   margin: 0;
 }
 
-input {
-  background-color: $bg0_h;
-}
-
 .page {
   margin: 0 auto;
-  padding: 0.5em 0.5em 0;
+  padding: 0.25em 0.25em 0;
   max-width: 70em;
 
   &-header {
@@ -49,64 +45,24 @@ input {
   }
 }
 
-.game-board {
-  padding: 0;
-  margin: 0;
-}
-
 .sudoku {
   display: block;
   padding: 0;
   margin: 0;
 
   &-container {
+    max-width: 31.9em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     margin: 0 auto;
     border: 0.2em solid $aqua;
-    border-collapse: collapse;
-    display: inline-block;
-    z-index: 1;
-    table-layout: auto;
-    width: 40em;
-    height: 40em;
-  }
-
-  &-td {
-    border: 0.2em solid $fg4;
-    display: inline-block;
-
-    &-highlight {
-      background-color: $bg4;
-      cursor: pointer;
-    }
-  }
-
-  &-tr:nth-child(3n) &-td {
-    border-bottom: 0.2em solid $blue;
-  }
-
-  &-td:nth-child(3n) {
-    border-right: 0.2em solid $blue;
-  }
-
-  &-td &-tile-text {
-    line-height: 1em;
-    font-size: 1em;
-    border: 0;
-    margin: 0 auto;
-    padding: 0 auto;
-    text-align: center;
-    vertical-align: middle;
-    outline: none;
-  }
-
-  &-td &-tile-text:focus {
-    outline: none;
-    background-color: $dark_green;
   }
 
   &-row {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
   }
 
   &-tile {
@@ -118,6 +74,7 @@ input {
     width: $tile-width;
     height: $tile-height;
     background-color: $tile-background-color;
+    z-index: 1;
 
     &-text {
       font-size: $tile-text-size;
@@ -127,11 +84,13 @@ input {
     &:hover {
       border: $tile-border-thin-hover;
       cursor: pointer;
+      z-index: 3;
     }
 
     &:active {
       border: $tile-border-thin-hover;
       cursor: pointer;
+      z-index: 3;
     }
 
     &-outer {
@@ -187,51 +146,67 @@ input {
     &-inner {
       &-left {
         border-left: $tile-border-inner-edge;
+        z-index: 2;
 
         &:hover {
           border-left: $tile-border-inner-edge-hover;
+          z-index: 4;
         }
 
         &:active {
           border-left: $tile-border-inner-edge-hover;
+          z-index: 4;
         }
       }
 
       &-right {
         border-right: $tile-border-inner-edge;
+        z-index: 2;
 
         &:hover {
           border-right: $tile-border-inner-edge-hover;
+          z-index: 4;
         }
 
         &:active {
           border-right: $tile-border-inner-edge-hover;
+          z-index: 4;
         }
       }
 
       &-top {
         border-top: $tile-border-inner-edge;
+        z-index: 2;
 
         &:hover {
           border-top: $tile-border-inner-edge-hover;
+          z-index: 4;
         }
 
         &:active {
           border-top: $tile-border-inner-edge-hover;
+          z-index: 4;
         }
       }
 
       &-bottom {
         border-bottom: $tile-border-inner-edge;
+        z-index: 2;
 
         &:hover {
           border-bottom: $tile-border-inner-edge-hover;
+          z-index: 4;
         }
 
         &:active {
           border-bottom: $tile-border-inner-edge-hover;
+          z-index: 4;
         }
       }
     }
   }
+}
+
+.solved-sequence {
+  text-align: center;
 }
