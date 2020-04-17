@@ -12,14 +12,13 @@ class Tile extends Component {
 
   render() {
     const {
+      id,
       row,
       column,
       region,
       value,
-      id,
       candidates,
-      classNames,
-      style,
+      className,
       handleClick,
     } = this.props;
 
@@ -30,16 +29,16 @@ class Tile extends Component {
     } else {
       tileText = candidates;
     }
+
     return (
       <div
-        className={classNames}
-        value={value}
-        style={style}
+        id={`tile-${id}`}
         row={row}
         column={column}
         region={region}
-        id={id}
+        value={value}
         candidates={candidates}
+        className={className}
         onClick={() => handleClick(id)}
       >
         <div className="sudoku-tile-text">{tileText}</div>
@@ -49,17 +48,13 @@ class Tile extends Component {
 }
 
 Tile.propTypes = {
+  id: PropTypes.number.isRequired,
   row: PropTypes.number.isRequired,
   column: PropTypes.number.isRequired,
   region: PropTypes.number.isRequired,
   value: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
   candidates: PropTypes.arrayOf(PropTypes.number).isRequired,
-  classNames: PropTypes.string.isRequired,
-  style: PropTypes.shape({
-    left: PropTypes.string,
-    top: PropTypes.string,
-  }).isRequired,
+  className: PropTypes.string.isRequired,
   handleClick: PropTypes.func.isRequired,
 };
 

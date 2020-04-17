@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 import React, { Component } from 'react';
 import newStandardSudoku from '../lib/getNewSudoku';
@@ -9,54 +8,52 @@ class SudokuBoard extends Component {
   constructor() {
     super();
 
-    const { startingSequence, solvedSequence } = newStandardSudoku;
+    const { startingSequence } = newStandardSudoku;
 
     this.state = {
       startingSequence,
-      solvedSequence,
       currentBoard: [],
     };
 
     this.handleClick = this.handleClick.bind(this);
-    this.startNewGame = this.startNewGame.bind(this);
   }
 
   componentDidMount() {
     const newBoard = buildBoard();
+    let row;
 
-    this.setState(() => {
+    this.setState((prevState) => {
+      const { startingSequence } = prevState;
+      const splitSequence = startingSequence.split('');
+
+      splitSequence.forEach((e, i) => {
+        row = Math.floor(i / 9);
+        newBoard[row].props.children[i % 9].value = e;
+      });
+
       return {
         currentBoard: newBoard,
       };
     });
-
-    this.startNewGame();
   }
 
   handleClick(id) {
     this.setState((prevState) => {
       const { currentBoard } = prevState;
-      const { value } = currentBoard[id];
+      const row = Math.floor(id / 9);
+      const rowMod = id % 9;
+      const rowContents = currentBoard[row].props.children;
+      const tile = rowContents[rowMod];
+      const { value } = tile;
       const oldValue = value ? parseInt(value, 10) : 0;
       let newValue = 0;
 
       if (oldValue !== 9) {
         newValue = oldValue + 1;
       }
-      console.log('what');
-      currentBoard[id].value = newValue.toString();
+      tile.value = newValue.toString();
 
-      return { currentBoard };
-    });
-  }
-
-  startNewGame() {
-    this.setState((prevState) => {
-      const { currentBoard, startingSequence } = prevState;
-      const splitSequence = startingSequence.split('');
-      splitSequence.forEach((e, i) => {
-        currentBoard[i].value = e;
-      });
+      currentBoard[row].props.children[rowMod].value = tile.value;
 
       return { currentBoard };
     });
@@ -64,41 +61,39 @@ class SudokuBoard extends Component {
 
   render() {
     const { currentBoard } = this.state;
-    let { solvedSequence } = this.state;
 
-    if (solvedSequence === '') solvedSequence = '12345';
+    const fullBoard = currentBoard.map((rowOfTiles) => {
+      const rowID = rowOfTiles.props.id;
+      const rowClassName = rowOfTiles.props.className;
+      const rowContents = rowOfTiles.props.children;
+      const tileBatch = rowContents.map((tile) => {
+        const { id, row, column, region, className, candidates, value } = tile;
 
-    const tileBatch = currentBoard.map((tile) => {
-      const {
-        id,
-        row,
-        column,
-        region,
-        classNames,
-        style,
-        candidates,
-        value,
-      } = tile;
+        return (
+          <Tile
+            key={`tile-${id}`}
+            id={id}
+            row={row}
+            column={column}
+            region={region}
+            className={className}
+            candidates={candidates}
+            value={value === '0' ? '' : value}
+            handleClick={this.handleClick}
+          />
+        );
+      });
 
       return (
-        <Tile
-          key={id}
-          id={id}
-          row={row}
-          column={column}
-          region={region}
-          classNames={classNames}
-          style={style}
-          candidates={candidates}
-          value={value === '0' ? '' : value}
-          handleClick={this.handleClick}
-        />
+        <div key={rowID} id={rowID} className={rowClassName}>
+          {tileBatch}
+        </div>
       );
     });
 
     return (
       <section className="sudoku">
-        <div className="sudoku-container">{tileBatch}</div>
+        <div className="sudoku-container">{fullBoard}</div>
       </section>
     );
   }
