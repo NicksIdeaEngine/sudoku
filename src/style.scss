@@ -1,5 +1,5 @@
-@import 'colors/gruvbox-dark.scss';
-// @import 'colors/gruvbox-light.scss';
+// @import 'colors/gruvbox-dark.scss';
+@import 'colors/gruvbox-light.scss';
 
 $page-background: $bg0_h;
 $page-color: $fg0;
@@ -78,6 +78,10 @@ body {
     &-text {
       font-size: $tile-text-size;
       color: $page-color;
+    }
+
+    &-highlight {
+      background-color: $purple;
     }
 
     &:hover {

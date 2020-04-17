@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 import React, { Component } from 'react';
 import newStandardSudoku from '../lib/getNewSudoku';
@@ -16,6 +17,8 @@ class SudokuBoard extends Component {
     };
 
     this.handleClick = this.handleClick.bind(this);
+    this.handleHighlight = this.handleHighlight.bind(this);
+    this.addToValue = this.addToValue.bind(this);
   }
 
   componentDidMount() {
@@ -37,7 +40,106 @@ class SudokuBoard extends Component {
     });
   }
 
+  handleHighlight(id, tile) {
+    this.setState((prevState) => {
+      const { currentBoard } = prevState;
+
+      console.log(tile);
+      return { currentBoard };
+    });
+  }
+
   handleClick(id) {
+    this.setState((prevState) => {
+      const { currentBoard } = prevState;
+      const row = Math.floor(id / 9);
+      const rowMod = id % 9;
+      const tile = currentBoard[row].props.children[rowMod];
+
+      currentBoard.forEach((testRow) => {
+        testRow.props.children.forEach((testTile) => {
+          const newTile = testTile;
+          const { className } = newTile;
+          const splitClassName = className.split(' ');
+
+          if (newTile.highlight === true) {
+            newTile.highlight = false;
+            console.log(splitClassName);
+            splitClassName.splice(
+              splitClassName.findIndex((e) => e === 'sudoku-tile-highlight'),
+              1,
+            );
+            newTile.className = splitClassName.join(' ');
+          }
+          return newTile;
+        });
+        return testRow;
+      });
+
+      if (tile.highlight === false) {
+        tile.highlight = true;
+        const className = tile.className.split(' ');
+        className.push('sudoku-tile-highlight');
+        tile.className = className.join(' ');
+      } else {
+        tile.highlight = false;
+        const className = tile.className.split(' ');
+        className.splice(
+          className.findIndex((e) => e === 'sudoku-tile-highlight'),
+          1,
+        );
+        tile.className = className.join(' ');
+      }
+
+      currentBoard[row].props.children[rowMod] = tile;
+
+      currentBoard.forEach((testRow) => {
+        testRow.props.children.forEach((testTile) => {
+          const newTile = testTile;
+          if (testTile.row === tile.row && testTile.id !== tile.id) {
+            if (testTile.highlight === false) {
+              newTile.highlight = true;
+              const className = testTile.className.split(' ');
+              className.push('sudoku-tile-highlight');
+              newTile.className = className.join(' ');
+            }
+          }
+        });
+      });
+
+      currentBoard.forEach((testColumn) => {
+        testColumn.props.children.forEach((testTile) => {
+          const newTile = testTile;
+          if (testTile.column === tile.column && testTile.id !== tile.id) {
+            if (testTile.highlight === false) {
+              newTile.highlight = true;
+              const className = testTile.className.split(' ');
+              className.push('sudoku-tile-highlight');
+              newTile.className = className.join(' ');
+            }
+          }
+        });
+      });
+
+      currentBoard.forEach((testRegion) => {
+        testRegion.props.children.forEach((testTile) => {
+          const newTile = testTile;
+          if (testTile.region === tile.region && testTile.id !== tile.id) {
+            if (testTile.highlight === false) {
+              newTile.highlight = true;
+              const className = testTile.className.split(' ');
+              className.push('sudoku-tile-highlight');
+              newTile.className = className.join(' ');
+            }
+          }
+        });
+      });
+
+      return { currentBoard };
+    });
+  }
+
+  addToValue(id) {
     this.setState((prevState) => {
       const { currentBoard } = prevState;
       const row = Math.floor(id / 9);
@@ -67,7 +169,16 @@ class SudokuBoard extends Component {
       const rowClassName = rowOfTiles.props.className;
       const rowContents = rowOfTiles.props.children;
       const tileBatch = rowContents.map((tile) => {
-        const { id, row, column, region, className, candidates, value } = tile;
+        const {
+          id,
+          row,
+          column,
+          region,
+          value,
+          candidates,
+          className,
+          highlight,
+        } = tile;
 
         return (
           <Tile
@@ -76,9 +187,10 @@ class SudokuBoard extends Component {
             row={row}
             column={column}
             region={region}
-            className={className}
-            candidates={candidates}
             value={value === '0' ? '' : value}
+            candidates={candidates}
+            className={className}
+            highlight={highlight.toString()}
             handleClick={this.handleClick}
           />
         );

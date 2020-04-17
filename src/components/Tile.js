@@ -19,6 +19,7 @@ class Tile extends Component {
       value,
       candidates,
       className,
+      highlight,
       handleClick,
     } = this.props;
 
@@ -39,6 +40,7 @@ class Tile extends Component {
         value={value}
         candidates={candidates}
         className={className}
+        highlight={highlight}
         onClick={() => handleClick(id)}
       >
         <div className="sudoku-tile-text">{tileText}</div>
@@ -55,6 +57,7 @@ Tile.propTypes = {
   value: PropTypes.string.isRequired,
   candidates: PropTypes.arrayOf(PropTypes.number).isRequired,
   className: PropTypes.string.isRequired,
+  highlight: PropTypes.string.isRequired,
   handleClick: PropTypes.func.isRequired,
 };
 

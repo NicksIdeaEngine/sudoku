@@ -10,6 +10,8 @@ function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {
   const value = '';
   const candidates = [];
   let className = [];
+  const highlight = false;
+
   const newBoard = [];
   let newRowContents = [];
 
@@ -20,22 +22,20 @@ function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {
       className.push('sudoku-tile');
       if (column === 1) {
         className.push('sudoku-tile-outer-left');
-      }
-      if (column === 9) className.push('sudoku-tile-outer-right');
-      if (row === 1) {
-        className.push('sudoku-tile-outer-top');
-      }
-      if (row === 9) className.push('sudoku-tile-outer-bottom');
-      if (column === 3 || column === 6) {
+      } else if (column === maxColumns) {
+        className.push('sudoku-tile-outer-right');
+      } else if (column % regionSize === 0) {
         className.push('sudoku-tile-inner-right');
-      }
-      if (column === 4 || column === 7) {
+      } else if (column % regionSize === 1) {
         className.push('sudoku-tile-inner-left');
       }
-      if (row === 3 || row === 6) {
+      if (row === 1) {
+        className.push('sudoku-tile-outer-top');
+      } else if (row === maxRows) {
+        className.push('sudoku-tile-outer-bottom');
+      } else if (row % regionSize === 0) {
         className.push('sudoku-tile-inner-bottom');
-      }
-      if (row === 4 || row === 7) {
+      } else if (row % regionSize === 1) {
         className.push('sudoku-tile-inner-top');
       }
 
@@ -51,6 +51,7 @@ function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {
         value,
         candidates,
         className: className.join(' '),
+        highlight,
       });
       id += 1;
     }
