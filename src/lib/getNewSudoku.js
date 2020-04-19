@@ -17,4 +17,4 @@ const newStandardSudoku = (difficulty) => {
   return { startingSequence, solvedSequence, sizeParameters };
 };
 
-export default newStandardSudoku();
+export default newStandardSudoku;

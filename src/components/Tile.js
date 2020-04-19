@@ -19,6 +19,7 @@ class Tile extends Component {
       value,
       candidates,
       className,
+      active,
       highlight,
       handleClick,
     } = this.props;
@@ -33,13 +34,14 @@ class Tile extends Component {
 
     return (
       <div
-        id={`tile-${id}`}
+        id={id}
         row={row}
         column={column}
         region={region}
         value={value}
         candidates={candidates}
         className={className}
+        active={active}
         highlight={highlight}
         onClick={() => handleClick(id)}
       >
@@ -50,13 +52,14 @@ class Tile extends Component {
 }
 
 Tile.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   row: PropTypes.number.isRequired,
   column: PropTypes.number.isRequired,
   region: PropTypes.number.isRequired,
   value: PropTypes.string.isRequired,
   candidates: PropTypes.arrayOf(PropTypes.number).isRequired,
   className: PropTypes.string.isRequired,
+  active: PropTypes.string.isRequired,
   highlight: PropTypes.string.isRequired,
   handleClick: PropTypes.func.isRequired,
 };

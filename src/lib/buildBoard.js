@@ -10,7 +10,8 @@ function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {
   const value = '';
   const candidates = [];
   let className = [];
-  const highlight = false;
+  const active = 'false';
+  const highlight = 'false';
 
   const newBoard = [];
   let newRowContents = [];
@@ -44,13 +45,14 @@ function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {
         Math.floor((row - 1) / regionSize) * regionSize;
 
       newRowContents.push({
-        id,
+        id: `tile-${id}`,
         row,
         column,
         region,
         value,
         candidates,
         className: className.join(' '),
+        active,
         highlight,
       });
       id += 1;
@@ -62,8 +64,6 @@ function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {
       </div>,
     );
   }
-
-  console.log(newBoard);
 
   return newBoard;
 }
