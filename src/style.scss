@@ -1,19 +1,19 @@
-// @import 'colors/gruvbox-dark.scss';
-@import 'colors/gruvbox-light.scss';
+@import 'colors/gruvbox-dark.scss';
+// @import 'colors/gruvbox-light.scss';
 
 $page-background: $bg0;
 $page-color: $fg0;
 $header-color: $blue;
-$tile-border-thin: 0.2em solid $bg4;
-$tile-border-thin-hover: 0.2em solid $fg1 !important;
-$tile-border-inner-edge: 0.2em solid $dark_blue;
-$tile-border-inner-edge-hover: 0.2em solid $red;
-$tile-border-outer-edge: 0.2em solid $fg2;
-$tile-border-outer-edge-hover: 0.2em solid $red;
+$tile-border-thin: 0.25em solid $bg4;
+$tile-border-thin-hover: 0.25em solid $orange !important;
+$tile-border-inner-edge: 0.25em solid $dark_blue;
+$tile-border-inner-edge-hover: 0.25em solid $red;
+$tile-border-outer-edge: 0.25em solid $fg3;
+$tile-border-outer-edge-hover: 0.25em solid $red;
 $tile-background-color: $bg0_h;
-$tile-width: 3.5em;
-$tile-height: 3.5em;
-$tile-text-size: 2.75em;
+$tile-width: 4.5em;
+$tile-height: 4.5em;
+$tile-text-size: 3.25em;
 $menu-container-border: 0.2em solid $yellow;
 $game-board-border: 0.2em solid $purple;
 $page-border: 0.2em solid $orange;
@@ -28,7 +28,7 @@ body {
 .page {
   margin: 0 auto;
   padding: 2em;
-  width: 70em;
+  width: 55em;
   height: 36em;
   // border: $page-border;
   // background-color: $bg0;
@@ -44,10 +44,6 @@ body {
   &-footer {
     text-align: center;
     margin: 0.25em 0 0;
-
-    &-img {
-      margin: 0.5em;
-    }
   }
 }
 
@@ -69,7 +65,7 @@ body {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: start;
+    align-content: center;
     justify-content: center;
     // border: 0.2em solid $aqua;
   }
@@ -100,7 +96,19 @@ body {
     }
 
     &-highlight {
-      background-color: $bg1;
+      background-color: $fg1;
+
+      > div {
+        color: $bg0_h;
+      }
+    }
+
+    &-warning {
+      background-color: $dark_red !important;
+
+      > div {
+        color: $bg0_h;
+      }
     }
 
     &:hover {
@@ -220,15 +228,69 @@ body {
   flex: 1;
   margin: 0;
   padding: 0;
+  flex-direction: column;
+  // border: 0.1em solid $fg0;
+
+  &-header {
+    // border: 0.1em solid $red;
+    text-align: center;
+    margin: 1em 0 0;
+    padding: 1em 0 0;
+
+    &-text {
+      color: $fg1;
+    }
+  }
 
   &-container {
     // border: $menu-container-border;
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+  }
+
+  &-button {
+    margin: 1em 0;
+    min-width: 15em;
+    height: 2.5em;
+    background-color: $bg4;
+    border: 0.3em solid $fg2;
+    color: $fg0;
+    font-size: 1em;
+
+    &:focus {
+      background-color: $dark_green;
+    }
+  }
+
+  &-dropdown {
+    position: relative;
+    // border: 0.1em solid $fg0;
+
+    &-container {
+      margin: 0 auto;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      left: -5.625em;
+      // border: 0.1em solid $fg0;
+    }
+
+    &-button {
+      margin: 0.25em 0;
+      min-width: 15em;
+      height: 1.65em;
+      background-color: $dark_blue;
+      border: 0.2em solid $fg1;
+      color: $fg0;
+      font-size: 0.75em;
+    }
   }
 }
 

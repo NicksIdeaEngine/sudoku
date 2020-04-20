@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-console */
 function toggleHighlight(tile) {
   const newTile = tile;
   const className = newTile.className.split(' ');

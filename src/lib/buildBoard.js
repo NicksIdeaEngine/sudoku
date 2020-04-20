@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable no-unused-vars */
 import React from 'react';
 
 function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {
@@ -12,6 +10,7 @@ function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {
   let className = [];
   const active = 'false';
   const highlight = 'false';
+  const warning = 'false';
 
   const newBoard = [];
   let newRowContents = [];
@@ -54,6 +53,7 @@ function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {
         className: className.join(' '),
         active,
         highlight,
+        warning,
       });
       id += 1;
     }

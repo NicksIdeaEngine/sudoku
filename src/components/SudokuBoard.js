@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unused-state */
-/* eslint-disable no-console */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Tile from './Tile';
@@ -10,28 +8,6 @@ class SudokuBoard extends Component {
 
     this.state = {};
   }
-
-  // addToValue(id) {
-  //   this.setState((prevState) => {
-  //     const { currentBoard } = prevState;
-  //     const row = Math.floor(id / 9);
-  //     const rowMod = id % 9;
-  //     const rowContents = currentBoard[row].props.children;
-  //     const tile = rowContents[rowMod];
-  //     const { value } = tile;
-  //     const oldValue = value ? parseInt(value, 10) : 0;
-  //     let newValue = 0;
-
-  //     if (oldValue !== 9) {
-  //       newValue = oldValue + 1;
-  //     }
-  //     tile.value = newValue.toString();
-
-  //     currentBoard[row].props.children[rowMod].value = tile.value;
-
-  //     return { currentBoard };
-  //   });
-  // }
 
   render() {
     const { currentBoard, handleClick } = this.props;
@@ -51,6 +27,7 @@ class SudokuBoard extends Component {
           className,
           active,
           highlight,
+          warning,
         } = tile;
 
         return (
@@ -65,6 +42,7 @@ class SudokuBoard extends Component {
             className={className}
             active={active}
             highlight={highlight}
+            warning={warning}
             handleClick={handleClick}
           />
         );

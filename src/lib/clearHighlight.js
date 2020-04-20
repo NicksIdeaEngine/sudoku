@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 const clearHighlight = (prevState) => {
   const { currentBoard } = prevState;
 
@@ -19,6 +18,13 @@ const clearHighlight = (prevState) => {
         newTile.highlight = 'false';
         splitClassName.splice(
           splitClassName.findIndex((e) => e === 'sudoku-tile-highlight'),
+          1,
+        );
+      }
+      if (newTile.warning === 'true') {
+        newTile.warning = 'false';
+        splitClassName.splice(
+          splitClassName.findIndex((e) => e === 'sudoku-tile-warning'),
           1,
         );
       }

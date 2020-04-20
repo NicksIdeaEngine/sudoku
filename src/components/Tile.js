@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
@@ -21,6 +20,7 @@ class Tile extends Component {
       className,
       active,
       highlight,
+      warning,
       handleClick,
     } = this.props;
 
@@ -33,7 +33,8 @@ class Tile extends Component {
     }
 
     return (
-      <div
+      <button
+        type="button"
         id={id}
         row={row}
         column={column}
@@ -43,10 +44,11 @@ class Tile extends Component {
         className={className}
         active={active}
         highlight={highlight}
+        warning={warning}
         onClick={() => handleClick(id)}
       >
         <div className="sudoku-tile-text">{tileText}</div>
-      </div>
+      </button>
     );
   }
 }
@@ -61,6 +63,7 @@ Tile.propTypes = {
   className: PropTypes.string.isRequired,
   active: PropTypes.string.isRequired,
   highlight: PropTypes.string.isRequired,
+  warning: PropTypes.string.isRequired,
   handleClick: PropTypes.func.isRequired,
 };
 

@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 function getTile(currentBoard, id) {
   const board = currentBoard;
   const idNum = parseInt(id.slice(5), 10);
