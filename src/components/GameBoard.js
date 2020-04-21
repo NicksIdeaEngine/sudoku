@@ -1,4 +1,3 @@
-/* eslint-disable class-methods-use-this */
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import SudokuBoard from './SudokuBoard';
@@ -48,33 +47,31 @@ class GameBoard extends Component {
   }
 
   handleClick(id) {
+    const { currentBoard, insertMode } = this.state;
+    const tile = getTile(currentBoard, id);
+
+    if (tile.locked === 'false' && tile.active === 'true') {
+      let tempNum = parseInt(tile.value, 10) + 1;
+      if (tempNum > 9) tempNum = 1;
+      tile.value = tempNum.toString();
+    }
+
+    if (insertMode !== '' && tile.locked === 'false') {
+      tile.value = insertMode;
+    }
+
     this.setState((prevState) => {
-      const { currentBoard } = prevState;
-      const tile = getTile(currentBoard, id);
-      if (tile.active === 'true') {
-        let tempNum = parseInt(tile.value, 10) + 1;
-        if (tempNum > 9) tempNum = 1;
-        tile.value = tempNum.toString();
-        clearHighlight(prevState);
-        toggleTileState(tile, 'active');
-        toggleTileState(tile, 'highlight');
-        highlightRelatedTiles(prevState, id);
-        enforceRules(prevState, id);
-      } else {
-        clearHighlight(prevState);
-        toggleTileState(tile, 'active');
-        toggleTileState(tile, 'highlight');
-        highlightRelatedTiles(prevState, id);
-        enforceRules(prevState, id);
-      }
+      clearHighlight(prevState);
+      toggleTileState(tile, 'active');
+      toggleTileState(tile, 'highlight');
+      highlightRelatedTiles(prevState, id);
+      enforceRules(prevState, id);
       return { currentBoard };
     });
   }
 
   toggleInsertMode(value) {
     this.setState((prevState) => toggleInsertMode(prevState, value));
-    const { insertMode } = this.state;
-    // console.log(insertMode);
   }
 
   resetGame() {

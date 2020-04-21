@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import standardSudokus from '../data/sudokuData';
 
 class Menu extends Component {
   constructor(props) {
@@ -38,103 +39,56 @@ class Menu extends Component {
       insertMode,
     } = this.props;
     const { showDifficultyMenu } = this.state;
+    const menuNumbers = [];
+    const { difficultyOptions } = standardSudokus;
+    const difficultyButtons = [];
+    let numberButtonClass = ['menu-number-button'];
+    let index;
+    let text;
+
+    for (let i = 1; i <= 9; i += 1) {
+      index = i;
+      numberButtonClass = ['menu-number-button'];
+      if (index.toString() === insertMode)
+        numberButtonClass.push('menu-number-button-active');
+      menuNumbers.push(
+        <button
+          key={`menu-number-btn-${i - 1}`}
+          id={`menu-number-btn-${i - 1}`}
+          type="button"
+          className={numberButtonClass.join(' ')}
+          onClick={(e) => {
+            toggleInsertMode(e.target.value);
+          }}
+          value={i}
+        >
+          {i}
+        </button>,
+      );
+    }
+
+    for (let i = 1; i <= 10; i += 1) {
+      text = difficultyOptions[index];
+      index = i - 1;
+      difficultyButtons.push(
+        <button
+          key={`drowndown-btn-${index}`}
+          id={`drowndown-btn-${index}`}
+          type="button"
+          className="menu-dropdown-button"
+          value={index}
+          onClick={(e) => setDifficulty(parseInt(e.target.value, 10))}
+        >
+          {text}
+        </button>,
+      );
+    }
+
     return (
       <section className="menu">
         <div className="menu-container">
           <div className="menu-number">
-            <div className="dev-text">{insertMode}</div>
-            <div className="menu-number-container">
-              <button
-                type="button"
-                className="menu-number-button"
-                onClick={(e) => {
-                  toggleInsertMode(e.target.value);
-                }}
-                value="1"
-              >
-                1
-              </button>
-              <button
-                type="button"
-                className="menu-number-button"
-                onClick={(e) => {
-                  toggleInsertMode(e.target.value);
-                }}
-                value="2"
-              >
-                2
-              </button>
-              <button
-                type="button"
-                className="menu-number-button"
-                onClick={(e) => {
-                  toggleInsertMode(e.target.value);
-                }}
-                value="3"
-              >
-                3
-              </button>
-              <button
-                type="button"
-                className="menu-number-button"
-                onClick={(e) => {
-                  toggleInsertMode(e.target.value);
-                }}
-                value="4"
-              >
-                4
-              </button>
-              <button
-                type="button"
-                className="menu-number-button"
-                onClick={(e) => {
-                  toggleInsertMode(e.target.value);
-                }}
-                value="5"
-              >
-                5
-              </button>
-              <button
-                type="button"
-                className="menu-number-button"
-                onClick={(e) => {
-                  toggleInsertMode(e.target.value);
-                }}
-                value="6"
-              >
-                6
-              </button>
-              <button
-                type="button"
-                className="menu-number-button"
-                onClick={(e) => {
-                  toggleInsertMode(e.target.value);
-                }}
-                value="7"
-              >
-                7
-              </button>
-              <button
-                type="button"
-                className="menu-number-button"
-                onClick={(e) => {
-                  toggleInsertMode(e.target.value);
-                }}
-                value="8"
-              >
-                8
-              </button>
-              <button
-                type="button"
-                className="menu-number-button"
-                onClick={(e) => {
-                  toggleInsertMode(e.target.value);
-                }}
-                value="9"
-              >
-                9
-              </button>
-            </div>
+            <div className="menu-number-container">{menuNumbers}</div>
           </div>
           <button
             className="menu-button"
@@ -168,86 +122,7 @@ class Menu extends Component {
                   this.dropdownMenu = e;
                 }}
               >
-                <button
-                  type="button"
-                  className="menu-dropdown-button"
-                  value="0"
-                  onClick={(e) => setDifficulty(parseInt(e.target.value, 10))}
-                >
-                  very easy
-                </button>
-                <button
-                  type="button"
-                  className="menu-dropdown-button"
-                  value="1"
-                  onClick={(e) => setDifficulty(parseInt(e.target.value, 10))}
-                >
-                  easy
-                </button>
-                <button
-                  type="button"
-                  className="menu-dropdown-button"
-                  value="2"
-                  onClick={(e) => setDifficulty(parseInt(e.target.value, 10))}
-                >
-                  moderate
-                </button>
-                <button
-                  type="button"
-                  className="menu-dropdown-button"
-                  value="3"
-                  onClick={(e) => setDifficulty(parseInt(e.target.value, 10))}
-                >
-                  challenging
-                </button>
-                <button
-                  type="button"
-                  className="menu-dropdown-button"
-                  value="4"
-                  onClick={(e) => setDifficulty(parseInt(e.target.value, 10))}
-                >
-                  tricky
-                </button>
-                <button
-                  type="button"
-                  className="menu-dropdown-button"
-                  value="5"
-                  onClick={(e) => setDifficulty(parseInt(e.target.value, 10))}
-                >
-                  hard
-                </button>
-                <button
-                  type="button"
-                  className="menu-dropdown-button"
-                  value="6"
-                  onClick={(e) => setDifficulty(parseInt(e.target.value, 10))}
-                >
-                  very hard
-                </button>
-                <button
-                  type="button"
-                  className="menu-dropdown-button"
-                  value="7"
-                  onClick={(e) => setDifficulty(parseInt(e.target.value, 10))}
-                >
-                  extreme
-                </button>
-                <button
-                  type="button"
-                  className="menu-dropdown-button"
-                  value="8"
-                  onClick={(e) => setDifficulty(parseInt(e.target.value, 10))}
-                >
-                  ultra extreme
-                </button>
-                <button
-                  type="button"
-                  className="menu-dropdown-button"
-                  value="9"
-                  onClick={(e) => setDifficulty(parseInt(e.target.value, 10))}
-                >
-                  random
-                </button>
+                {difficultyButtons}
               </div>
             ) : null}
           </div>

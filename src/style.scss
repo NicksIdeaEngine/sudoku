@@ -299,17 +299,24 @@ body {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+
     &-container {
       display: flex;
       flex-flow: row wrap;
       align-items: center;
       justify-content: center;
     }
+
     &-button {
       min-width: 2em;
       height: 2em;
       background-color: $bg4;
       border: 0.1em solid $fg0;
+
+      &-active {
+        background-color: $fg2;
+        color: $bg1;
+      }
     }
   }
 

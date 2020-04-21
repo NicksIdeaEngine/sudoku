@@ -1,5 +1,7 @@
 const clearHighlight = (prevState) => {
   const { currentBoard } = prevState;
+  const insertMode = '';
+  let classList;
 
   currentBoard.forEach((currentRow) => {
     currentRow.props.children.forEach((currentTile) => {
@@ -23,7 +25,13 @@ const clearHighlight = (prevState) => {
     });
     return currentRow;
   });
-  return { currentBoard };
+
+  for (let i = 1; i <= 9; i += 1) {
+    classList = document.getElementById(`menu-number-btn-${i - 1}`).classList;
+    classList.remove(`menu-number-button-active`);
+  }
+
+  return { currentBoard, insertMode };
 };
 
 export default clearHighlight;

@@ -2,20 +2,24 @@ import clearHighlight from './clearHighlight';
 import getNewSudoku from './getNewSudoku';
 
 const newGame = (prevState) => {
-  clearHighlight(prevState);
-  const { currentBoard, difficulty } = prevState;
+  const { difficulty } = prevState;
+  const { currentBoard, insertMode } = clearHighlight(prevState);
   const { startingSequence } = getNewSudoku(difficulty);
   const splitSequence = startingSequence.split('');
+  let tile;
   let row;
   let column;
 
   splitSequence.forEach((value, index) => {
     row = Math.floor(index / 9);
     column = index % 9;
-    currentBoard[row].props.children[column].value = value;
+    tile = currentBoard[row].props.children[column];
+    tile.value = value;
+    tile.locked = value !== '0' ? 'true' : 'false';
+    currentBoard[row].props.children[column] = tile;
   });
 
-  return { currentBoard, startingSequence };
+  return { currentBoard, insertMode, startingSequence };
 };
 
 export default newGame;

@@ -4,19 +4,22 @@ import clearHighlight from './clearHighlight';
 function toggleInsertMode(prevState, value) {
   clearHighlight(prevState);
   const { currentBoard } = prevState;
-  const newMode = value;
-  currentBoard.insertMode = newMode;
-  console.log(currentBoard.insertMode);
+  let { insertMode } = prevState;
+
+  insertMode = value;
 
   currentBoard.forEach((currentRow) => {
     currentRow.props.children.forEach((currentTile) => {
-      if (currentTile.value === newMode) {
+      if (currentTile.value === insertMode) {
         toggleTileState(currentTile, 'highlight');
       }
     });
   });
 
-  return { currentBoard };
+  const { classList } = document.getElementById(`menu-number-btn-${value - 1}`);
+  classList.add(`menu-number-button-active`);
+
+  return { currentBoard, insertMode };
 }
 
 export default toggleInsertMode;

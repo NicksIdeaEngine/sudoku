@@ -8,11 +8,12 @@ const highlightRelatedTiles = (prevState, id) => {
   currentBoard.forEach((currentRow) => {
     currentRow.props.children.forEach((currentTile) => {
       if (currentTile.id !== tile.id) {
-        if (currentTile.row === tile.row) {
-          toggleTileState(currentTile, 'highlight');
-        } else if (currentTile.column === tile.column) {
-          toggleTileState(currentTile, 'highlight');
-        } else if (currentTile.region === tile.region) {
+        if (
+          currentTile.row === tile.row ||
+          currentTile.column === tile.column ||
+          currentTile.region === tile.region ||
+          (currentTile.value === tile.value && currentTile.value !== '0')
+        ) {
           toggleTileState(currentTile, 'highlight');
         }
       }

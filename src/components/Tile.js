@@ -21,6 +21,7 @@ class Tile extends Component {
       active,
       highlight,
       warning,
+      locked,
       handleClick,
     } = this.props;
 
@@ -45,6 +46,7 @@ class Tile extends Component {
         active={active}
         highlight={highlight}
         warning={warning}
+        locked={locked}
         onClick={() => handleClick(id)}
       >
         <div className="sudoku-tile-text">{tileText}</div>
@@ -64,6 +66,7 @@ Tile.propTypes = {
   active: PropTypes.string.isRequired,
   highlight: PropTypes.string.isRequired,
   warning: PropTypes.string.isRequired,
+  locked: PropTypes.string.isRequired,
   handleClick: PropTypes.func.isRequired,
 };
 

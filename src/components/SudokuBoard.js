@@ -28,6 +28,7 @@ class SudokuBoard extends Component {
           active,
           highlight,
           warning,
+          locked,
         } = tile;
 
         return (
@@ -43,6 +44,7 @@ class SudokuBoard extends Component {
             active={active}
             highlight={highlight}
             warning={warning}
+            locked={locked}
             handleClick={handleClick}
           />
         );

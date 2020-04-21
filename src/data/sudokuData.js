@@ -168,6 +168,18 @@ const standardSudokus = {
     extreme,
     ultraExtreme,
   ],
+  difficultyOptions: [
+    'very easy',
+    'easy',
+    'moderate',
+    'challenging',
+    'tricky',
+    'hard',
+    'very hard',
+    'extreme',
+    'ultra extreme',
+    'random',
+  ],
   sizeParameters: {
     maxRows,
     maxColumns,

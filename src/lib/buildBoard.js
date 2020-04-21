@@ -11,6 +11,7 @@ function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {
   const active = 'false';
   const highlight = 'false';
   const warning = 'false';
+  const locked = 'false';
 
   const newBoard = [];
   let newRowContents = [];
@@ -54,6 +55,7 @@ function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {
         active,
         highlight,
         warning,
+        locked,
       });
       id += 1;
     }
