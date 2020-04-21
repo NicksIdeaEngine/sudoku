@@ -1,4 +1,4 @@
-import toggleHighlight from './toggleHighlight';
+import toggleTileState from './toggleTileState';
 import getTile from './getTile';
 
 const highlightRelatedTiles = (prevState, id) => {
@@ -9,11 +9,11 @@ const highlightRelatedTiles = (prevState, id) => {
     currentRow.props.children.forEach((currentTile) => {
       if (currentTile.id !== tile.id) {
         if (currentTile.row === tile.row) {
-          toggleHighlight(currentTile);
+          toggleTileState(currentTile, 'highlight');
         } else if (currentTile.column === tile.column) {
-          toggleHighlight(currentTile);
+          toggleTileState(currentTile, 'highlight');
         } else if (currentTile.region === tile.region) {
-          toggleHighlight(currentTile);
+          toggleTileState(currentTile, 'highlight');
         }
       }
     });

@@ -7,7 +7,6 @@ function getNewSudoku(difficulty) {
     sudokuDifficulty = Math.floor(Math.random() * Math.floor(gameData.length));
   } else {
     sudokuDifficulty = difficulty.index;
-    console.log(sudokuDifficulty);
   }
 
   const sudokuChoices = gameData[sudokuDifficulty];

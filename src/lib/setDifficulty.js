@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 const getDifficultyName = (difficulty) => {
   let currentDifficulty = difficulty;
   let difficultyName = '';
@@ -43,10 +42,8 @@ const getDifficultyName = (difficulty) => {
 
 const setDifficulty = (prevState, value) => {
   const { difficulty } = prevState;
-  console.log(value, typeof value);
   difficulty.name = getDifficultyName(value);
   difficulty.index = value;
-  console.log(difficulty);
   return { difficulty };
 };
 

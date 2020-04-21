@@ -1,4 +1,4 @@
-import toggleWarning from './toggleWarning';
+import toggleTileState from './toggleTileState';
 import getTile from './getTile';
 
 const enforceRules = (prevState, id) => {
@@ -12,15 +12,13 @@ const enforceRules = (prevState, id) => {
         currentTile.value !== '0' &&
         currentTile.value === tile.value
       ) {
-        if (currentTile.row === tile.row) {
-          toggleWarning(currentTile);
-          if (tile.warning === 'false') toggleWarning(tile);
-        } else if (currentTile.column === tile.column) {
-          toggleWarning(currentTile);
-          if (tile.warning === 'false') toggleWarning(tile);
-        } else if (currentTile.region === tile.region) {
-          toggleWarning(currentTile);
-          if (tile.warning === 'false') toggleWarning(tile);
+        if (
+          currentTile.row === tile.row ||
+          currentTile.column === tile.column ||
+          currentTile.region === tile.region
+        ) {
+          toggleTileState(currentTile, 'warning');
+          if (tile.warning === 'false') toggleTileState(tile, 'warning');
         }
       }
     });

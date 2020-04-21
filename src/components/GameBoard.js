@@ -1,3 +1,5 @@
+/* eslint-disable class-methods-use-this */
+/* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import SudokuBoard from './SudokuBoard';
 import Menu from './Menu';
@@ -9,10 +11,10 @@ import clearBoard from '../lib/clearBoard';
 import newGame from '../lib/newGame';
 import clearHighlight from '../lib/clearHighlight';
 import getTile from '../lib/getTile';
-import toggleHighlight from '../lib/toggleHighlight';
-import toggleActive from '../lib/toggleActive';
 import setDifficulty from '../lib/setDifficulty';
 import enforceRules from '../lib/enforceRules';
+import toggleTileState from '../lib/toggleTileState';
+import toggleInsertMode from '../lib/toggleInsertMode';
 
 class GameBoard extends Component {
   constructor(props) {
@@ -21,6 +23,7 @@ class GameBoard extends Component {
     this.state = {
       startingSequence: '',
       currentBoard: buildBoard(),
+      insertMode: '',
       difficulty: {
         name: 'very easy',
         index: 0,
@@ -29,6 +32,7 @@ class GameBoard extends Component {
 
     this.setDifficulty = this.setDifficulty.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.toggleInsertMode = this.toggleInsertMode.bind(this);
     this.resetGame = this.resetGame.bind(this);
     this.clearBoard = this.clearBoard.bind(this);
     this.newGame = this.newGame.bind(this);
@@ -48,24 +52,29 @@ class GameBoard extends Component {
       const { currentBoard } = prevState;
       const tile = getTile(currentBoard, id);
       if (tile.active === 'true') {
-        // clearHighlight(prevState);
         let tempNum = parseInt(tile.value, 10) + 1;
         if (tempNum > 9) tempNum = 1;
         tile.value = tempNum.toString();
         clearHighlight(prevState);
-        toggleActive(tile);
-        toggleHighlight(tile);
+        toggleTileState(tile, 'active');
+        toggleTileState(tile, 'highlight');
         highlightRelatedTiles(prevState, id);
         enforceRules(prevState, id);
       } else {
         clearHighlight(prevState);
-        toggleActive(tile);
-        toggleHighlight(tile);
+        toggleTileState(tile, 'active');
+        toggleTileState(tile, 'highlight');
         highlightRelatedTiles(prevState, id);
         enforceRules(prevState, id);
       }
       return { currentBoard };
     });
+  }
+
+  toggleInsertMode(value) {
+    this.setState((prevState) => toggleInsertMode(prevState, value));
+    const { insertMode } = this.state;
+    // console.log(insertMode);
   }
 
   resetGame() {
@@ -85,13 +94,19 @@ class GameBoard extends Component {
   }
 
   render() {
-    const { currentBoard, startingSequence, difficulty } = this.state;
+    const {
+      currentBoard,
+      startingSequence,
+      difficulty,
+      insertMode,
+    } = this.state;
     return (
       <main className="game-board">
         <SudokuBoard
           currentBoard={currentBoard}
           startingSequence={startingSequence}
           handleClick={this.handleClick}
+          insertMode={insertMode}
         />
         <Menu
           resetGame={this.resetGame}
@@ -100,6 +115,8 @@ class GameBoard extends Component {
           clearHighlight={this.clearHighlight}
           setDifficulty={this.setDifficulty}
           currentDifficulty={difficulty.name}
+          toggleInsertMode={this.toggleInsertMode}
+          insertMode={insertMode}
         />
       </main>
     );

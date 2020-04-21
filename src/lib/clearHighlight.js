@@ -6,28 +6,18 @@ const clearHighlight = (prevState) => {
       const newTile = currentTile;
       const { className } = newTile;
       const splitClassName = className.split(' ');
+      const effects = ['active', 'highlight', 'warning'];
 
-      if (newTile.active === 'true') {
-        newTile.active = 'false';
-        splitClassName.splice(
-          splitClassName.findIndex((e) => e === 'sudoku-tile-active'),
-          1,
-        );
-      }
-      if (newTile.highlight === 'true') {
-        newTile.highlight = 'false';
-        splitClassName.splice(
-          splitClassName.findIndex((e) => e === 'sudoku-tile-highlight'),
-          1,
-        );
-      }
-      if (newTile.warning === 'true') {
-        newTile.warning = 'false';
-        splitClassName.splice(
-          splitClassName.findIndex((e) => e === 'sudoku-tile-warning'),
-          1,
-        );
-      }
+      effects.forEach((effect) => {
+        if (newTile[`${effect}`] === 'true') {
+          newTile[`${effect}`] = 'false';
+          splitClassName.splice(
+            splitClassName.findIndex((e) => e === `sudoku-tile-${effect}`),
+            1,
+          );
+        }
+      });
+
       newTile.className = splitClassName.join(' ');
       return newTile;
     });

@@ -1,9 +1,23 @@
 @import 'colors/gruvbox-dark.scss';
 // @import 'colors/gruvbox-light.scss';
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Montserrat:wght@500&display=swap');
 
-$page-background: $bg0;
-$page-color: $fg0;
+$body-bgc: $bg0;
+$body-color: $fg0;
+
+// page variables
+$page-border: 0; // 0.2em solid $orange;
 $header-color: $blue;
+
+// game board variables
+$game-board-border: 0; // 0.2em solid $purple;
+
+// sudoku board variables
+$sudoku-container-border: 0; // 0.2em solid $aqua;
+$tile-highlight-bgc: $fg1;
+$tile-highlight-text-color: $bg0_h;
+$tile-warning-bgc: $dark_red !important;
+$tile-warning-text-color: $bg0_h;
 $tile-border-thin: 0.25em solid $bg4;
 $tile-border-thin-hover: 0.25em solid $orange !important;
 $tile-border-inner-edge: 0.25em solid $dark_blue;
@@ -14,24 +28,36 @@ $tile-background-color: $bg0_h;
 $tile-width: 4.5em;
 $tile-height: 4.5em;
 $tile-text-size: 3.25em;
-$menu-container-border: 0.2em solid $yellow;
-$game-board-border: 0.2em solid $purple;
-$page-border: 0.2em solid $orange;
+$tile-text-color: $fg0;
+
+// menu variables
+$menu-border: 0; // 0.1em solid $fg0;
+$menu-header-border: 0; // 0.1em solid $red;
+$menu-header-text-color: $fg1;
+$menu-container-border: 0; // 0.2em solid $yellow;
+$menu-button-background-color: $bg4;
+$menu-button-border: 0.3em solid $fg2;
+$menu-button-text-color: $fg0;
+$menu-button-focus-bgc: $green;
+$menu-button-dropdown-bgc: $dark_blue;
+$menu-button-dropdown-border: 0.2em solid $fg1;
+$menu-button-dropdown-color: $fg0;
 
 body {
-  font-family: Roboto, sans-serif;
-  background-color: $page-background;
-  color: $page-color;
-  margin: 0;
+  background-color: $body-bgc;
+  color: $body-color;
+}
+
+.dev-text {
+  color: $fg0;
 }
 
 .page {
   margin: 0 auto;
   padding: 2em;
-  width: 55em;
+  width: 50em;
   height: 36em;
-  // border: $page-border;
-  // background-color: $bg0;
+  border: $page-border;
 
   &-header {
     text-align: center;
@@ -52,6 +78,7 @@ body {
   justify-content: space-around;
   height: 100%;
   width: 100%;
+  border: $game-board-border;
 }
 
 .sudoku {
@@ -67,7 +94,7 @@ body {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    // border: 0.2em solid $aqua;
+    border: $sudoku-container-border;
   }
 
   &-row {
@@ -88,7 +115,7 @@ body {
 
     &-text {
       font-size: $tile-text-size;
-      color: $page-color;
+      color: $tile-text-color;
     }
 
     &-active {
@@ -96,18 +123,18 @@ body {
     }
 
     &-highlight {
-      background-color: $fg1;
+      background-color: $tile-highlight-bgc;
 
       > div {
-        color: $bg0_h;
+        color: $tile-highlight-text-color;
       }
     }
 
     &-warning {
-      background-color: $dark_red !important;
+      background-color: $tile-warning-bgc;
 
       > div {
-        color: $bg0_h;
+        color: $tile-warning-text-color;
       }
     }
 
@@ -229,21 +256,21 @@ body {
   margin: 0;
   padding: 0;
   flex-direction: column;
-  // border: 0.1em solid $fg0;
+  border: $menu-border;
 
   &-header {
-    // border: 0.1em solid $red;
+    border: $menu-header-border;
     text-align: center;
     margin: 1em 0 0;
     padding: 1em 0 0;
 
     &-text {
-      color: $fg1;
+      color: $menu-header-text-color;
     }
   }
 
   &-container {
-    // border: $menu-container-border;
+    border: $menu-container-border;
     width: 100%;
     height: 100%;
     display: flex;
@@ -257,19 +284,37 @@ body {
     margin: 1em 0;
     min-width: 15em;
     height: 2.5em;
-    background-color: $bg4;
-    border: 0.3em solid $fg2;
-    color: $fg0;
+    background-color: $menu-button-background-color;
+    border: $menu-button-border;
+    color: $menu-button-text-color;
     font-size: 1em;
 
     &:focus {
-      background-color: $dark_green;
+      background-color: $menu-button-focus-bgc;
+    }
+  }
+
+  &-number {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    &-container {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    &-button {
+      min-width: 2em;
+      height: 2em;
+      background-color: $bg4;
+      border: 0.1em solid $fg0;
     }
   }
 
   &-dropdown {
     position: relative;
-    // border: 0.1em solid $fg0;
 
     &-container {
       margin: 0 auto;
@@ -279,21 +324,16 @@ body {
       justify-content: center;
       align-items: center;
       left: -5.625em;
-      // border: 0.1em solid $fg0;
     }
 
     &-button {
       margin: 0.25em 0;
       min-width: 15em;
       height: 1.65em;
-      background-color: $dark_blue;
-      border: 0.2em solid $fg1;
-      color: $fg0;
+      background-color: $menu-button-dropdown-bgc;
+      border: $menu-button-dropdown-border;
+      color: $menu-button-dropdown-color;
       font-size: 0.75em;
     }
   }
-}
-
-.solved-sequence {
-  text-align: center;
 }

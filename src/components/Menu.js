@@ -34,11 +34,108 @@ class Menu extends Component {
       clearHighlight,
       setDifficulty,
       currentDifficulty,
+      toggleInsertMode,
+      insertMode,
     } = this.props;
     const { showDifficultyMenu } = this.state;
     return (
       <section className="menu">
         <div className="menu-container">
+          <div className="menu-number">
+            <div className="dev-text">{insertMode}</div>
+            <div className="menu-number-container">
+              <button
+                type="button"
+                className="menu-number-button"
+                onClick={(e) => {
+                  toggleInsertMode(e.target.value);
+                }}
+                value="1"
+              >
+                1
+              </button>
+              <button
+                type="button"
+                className="menu-number-button"
+                onClick={(e) => {
+                  toggleInsertMode(e.target.value);
+                }}
+                value="2"
+              >
+                2
+              </button>
+              <button
+                type="button"
+                className="menu-number-button"
+                onClick={(e) => {
+                  toggleInsertMode(e.target.value);
+                }}
+                value="3"
+              >
+                3
+              </button>
+              <button
+                type="button"
+                className="menu-number-button"
+                onClick={(e) => {
+                  toggleInsertMode(e.target.value);
+                }}
+                value="4"
+              >
+                4
+              </button>
+              <button
+                type="button"
+                className="menu-number-button"
+                onClick={(e) => {
+                  toggleInsertMode(e.target.value);
+                }}
+                value="5"
+              >
+                5
+              </button>
+              <button
+                type="button"
+                className="menu-number-button"
+                onClick={(e) => {
+                  toggleInsertMode(e.target.value);
+                }}
+                value="6"
+              >
+                6
+              </button>
+              <button
+                type="button"
+                className="menu-number-button"
+                onClick={(e) => {
+                  toggleInsertMode(e.target.value);
+                }}
+                value="7"
+              >
+                7
+              </button>
+              <button
+                type="button"
+                className="menu-number-button"
+                onClick={(e) => {
+                  toggleInsertMode(e.target.value);
+                }}
+                value="8"
+              >
+                8
+              </button>
+              <button
+                type="button"
+                className="menu-number-button"
+                onClick={(e) => {
+                  toggleInsertMode(e.target.value);
+                }}
+                value="9"
+              >
+                9
+              </button>
+            </div>
+          </div>
           <button
             className="menu-button"
             type="button"
@@ -167,6 +264,8 @@ Menu.propTypes = {
   clearHighlight: PropTypes.func.isRequired,
   setDifficulty: PropTypes.func.isRequired,
   currentDifficulty: PropTypes.string.isRequired,
+  toggleInsertMode: PropTypes.func.isRequired,
+  insertMode: PropTypes.string.isRequired,
 };
 
 export default Menu;
