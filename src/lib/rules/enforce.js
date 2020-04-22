@@ -1,7 +1,7 @@
-import toggleTileState from './toggleTileState';
-import getTile from './getTile';
+import toggleTileState from '../board-functions/toggleTileState';
+import { getTile } from '../../components/Tile';
 
-const enforceRules = (prevState, id) => {
+const enforce = (prevState, id) => {
   const { currentBoard } = prevState;
   const tile = getTile(currentBoard, id);
 
@@ -27,4 +27,4 @@ const enforceRules = (prevState, id) => {
   return prevState;
 };
 
-export default enforceRules;
+export default enforce;

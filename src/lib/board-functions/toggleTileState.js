@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 function toggleTileState(tile, effect) {
   const newTile = tile;
   const className = newTile.className.split(' ');

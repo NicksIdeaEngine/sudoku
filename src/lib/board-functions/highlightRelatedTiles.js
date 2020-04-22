@@ -1,5 +1,5 @@
 import toggleTileState from './toggleTileState';
-import getTile from './getTile';
+import { getTile } from '../../components/Tile';
 
 const highlightRelatedTiles = (prevState, id) => {
   const { currentBoard } = prevState;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Tile from './Tile';
+import Tile, { getTileText } from './Tile';
 
 class SudokuBoard extends Component {
   constructor(props) {
@@ -31,6 +31,8 @@ class SudokuBoard extends Component {
           locked,
         } = tile;
 
+        const tiletext = getTileText(tile);
+
         return (
           <Tile
             key={id}
@@ -40,6 +42,7 @@ class SudokuBoard extends Component {
             region={region}
             value={value === '0' ? '' : value}
             candidates={candidates}
+            tiletext={tiletext}
             className={className}
             active={active}
             highlight={highlight}

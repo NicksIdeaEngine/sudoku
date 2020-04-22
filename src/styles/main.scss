@@ -1,5 +1,5 @@
-@import 'colors/gruvbox-dark.scss';
-// @import 'colors/gruvbox-light.scss';
+// @import '../colors/gruvbox-dark.scss';
+@import '../colors/gruvbox-light.scss';
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Montserrat:wght@500&display=swap');
 
 $body-bgc: $bg0;
@@ -14,10 +14,15 @@ $game-board-border: 0; // 0.2em solid $purple;
 
 // sudoku board variables
 $sudoku-container-border: 0; // 0.2em solid $aqua;
-$tile-highlight-bgc: $fg1;
-$tile-highlight-text-color: $bg0_h;
-$tile-warning-bgc: $dark_red !important;
-$tile-warning-text-color: $bg0_h;
+$tile-border-highlight: 0.25em solid $bg3;
+$tile-bgc-highlight: $fg1;
+$tile-text-color-highlight: $bg0_h;
+$tile-border-active: 0.25em solid $orange !important;
+$tile-bgc-active: $fg1;
+$tile-text-color-active: $bg0_h;
+$tile-border-warning: 0.25em solid $bg3;
+$tile-bgc-warning: $dark_red !important;
+$tile-text-color-warning: $bg0_h;
 $tile-border-thin: 0.25em solid $bg4;
 $tile-border-thin-hover: 0.25em solid $orange !important;
 $tile-border-inner-edge: 0.25em solid $dark_blue;
@@ -113,28 +118,53 @@ body {
     height: $tile-height;
     background-color: $tile-background-color;
 
-    &-text {
+    &-value {
       font-size: $tile-text-size;
       color: $tile-text-color;
+      width: $tile-width;
     }
 
-    &-active {
-      border: $tile-border-thin-hover;
+    &-candidate {
+      display: inline-flex;
+      width: $tile-width;
+      height: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      // border: 0.1px solid $fg0;
+
+      &-text {
+        font-size: 0.75em;
+        flex: 1 33%;
+        width: 32%;
+        position: relative;
+        color: $tile-text-color;
+      }
     }
 
     &-highlight {
-      background-color: $tile-highlight-bgc;
+      border: $tile-border-highlight;
+      background-color: $tile-bgc-highlight;
 
       > div {
-        color: $tile-highlight-text-color;
+        color: $tile-text-color-highlight;
+      }
+    }
+
+    &-active {
+      border: $tile-border-active;
+      background-color: $tile-bgc-active;
+
+      > div {
+        color: $tile-text-color-active;
       }
     }
 
     &-warning {
-      background-color: $tile-warning-bgc;
+      border: $tile-border-warning;
+      background-color: $tile-bgc-warning;
 
       > div {
-        color: $tile-warning-text-color;
+        color: $tile-text-color-warning;
       }
     }
 

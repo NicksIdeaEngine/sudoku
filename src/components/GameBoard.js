@@ -3,17 +3,18 @@ import React, { Component } from 'react';
 import SudokuBoard from './SudokuBoard';
 import Menu from './Menu';
 
-import buildBoard from '../lib/buildBoard';
-import highlightRelatedTiles from '../lib/highlightRelatedTiles';
-import resetGame from '../lib/resetGame';
-import clearBoard from '../lib/clearBoard';
-import newGame from '../lib/newGame';
-import clearHighlight from '../lib/clearHighlight';
-import getTile from '../lib/getTile';
-import setDifficulty from '../lib/setDifficulty';
-import enforceRules from '../lib/enforceRules';
-import toggleTileState from '../lib/toggleTileState';
-import toggleInsertMode from '../lib/toggleInsertMode';
+import buildBoard from '../lib/board-functions/buildBoard';
+import highlightRelatedTiles from '../lib/board-functions/highlightRelatedTiles';
+import { newGame, resetGame } from '../lib/board-functions/changeGameState';
+import {
+  clearBoard,
+  clearHighlight,
+} from '../lib/board-functions/changeBoardState';
+import { getTile } from './Tile';
+import difficulty from '../lib/settings/difficulty';
+import enforceRules from '../lib/rules/enforce';
+import toggleTileState from '../lib/board-functions/toggleTileState';
+import toggleInsertMode from '../lib/board-functions/toggleInsertMode';
 
 class GameBoard extends Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class GameBoard extends Component {
       startingSequence: '',
       currentBoard: buildBoard(),
       insertMode: '',
-      difficulty: {
+      currentDifficulty: {
         name: 'very easy',
         index: 0,
       },
@@ -43,12 +44,13 @@ class GameBoard extends Component {
   }
 
   setDifficulty(value) {
-    this.setState((prevState) => setDifficulty(prevState, value));
+    this.setState((prevState) => difficulty.setDifficulty(prevState, value));
   }
 
   handleClick(id) {
     const { currentBoard, insertMode } = this.state;
     const tile = getTile(currentBoard, id);
+    console.log(tile);
 
     if (tile.locked === 'false' && tile.active === 'true') {
       let tempNum = parseInt(tile.value, 10) + 1;
@@ -56,7 +58,18 @@ class GameBoard extends Component {
       tile.value = tempNum.toString();
     }
 
-    if (insertMode !== '' && tile.locked === 'false') {
+    if (insertMode === 'switch') {
+      this.setState((prevState) => {
+        tile.candidates[1][1] = '5';
+        console.log(tile.candidates);
+      });
+    }
+
+    if (
+      insertMode !== '' &&
+      tile.locked === 'false' &&
+      insertMode !== 'switch'
+    ) {
       tile.value = insertMode;
     }
 
@@ -94,7 +107,7 @@ class GameBoard extends Component {
     const {
       currentBoard,
       startingSequence,
-      difficulty,
+      currentDifficulty,
       insertMode,
     } = this.state;
     return (
@@ -111,7 +124,7 @@ class GameBoard extends Component {
           newGame={this.newGame}
           clearHighlight={this.clearHighlight}
           setDifficulty={this.setDifficulty}
-          currentDifficulty={difficulty.name}
+          currentDifficulty={currentDifficulty.name}
           toggleInsertMode={this.toggleInsertMode}
           insertMode={insertMode}
         />

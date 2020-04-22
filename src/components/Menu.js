@@ -68,8 +68,8 @@ class Menu extends Component {
     }
 
     for (let i = 1; i <= 10; i += 1) {
-      text = difficultyOptions[index];
       index = i - 1;
+      text = difficultyOptions[index];
       difficultyButtons.push(
         <button
           key={`drowndown-btn-${index}`}
@@ -88,6 +88,28 @@ class Menu extends Component {
       <section className="menu">
         <div className="menu-container">
           <div className="menu-number">
+            <div className="menu-number-settings">
+              <button
+                className="menu-number-button menu-number-remove-btn"
+                type="button"
+                id="menu-number-remove-btn"
+                onClick={() => {
+                  toggleInsertMode('remove');
+                }}
+              >
+                remove
+              </button>
+              <button
+                className="menu-number-button menu-number-switch-btn"
+                type="button"
+                id="menu-number-switch-btn"
+                onClick={() => {
+                  toggleInsertMode('switch');
+                }}
+              >
+                switch
+              </button>
+            </div>
             <div className="menu-number-container">{menuNumbers}</div>
           </div>
           <button

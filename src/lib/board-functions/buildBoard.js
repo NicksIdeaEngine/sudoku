@@ -12,9 +12,17 @@ function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {
   const highlight = 'false';
   const warning = 'false';
   const locked = 'false';
+  const tiletext = '';
 
   const newBoard = [];
   let newRowContents = [];
+
+  for (let i = 0; i < 3; i += 1) {
+    candidates.push([]);
+    for (let j = 0; j < 3; j += 1) {
+      candidates[i].push(' ');
+    }
+  }
 
   for (row = 1; row <= maxRows; row += 1) {
     newRowContents = [];
@@ -51,12 +59,14 @@ function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {
         region,
         value,
         candidates,
+        tiletext,
         className: className.join(' '),
         active,
         highlight,
         warning,
         locked,
       });
+
       id += 1;
     }
 

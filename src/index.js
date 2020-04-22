@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import GlobalStyles from './GlobalStyles';
-import './style.scss';
+import GlobalStyles from './styles/GlobalStyles';
+import './styles/main.scss';
 import App from './App';
 
 const rootContainer = document.getElementById('root');
