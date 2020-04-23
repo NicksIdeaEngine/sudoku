@@ -1,21 +1,22 @@
-function toggleTileState(tile, effect) {
-  const newTile = tile;
-  const className = newTile.className.split(' ');
+function toggleTileState(currentTile, newEffect) {
+  const tile = currentTile;
+  const effect = newEffect;
+  const className = tile.className.split(' ');
 
-  if (newTile[`${effect}`] === 'true') {
-    newTile[`${effect}`] = 'false';
+  if (tile[`${effect}`] === 'true') {
+    tile[`${effect}`] = 'false';
     className.splice(
       className.findIndex((e) => e === `sudoku-tile-${effect}`),
       1,
     );
   } else {
-    newTile[`${effect}`] = 'true';
+    tile[`${effect}`] = 'true';
     className.push(`sudoku-tile-${effect}`);
   }
 
-  newTile.className = className.join(' ');
+  tile.className = className.join(' ');
 
-  return newTile;
+  return tile;
 }
 
 export default toggleTileState;

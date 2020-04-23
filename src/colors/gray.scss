@@ -10,3 +10,18 @@ $gray800: #424242;
 $gray900: #212121;
 $black: #000000;
 $white: #ffffff;
+
+:export {
+  gray50: $gray50;
+  gray100: $gray100;
+  gray200: $gray200;
+  gray300: $gray300;
+  gray400: $gray400;
+  gray500: $gray500;
+  gray600: $gray600;
+  gray700: $gray700;
+  gray800: $gray800;
+  gray900: $gray900;
+  black: $black;
+  white: $white;
+}

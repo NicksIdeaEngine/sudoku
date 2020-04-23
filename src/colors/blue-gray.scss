@@ -8,3 +8,16 @@ $blue-gray600: #546e7a;
 $blue-gray700: #455a64;
 $blue-gray800: #37474f;
 $blue-gray900: #263238;
+
+:export {
+  blueGray50: $blue-gray50;
+  blueGray100: $blue-gray100;
+  blueGray200: $blue-gray200;
+  blueGray300: $blue-gray300;
+  blueGray400: $blue-gray400;
+  blueGray500: $blue-gray500;
+  blueGray600: $blue-gray600;
+  blueGray700: $blue-gray700;
+  blueGray800: $blue-gray800;
+  blueGray900: $blue-gray900;
+}

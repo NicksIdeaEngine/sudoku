@@ -1,8 +1,7 @@
 import toggleTileState from '../board-functions/toggleTileState';
 import { getTile } from '../../components/Tile';
 
-const enforce = (prevState, id) => {
-  const { currentBoard } = prevState;
+const enforce = ({ currentBoard }, id) => {
   const tile = getTile(currentBoard, id);
 
   currentBoard.forEach((currentRow) => {
@@ -24,7 +23,7 @@ const enforce = (prevState, id) => {
     });
   });
 
-  return prevState;
+  return { currentBoard };
 };
 
 export default enforce;

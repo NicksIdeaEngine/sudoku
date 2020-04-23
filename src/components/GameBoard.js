@@ -1,17 +1,16 @@
-/* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import SudokuBoard from './SudokuBoard';
 import Menu from './Menu';
 
 import buildBoard from '../lib/board-functions/buildBoard';
-import highlightRelatedTiles from '../lib/board-functions/highlightRelatedTiles';
 import { newGame, resetGame } from '../lib/board-functions/changeGameState';
 import {
   clearBoard,
   clearHighlight,
+  highlightRelatedTiles,
 } from '../lib/board-functions/changeBoardState';
 import { getTile } from './Tile';
-import difficulty from '../lib/settings/difficulty';
+import { setDifficulty } from '../lib/settings/difficulty';
 import enforceRules from '../lib/rules/enforce';
 import toggleTileState from '../lib/board-functions/toggleTileState';
 import toggleInsertMode from '../lib/board-functions/toggleInsertMode';
@@ -44,7 +43,7 @@ class GameBoard extends Component {
   }
 
   setDifficulty(value) {
-    this.setState((prevState) => difficulty.setDifficulty(prevState, value));
+    this.setState((prevState) => setDifficulty(prevState, value));
   }
 
   handleClick(id) {
@@ -59,7 +58,7 @@ class GameBoard extends Component {
     }
 
     if (insertMode === 'switch') {
-      this.setState((prevState) => {
+      this.setState(() => {
         tile.candidates[1][1] = '5';
         console.log(tile.candidates);
       });
