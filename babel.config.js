@@ -9,4 +9,12 @@ module.exports = {
       },
     ],
   ],
+  plugins: [
+    [
+      'emotion',
+      {
+        labelFormat: '[filename]--[local]',
+      },
+    ],
+  ],
 };

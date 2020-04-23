@@ -1,4 +1,5 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
     commonjs: true,
@@ -30,11 +31,16 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module',
   },
-  plugins: ['react', 'babel', 'prettier', 'jest', 'jest-formatting'],
+  plugins: ['react', 'babel', 'prettier', 'emotion', 'jest', 'jest-formatting'],
   rules: {
     'jsx-a11y/href-no-hash': ['off'],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'prettier/prettier': 'error',
     'no-console': ['off'],
+    'emotion/jsx-import': 'error',
+    'emotion/no-vanilla': 'error',
+    'emotion/import-from-emotion': 'error',
+    'emotion/styled-import': 'error',
+    'emotion/syntax-preference': [2, 'string'],
   },
 };
