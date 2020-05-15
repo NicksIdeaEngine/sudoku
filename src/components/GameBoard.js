@@ -9,7 +9,7 @@ import {
   clearHighlight,
   highlightRelatedTiles,
 } from '../lib/board-functions/changeBoardState';
-import { getTile } from './Tile';
+import { getTile, addCandidate } from './Tile';
 import { setDifficulty } from '../lib/settings/difficulty';
 import enforceRules from '../lib/rules/enforce';
 import toggleTileState from '../lib/board-functions/toggleTileState';
@@ -23,6 +23,7 @@ class GameBoard extends Component {
       startingSequence: '',
       currentBoard: buildBoard(),
       insertMode: '',
+      insertValue: '',
       currentDifficulty: {
         name: 'very easy',
         index: 0,
@@ -47,9 +48,8 @@ class GameBoard extends Component {
   }
 
   handleClick(id) {
-    const { currentBoard, insertMode } = this.state;
+    const { currentBoard, insertMode, insertValue } = this.state;
     const tile = getTile(currentBoard, id);
-    console.log(tile);
 
     if (tile.locked === 'false' && tile.active === 'true') {
       let tempNum = parseInt(tile.value, 10) + 1;
@@ -58,10 +58,7 @@ class GameBoard extends Component {
     }
 
     if (insertMode === 'switch') {
-      this.setState(() => {
-        tile.candidates[1][1] = '5';
-        console.log(tile.candidates);
-      });
+      this.setState((prevState) => addCandidate(prevState, id, 2));
     }
 
     if (
@@ -69,7 +66,7 @@ class GameBoard extends Component {
       tile.locked === 'false' &&
       insertMode !== 'switch'
     ) {
-      tile.value = insertMode;
+      tile.value = insertValue;
     }
 
     this.setState((prevState) => {
@@ -108,6 +105,7 @@ class GameBoard extends Component {
       startingSequence,
       currentDifficulty,
       insertMode,
+      insertValue,
     } = this.state;
     return (
       <main className="game-board">
@@ -116,6 +114,7 @@ class GameBoard extends Component {
           startingSequence={startingSequence}
           handleClick={this.handleClick}
           insertMode={insertMode}
+          insertValue={insertValue}
         />
         <Menu
           resetGame={this.resetGame}
@@ -126,6 +125,7 @@ class GameBoard extends Component {
           currentDifficulty={currentDifficulty.name}
           toggleInsertMode={this.toggleInsertMode}
           insertMode={insertMode}
+          insertValue={insertValue}
         />
       </main>
     );

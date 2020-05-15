@@ -1,6 +1,6 @@
-// @import '../colors/gruvbox-dark.scss';
-@import '../colors/gruvbox-light.scss';
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Montserrat:wght@500&display=swap');
+@import '../colors/gruvbox-dark.scss';
+// @import '../colors/gruvbox-light.scss';
+// @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Montserrat:wght@500&display=swap');
 
 $body-bgc: $bg0;
 $body-color: $fg0;
@@ -40,7 +40,7 @@ $menu-border: 0; // 0.1em solid $fg0;
 $menu-header-border: 0; // 0.1em solid $red;
 $menu-header-text-color: $fg1;
 $menu-container-border: 0; // 0.2em solid $yellow;
-$menu-button-background-color: $bg4;
+$menu-button-background-color: $bg2;
 $menu-button-border: 0.3em solid $fg2;
 $menu-button-text-color: $fg0;
 $menu-button-focus-bgc: $green;
@@ -55,27 +55,6 @@ body {
 
 .dev-text {
   color: $fg0;
-}
-
-.page {
-  margin: 0 auto;
-  padding: 2em;
-  width: 50em;
-  height: 36em;
-  border: $page-border;
-
-  &-header {
-    text-align: center;
-    color: $header-color;
-    &-text {
-      margin: 0.25em 0.5em;
-    }
-  }
-
-  &-footer {
-    text-align: center;
-    margin: 0.25em 0 0;
-  }
 }
 
 .game-board {

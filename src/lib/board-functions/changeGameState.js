@@ -21,9 +21,9 @@ const getNewSudoku = (difficulty) => {
 };
 
 const newGame = (prevState) => {
-  const { difficulty } = prevState;
+  const { currentDifficulty } = prevState;
   const { currentBoard, insertMode } = clearHighlight(prevState);
-  const { startingSequence } = getNewSudoku(difficulty);
+  const { startingSequence } = getNewSudoku(currentDifficulty);
   const splitSequence = startingSequence.split('');
   let tile;
   let row;

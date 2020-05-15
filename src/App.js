@@ -1,12 +1,19 @@
 import React from 'react';
+import styled from '@emotion/styled';
 import GameBoard from './components/GameBoard';
-import './styles/main.scss';
+
+const AppContainer = styled.div`
+  margin: 0 auto;
+  padding: 2em;
+  width: 50em;
+  height: 36em;
+`;
 
 function App() {
   return (
-    <div className="page">
+    <AppContainer className="app">
       <GameBoard />
-    </div>
+    </AppContainer>
   );
 }
 

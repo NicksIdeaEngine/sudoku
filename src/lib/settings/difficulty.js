@@ -25,10 +25,10 @@ function getDifficultyName(difficultyID) {
 }
 
 function setDifficulty(prevState, value) {
-  const { difficulty } = prevState;
-  difficulty.name = getDifficultyName(value);
-  difficulty.index = value;
-  return { difficulty };
+  const { currentDifficulty } = prevState;
+  currentDifficulty.name = getDifficultyName(value);
+  currentDifficulty.index = value;
+  return { currentDifficulty };
 }
 
 export { difficultyOptions, getDifficultyName, setDifficulty };

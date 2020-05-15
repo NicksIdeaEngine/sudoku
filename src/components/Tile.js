@@ -58,6 +58,12 @@ const getTile = (currentBoard, id) => {
   return tile;
 };
 
+const updateBoardWithTile = (currentBoard, tile) => {
+  const newBoard = currentBoard;
+  newBoard[tile.row].props.children[tile.column] = tile;
+  return { currentBoard: newBoard };
+};
+
 const getTileText = (tile) => {
   const { value, candidates, id } = tile;
   let displayText = '';
@@ -104,7 +110,17 @@ const getTileText = (tile) => {
   return displayText;
 };
 
-export { getTile, getTileText };
+const addCandidate = ({ currentBoard }, id, candidate) => {
+  const tile = getTile(currentBoard, id);
+  console.log('tile', tile);
+  tile.candidates[Math.floor(candidate / 3)][
+    candidate % 3
+  ] = candidate.toString();
+
+  return updateBoardWithTile(currentBoard, tile);
+};
+
+export { getTile, getTileText, addCandidate };
 
 Tile.propTypes = {
   id: PropTypes.string.isRequired,
