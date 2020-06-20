@@ -1,0 +1,9 @@
+.git
+dist
+examples
+node_modules
+notes
+public
+reference
+package.json
+package-lock.json

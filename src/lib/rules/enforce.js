@@ -1,8 +1,8 @@
-import toggleTileState from '../board-functions/toggleTileState';
-import { getTile } from '../../components/Tile';
+import toggleTileState from '../board-functions/toggleTileState'
+import { getTile } from '../../components/Tile'
 
 const enforce = ({ currentBoard }, id) => {
-  const tile = getTile(currentBoard, id);
+  const tile = getTile(currentBoard, id)
 
   currentBoard.forEach((currentRow) => {
     currentRow.props.children.forEach((currentTile) => {
@@ -16,14 +16,14 @@ const enforce = ({ currentBoard }, id) => {
           currentTile.column === tile.column ||
           currentTile.region === tile.region
         ) {
-          toggleTileState(currentTile, 'warning');
-          if (tile.warning === 'false') toggleTileState(tile, 'warning');
+          toggleTileState(currentTile, 'warning')
+          if (tile.warning === 'false') toggleTileState(tile, 'warning')
         }
       }
-    });
-  });
+    })
+  })
 
-  return { currentBoard };
-};
+  return { currentBoard }
+}
 
-export default enforce;
+export default enforce

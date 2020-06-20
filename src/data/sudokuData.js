@@ -1,6 +1,6 @@
-const maxRows = 9;
-const maxColumns = 9;
-const regionSize = 3;
+const maxRows = 9
+const maxColumns = 9
+const regionSize = 3
 
 const veryEasy = [
   {
@@ -18,7 +18,7 @@ const veryEasy = [
       '390507042040603010006104500452000196030000080687000234008409300060302050210805069',
     solvedSequence: '',
   },
-];
+]
 const easy = [
   {
     startingSequence:
@@ -35,7 +35,7 @@ const easy = [
       '090741020400503007008000100960108075700000009250907018007000500500306001030875040',
     solvedSequence: '',
   },
-];
+]
 const moderate = [
   {
     startingSequence:
@@ -52,7 +52,7 @@ const moderate = [
       '000000000007102900010346050091408260003000100025907340030694010002803600000000000',
     solvedSequence: '',
   },
-];
+]
 const challenging = [
   {
     startingSequence:
@@ -69,7 +69,7 @@ const challenging = [
       '090000040400781002001060800030070080087502410010040090002050100300618004040000030',
     solvedSequence: '',
   },
-];
+]
 const tricky = [
   {
     startingSequence:
@@ -86,7 +86,7 @@ const tricky = [
       '476020000900034000000000870500080040010902080020060005098000000000570008000090413',
     solvedSequence: '',
   },
-];
+]
 const hard = [
   {
     startingSequence:
@@ -103,7 +103,7 @@ const hard = [
       '740902051900000007001405200305207904000000000604103502008701300100000008420806015',
     solvedSequence: '',
   },
-];
+]
 const veryHard = [
   {
     startingSequence:
@@ -120,7 +120,7 @@ const veryHard = [
       '010090060900602001000157000027010430106508902049020150000475000600201005050060010',
     solvedSequence: '',
   },
-];
+]
 const extreme = [
   {
     startingSequence:
@@ -137,7 +137,7 @@ const extreme = [
       '080204090001907500700060003048000360000000000053000410200070005007605200010302070',
     solvedSequence: '',
   },
-];
+]
 const ultraExtreme = [
   {
     startingSequence:
@@ -154,7 +154,7 @@ const ultraExtreme = [
       '008060900000307000100408003054000270200000005019000630800506009000709000006040300',
     solvedSequence: '',
   },
-];
+]
 
 const standardSudokus = {
   gameData: [
@@ -185,6 +185,6 @@ const standardSudokus = {
     maxColumns,
     regionSize,
   },
-};
+}
 
-export default standardSudokus;
+export default standardSudokus

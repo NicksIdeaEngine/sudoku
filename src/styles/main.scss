@@ -1,6 +1,9 @@
-@import '../colors/gruvbox-dark.scss';
-// @import '../colors/gruvbox-light.scss';
-// @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Montserrat:wght@500&display=swap');
+@import '../assets/palettes/gruvbox-light.scss';
+// @import '../assets/palettes/gruvbox-dark.scss';
+@import '../assets/palettes/blue-gray.scss';
+@import '../assets/palettes/blue.scss';
+@import '../assets/palettes/green.scss';
+@import '../assets/palettes/gray.scss';
 
 $body-bgc: $bg0;
 $body-color: $fg0;
@@ -21,11 +24,11 @@ $tile-border-active: 0.25em solid $orange !important;
 $tile-bgc-active: $fg1;
 $tile-text-color-active: $bg0_h;
 $tile-border-warning: 0.25em solid $bg3;
-$tile-bgc-warning: $dark_red !important;
+$tile-bgc-warning: $alt-red !important;
 $tile-text-color-warning: $bg0_h;
 $tile-border-thin: 0.25em solid $bg4;
 $tile-border-thin-hover: 0.25em solid $orange !important;
-$tile-border-inner-edge: 0.25em solid $dark_blue;
+$tile-border-inner-edge: 0.25em solid $alt-blue;
 $tile-border-inner-edge-hover: 0.25em solid $red;
 $tile-border-outer-edge: 0.25em solid $fg3;
 $tile-border-outer-edge-hover: 0.25em solid $red;
@@ -44,7 +47,7 @@ $menu-button-background-color: $bg2;
 $menu-button-border: 0.3em solid $fg2;
 $menu-button-text-color: $fg0;
 $menu-button-focus-bgc: $green;
-$menu-button-dropdown-bgc: $dark_blue;
+$menu-button-dropdown-bgc: $alt-blue;
 $menu-button-dropdown-border: 0.2em solid $fg1;
 $menu-button-dropdown-color: $fg0;
 

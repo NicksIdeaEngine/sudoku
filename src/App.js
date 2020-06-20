@@ -1,20 +1,20 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import GameBoard from './components/GameBoard';
+import React from 'react'
+import styled from '@emotion/styled'
+import GameBoard from './components/GameBoard'
 
 const AppContainer = styled.div`
   margin: 0 auto;
-  padding: 2em;
-  width: 50em;
-  height: 36em;
-`;
+  padding: 0;
+  width: 62em;
+  height: 50em;
+`
 
 function App() {
   return (
     <AppContainer className="app">
       <GameBoard />
     </AppContainer>
-  );
+  )
 }
 
-export default App;
+export default App

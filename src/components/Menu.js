@@ -1,29 +1,29 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import standardSudokus from '../data/sudokuData';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import standardSudokus from '../data/sudokuData'
 
 class Menu extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       showDifficultyMenu: false,
-    };
-    this.toggleDifficultyMenu = this.toggleDifficultyMenu.bind(this);
+    }
+    this.toggleDifficultyMenu = this.toggleDifficultyMenu.bind(this)
   }
 
   toggleDifficultyMenu(event) {
-    event.preventDefault();
-    let { showDifficultyMenu } = this.state;
-    showDifficultyMenu = !showDifficultyMenu;
+    event.preventDefault()
+    let { showDifficultyMenu } = this.state
+    showDifficultyMenu = !showDifficultyMenu
     if (showDifficultyMenu) {
       this.setState({ showDifficultyMenu }, () => {
-        document.addEventListener('click', this.toggleDifficultyMenu);
-      });
+        document.addEventListener('click', this.toggleDifficultyMenu)
+      })
     } else if (!this.dropdownMenu.contains(event.target)) {
       this.setState({ showDifficultyMenu }, () => {
-        document.removeEventListener('click', this.toggleDifficultyMenu);
-      });
+        document.removeEventListener('click', this.toggleDifficultyMenu)
+      })
     }
   }
 
@@ -37,20 +37,20 @@ class Menu extends Component {
       currentDifficulty,
       toggleInsertMode,
       insertMode,
-    } = this.props;
-    const { showDifficultyMenu } = this.state;
-    const menuNumbers = [];
-    const { difficultyOptions } = standardSudokus;
-    const difficultyButtons = [];
-    let numberButtonClass = ['menu-number-button'];
-    let index;
-    let text;
+    } = this.props
+    const { showDifficultyMenu } = this.state
+    const menuNumbers = []
+    const { difficultyOptions } = standardSudokus
+    const difficultyButtons = []
+    let numberButtonClass = ['menu-number-button']
+    let index
+    let text
 
     for (let i = 1; i <= 9; i += 1) {
-      index = i;
-      numberButtonClass = ['menu-number-button'];
+      index = i
+      numberButtonClass = ['menu-number-button']
       if (index.toString() === insertMode)
-        numberButtonClass.push('menu-number-button-active');
+        numberButtonClass.push('menu-number-button-active')
       menuNumbers.push(
         <button
           key={`menu-number-btn-${i - 1}`}
@@ -58,18 +58,18 @@ class Menu extends Component {
           type="button"
           className={numberButtonClass.join(' ')}
           onClick={(e) => {
-            toggleInsertMode(e.target.value);
+            toggleInsertMode(e.target.value)
           }}
           value={i}
         >
           {i}
-        </button>,
-      );
+        </button>
+      )
     }
 
     for (let i = 1; i <= 10; i += 1) {
-      index = i - 1;
-      text = difficultyOptions[index];
+      index = i - 1
+      text = difficultyOptions[index]
       difficultyButtons.push(
         <button
           key={`drowndown-btn-${index}`}
@@ -80,8 +80,8 @@ class Menu extends Component {
           onClick={(e) => setDifficulty(parseInt(e.target.value, 10))}
         >
           {text}
-        </button>,
-      );
+        </button>
+      )
     }
 
     return (
@@ -94,7 +94,7 @@ class Menu extends Component {
                 type="button"
                 id="menu-number-remove-btn"
                 onClick={() => {
-                  toggleInsertMode('remove');
+                  toggleInsertMode('remove')
                 }}
               >
                 remove
@@ -104,7 +104,7 @@ class Menu extends Component {
                 type="button"
                 id="menu-number-switch-btn"
                 onClick={() => {
-                  toggleInsertMode('switch');
+                  toggleInsertMode('switch')
                 }}
               >
                 switch
@@ -141,7 +141,7 @@ class Menu extends Component {
               <div
                 className="menu-dropdown-container"
                 ref={(e) => {
-                  this.dropdownMenu = e;
+                  this.dropdownMenu = e
                 }}
               >
                 {difficultyButtons}
@@ -150,7 +150,7 @@ class Menu extends Component {
           </div>
         </div>
       </section>
-    );
+    )
   }
 }
 
@@ -163,6 +163,6 @@ Menu.propTypes = {
   currentDifficulty: PropTypes.string.isRequired,
   toggleInsertMode: PropTypes.func.isRequired,
   insertMode: PropTypes.string.isRequired,
-};
+}
 
-export default Menu;
+export default Menu

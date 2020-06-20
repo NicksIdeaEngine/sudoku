@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Tile, { getTileText } from './Tile';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import Tile, { getTileText } from './Tile'
 
 class SudokuBoard extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.state = {};
+    this.state = {}
   }
 
   render() {
-    const { currentBoard, handleClick } = this.props;
+    const { currentBoard, handleClick } = this.props
 
     const fullBoard = currentBoard.map((rowOfTiles) => {
-      const rowID = rowOfTiles.props.id;
-      const rowClassName = rowOfTiles.props.className;
-      const rowContents = rowOfTiles.props.children;
+      const rowID = rowOfTiles.props.id
+      const rowClassName = rowOfTiles.props.className
+      const rowContents = rowOfTiles.props.children
       const tileBatch = rowContents.map((tile) => {
         const {
           id,
@@ -29,9 +29,9 @@ class SudokuBoard extends Component {
           highlight,
           warning,
           locked,
-        } = tile;
+        } = tile
 
-        const tiletext = getTileText(tile);
+        const tiletext = getTileText(tile)
 
         return (
           <Tile
@@ -50,27 +50,27 @@ class SudokuBoard extends Component {
             locked={locked}
             handleClick={handleClick}
           />
-        );
-      });
+        )
+      })
 
       return (
         <div key={rowID} id={rowID} className={rowClassName}>
           {tileBatch}
         </div>
-      );
-    });
+      )
+    })
 
     return (
       <section className="sudoku">
         <div className="sudoku-container">{fullBoard}</div>
       </section>
-    );
+    )
   }
 }
 
 SudokuBoard.propTypes = {
   currentBoard: PropTypes.arrayOf(PropTypes.node.isRequired).isRequired,
   handleClick: PropTypes.func.isRequired,
-};
+}
 
-export default SudokuBoard;
+export default SudokuBoard
