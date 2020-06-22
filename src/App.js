@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import GameBoard from './components/GameBoard'
 
 const AppContainer = styled.div`
   margin: 0 auto;
@@ -12,7 +11,7 @@ const AppContainer = styled.div`
 function App() {
   return (
     <AppContainer className="app">
-      <GameBoard />
+      <p>test</p>
     </AppContainer>
   )
 }

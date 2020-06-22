@@ -1,18 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from '@emotion/styled'
 import GlobalStyles from './styles/GlobalStyles'
-
-const PageContainer = styled.main`
-  max-width: 80em;
-  margin: 0 auto;
-`
+import { GameContextProvider } from './utils/useGameContext'
 
 const Root = ({ children }) => {
   return (
     <>
       <GlobalStyles />
-      <PageContainer className="page">{children}</PageContainer>
+      <GameContextProvider>{children}</GameContextProvider>
     </>
   )
 }

@@ -1019,10 +1019,12 @@
 @xtuc/long	package-lock.json	/^    "@xtuc\/long": {$/;"	o	object:dependencies
 App	src/App.js	/^function App() {$/;"	f
 AppContainer	src/App.js	/^const AppContainer = styled.div`$/;"	C
-GameBoard	src/components/GameBoard.js	/^class GameBoard extends Component {$/;"	c
+Family	src/components/Example.js	/^const Family = (props) => ($/;"	C
+GameBoard	src/components/GameBoard.js	/^function GameBoard() {$/;"	f
+GameContext	src/utils/useGameContext.js	/^const GameContext = createContext()$/;"	C
+GameContextProvider	src/utils/useGameContext.js	/^export const GameContextProvider = ({ children }) => {$/;"	C
 GlobalStyles	src/styles/GlobalStyles.js	/^const GlobalStyles = () => <Global styles={styles} \/>$/;"	C
 HtmlWebpackPlugin	webpack.config.js	/^const HtmlWebpackPlugin = require('html-webpack-plugin')$/;"	C
-Menu	src/components/Menu.js	/^class Menu extends Component {$/;"	c
 Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-100.svg	/^<font id="Montserrat" horiz-adv-x="626" ><font-face$/;"	d
 Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-100.svg	/^<font id="Montserrat" horiz-adv-x="626" ><font-face$/;"	i
 Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-100italic.svg	/^<font id="Montserrat" horiz-adv-x="628" ><font-face$/;"	d
@@ -1059,9 +1061,11 @@ Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-italic.svg	/^<fo
 Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-italic.svg	/^<font id="Montserrat" horiz-adv-x="642" ><font-face$/;"	i
 Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-regular.svg	/^<font id="Montserrat" horiz-adv-x="639" ><font-face$/;"	d
 Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-regular.svg	/^<font id="Montserrat" horiz-adv-x="639" ><font-face$/;"	i
+MyContext	src/components/Example.js	/^const MyContext = createContext()$/;"	C
+MyProvider	src/components/Example.js	/^class MyProvider extends Component {$/;"	c
 PATH_DIST	webpack.config.js	/^const PATH_DIST = path.join(__dirname, '.\/dist')$/;"	C
 PATH_SOURCE	webpack.config.js	/^const PATH_SOURCE = path.join(__dirname, '.\/src')$/;"	C
-PageContainer	src/Root.js	/^const PageContainer = styled.main`$/;"	C
+Person	src/components/Example.js	/^class Person extends Component {$/;"	c
 Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-100.svg	/^<font id="Roboto" horiz-adv-x="1113" ><font-face$/;"	d
 Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-100.svg	/^<font id="Roboto" horiz-adv-x="1113" ><font-face$/;"	i
 Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-100italic.svg	/^<font id="Roboto" horiz-adv-x="1092" ><font-face$/;"	d
@@ -1087,8 +1091,7 @@ Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-italic.svg	/^<font id="Robot
 Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-regular.svg	/^<font id="Roboto" horiz-adv-x="1158" ><font-face$/;"	d
 Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-regular.svg	/^<font id="Roboto" horiz-adv-x="1158" ><font-face$/;"	i
 Root	src/Root.js	/^const Root = ({ children }) => {$/;"	C
-SudokuBoard	src/components/SudokuBoard.js	/^class SudokuBoard extends Component {$/;"	c
-Tile	src/components/Tile.js	/^class Tile extends Component {$/;"	c
+TopContext	src/components/Example.js	/^class TopContext extends Component {$/;"	c
 a	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
 abab	package-lock.json	/^        "abab": "^2.0.0",$/;"	s	object:dependencies.data-urls.requires
 abab	package-lock.json	/^        "abab": "^2.0.0",$/;"	s	object:dependencies.jsdom.requires
@@ -1116,8 +1119,8 @@ acorn-jsx	package-lock.json	/^    "acorn-jsx": {$/;"	o	object:dependencies
 acorn-walk	package-lock.json	/^        "acorn-walk": "^6.0.1"$/;"	s	object:dependencies.acorn-globals.requires
 acorn-walk	package-lock.json	/^    "acorn-walk": {$/;"	o	object:dependencies
 acronym	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
-active	src/components/Tile.js	/^  active: PropTypes.string.isRequired,$/;"	p	class:Tile.propTypes
 address	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
+age	src/components/Example.js	/^      age: 31,$/;"	p	class:super.state
 ajv	package-lock.json	/^            "ajv": "^6.1.0",$/;"	s	object:dependencies.terser-webpack-plugin.dependencies.schema-utils.requires
 ajv	package-lock.json	/^            "ajv": "^6.1.0",$/;"	s	object:dependencies.webpack-dev-server.dependencies.schema-utils.requires
 ajv	package-lock.json	/^            "ajv": "^6.1.0",$/;"	s	object:dependencies.webpack.dependencies.schema-utils.requires
@@ -1527,7 +1530,6 @@ bn.js	package-lock.json	/^        "bn.js": "^4.1.0",$/;"	s	object:dependencies.p
 bn.js	package-lock.json	/^        "bn.js": "^4.1.1",$/;"	s	object:dependencies.browserify-sign.requires
 bn.js	package-lock.json	/^        "bn.js": "^4.4.0",$/;"	s	object:dependencies.elliptic.requires
 bn.js	package-lock.json	/^    "bn.js": {$/;"	o	object:dependencies
-board	src/components/Tile.js	/^  const board = currentBoard$/;"	C
 body	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
 body-bgc	src/styles/main.scss	/^$body-bgc: $bg0;$/;"	v
 body-color	src/styles/main.scss	/^$body-color: $fg0;$/;"	v
@@ -1616,7 +1618,6 @@ buffer-xor	package-lock.json	/^        "buffer-xor": "^1.0.3",$/;"	s	object:depe
 buffer-xor	package-lock.json	/^    "buffer-xor": {$/;"	o	object:dependencies
 bugs	package.json	/^  "bugs": {$/;"	o
 build	package.json	/^    "build": "webpack --env.production --config webpack.config.js",$/;"	s	object:scripts
-buildBoard	src/lib/board-functions/buildBoard.js	/^function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {$/;"	f
 builtin-status-codes	package-lock.json	/^        "builtin-status-codes": "^3.0.0",$/;"	s	object:dependencies.stream-http.requires
 builtin-status-codes	package-lock.json	/^    "builtin-status-codes": {$/;"	o	object:dependencies
 bundled	package-lock.json	/^          "bundled": true,$/;"	b	object:dependencies.fsevents.dependencies.abbrev
@@ -1713,8 +1714,6 @@ camelcase	package-lock.json	/^        "camelcase": {$/;"	o	object:dependencies.c
 camelcase	package-lock.json	/^    "camelcase": {$/;"	o	object:dependencies
 camelcase-keys	package-lock.json	/^        "camelcase-keys": "^2.0.0",$/;"	s	object:dependencies.meow.requires
 camelcase-keys	package-lock.json	/^    "camelcase-keys": {$/;"	o	object:dependencies
-candidateKey	src/components/Tile.js	/^  let candidateKey = ''$/;"	v
-candidates	src/components/Tile.js	/^  candidates: PropTypes.arrayOf($/;"	p	class:Tile.propTypes
 caniuse-lite	package-lock.json	/^        "caniuse-lite": "^1.0.30001043",$/;"	s	object:dependencies.browserslist.requires
 caniuse-lite	package-lock.json	/^    "caniuse-lite": {$/;"	o	object:dependencies
 canvas	src/styles/reset.css	/^tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,$/;"	s
@@ -1810,17 +1809,10 @@ cipher-base	package-lock.json	/^    "cipher-base": {$/;"	o	object:dependencies
 cite	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
 class-utils	package-lock.json	/^        "class-utils": "^0.3.5",$/;"	s	object:dependencies.base.requires
 class-utils	package-lock.json	/^    "class-utils": {$/;"	o	object:dependencies
-classList	src/lib/board-functions/changeBoardState.js	/^  let classList$/;"	v
-className	src/components/Tile.js	/^  className: PropTypes.string.isRequired,$/;"	p	class:Tile.propTypes
 clean-css	package-lock.json	/^        "clean-css": "4.2.x",$/;"	s	object:dependencies.html-minifier.requires
 clean-css	package-lock.json	/^    "clean-css": {$/;"	o	object:dependencies
 clean-dist	package.json	/^    "clean-dist": "rimraf dist\/*",$/;"	s	object:scripts
 clean-public	package.json	/^    "clean-public": "rimraf public\/*",$/;"	s	object:scripts
-clearBoard	src/components/GameBoard.js	/^  clearBoard() {$/;"	m	class:GameBoard
-clearBoard	src/components/Menu.js	/^  clearBoard: PropTypes.func.isRequired,$/;"	p	class:Menu.propTypes
-clearHighlight	src/components/GameBoard.js	/^  clearHighlight() {$/;"	m	class:GameBoard
-clearHighlight	src/components/Menu.js	/^  clearHighlight: PropTypes.func.isRequired,$/;"	p	class:Menu.propTypes
-clearHighlight	src/lib/board-functions/changeBoardState.js	/^const clearHighlight = (prevState) => {$/;"	C
 clearMocks	jest.config.js	/^  clearMocks: true,$/;"	p	class:module.exports
 cli-cursor	package-lock.json	/^        "cli-cursor": "^3.1.0",$/;"	s	object:dependencies.inquirer.requires
 cli-cursor	package-lock.json	/^    "cli-cursor": {$/;"	o	object:dependencies
@@ -1988,9 +1980,6 @@ color8	src/assets/palettes/gruvbox-dark.scss	/^$color8: #928374;$/;"	v
 color8	src/assets/palettes/gruvbox-light.scss	/^$color8: #928374;$/;"	v
 color9	src/assets/palettes/gruvbox-dark.scss	/^$color9: #fb4934;$/;"	v
 color9	src/assets/palettes/gruvbox-light.scss	/^$color9: #9d0006;$/;"	v
-column	src/components/Tile.js	/^  column: PropTypes.number.isRequired,$/;"	p	class:Tile.propTypes
-column	src/components/Tile.js	/^  const column = idNum % 9$/;"	C
-column	src/lib/board-functions/changeGameState.js	/^  let column$/;"	v
 combined-stream	package-lock.json	/^        "combined-stream": "^1.0.6",$/;"	s	object:dependencies.form-data.requires
 combined-stream	package-lock.json	/^        "combined-stream": "~1.0.6",$/;"	s	object:dependencies.request.requires
 combined-stream	package-lock.json	/^    "combined-stream": {$/;"	o	object:dependencies
@@ -2009,7 +1998,6 @@ commonjs	.eslintrc.js	/^    commonjs: true,$/;"	p	class:module.exports.env
 component-emitter	package-lock.json	/^        "component-emitter": "^1.2.1",$/;"	s	object:dependencies.base.requires
 component-emitter	package-lock.json	/^        "component-emitter": "^1.2.1",$/;"	s	object:dependencies.cache-base.requires
 component-emitter	package-lock.json	/^    "component-emitter": {$/;"	o	object:dependencies
-componentDidMount	src/components/GameBoard.js	/^  componentDidMount() {$/;"	m	class:GameBoard
 compressible	package-lock.json	/^        "compressible": "~2.0.16",$/;"	s	object:dependencies.compression.requires
 compressible	package-lock.json	/^    "compressible": {$/;"	o	object:dependencies
 compression	package-lock.json	/^        "compression": "^1.7.4",$/;"	s	object:dependencies.webpack-dev-server.requires
@@ -2034,10 +2022,7 @@ console-control-strings	package-lock.json	/^        "console-control-strings": {
 console-control-strings	package-lock.json	/^    "console-control-strings": {$/;"	o	object:dependencies
 constants-browserify	package-lock.json	/^        "constants-browserify": "^1.0.0",$/;"	s	object:dependencies.node-libs-browser.requires
 constants-browserify	package-lock.json	/^    "constants-browserify": {$/;"	o	object:dependencies
-constructor	src/components/GameBoard.js	/^  constructor(props) {$/;"	m	class:GameBoard
-constructor	src/components/Menu.js	/^  constructor(props) {$/;"	m	class:Menu
-constructor	src/components/SudokuBoard.js	/^  constructor(props) {$/;"	m	class:SudokuBoard
-constructor	src/components/Tile.js	/^  constructor(props) {$/;"	m	class:Tile
+constructor	src/components/Example.js	/^  constructor(props) {$/;"	m	class:MyProvider
 contains-path	package-lock.json	/^        "contains-path": "^0.1.0",$/;"	s	object:dependencies.eslint-plugin-import.requires
 contains-path	package-lock.json	/^    "contains-path": {$/;"	o	object:dependencies
 content-disposition	package-lock.json	/^        "content-disposition": "0.5.3",$/;"	s	object:dependencies.express.requires
@@ -2055,6 +2040,7 @@ cookie	package-lock.json	/^        "cookie": "0.4.0",$/;"	s	object:dependencies.
 cookie	package-lock.json	/^    "cookie": {$/;"	o	object:dependencies
 cookie-signature	package-lock.json	/^        "cookie-signature": "1.0.6",$/;"	s	object:dependencies.express.requires
 cookie-signature	package-lock.json	/^    "cookie-signature": {$/;"	o	object:dependencies
+cool	src/components/Example.js	/^      cool: true,$/;"	p	class:super.state
 copy-concurrently	package-lock.json	/^        "copy-concurrently": "^1.0.0",$/;"	s	object:dependencies.move-concurrently.requires
 copy-concurrently	package-lock.json	/^    "copy-concurrently": {$/;"	o	object:dependencies
 copy-descriptor	package-lock.json	/^        "copy-descriptor": "^0.1.0",$/;"	s	object:dependencies.object-copy.requires
@@ -2116,10 +2102,6 @@ cssstyle	package-lock.json	/^        "cssstyle": "^2.0.0",$/;"	s	object:dependen
 cssstyle	package-lock.json	/^    "cssstyle": {$/;"	o	object:dependencies
 csstype	package-lock.json	/^        "csstype": "^2.5.7"$/;"	s	object:dependencies.@emotion/serialize.requires
 csstype	package-lock.json	/^    "csstype": {$/;"	o	object:dependencies
-currentBoard	src/components/GameBoard.js	/^      currentBoard: buildBoard(),$/;"	p	class:super.state
-currentBoard	src/components/SudokuBoard.js	/^  currentBoard: PropTypes.arrayOf(PropTypes.node.isRequired).isRequired,$/;"	p	class:SudokuBoard.propTypes
-currentDifficulty	src/components/GameBoard.js	/^      currentDifficulty: {$/;"	c	class:super.state
-currentDifficulty	src/components/Menu.js	/^  currentDifficulty: PropTypes.string.isRequired,$/;"	p	class:Menu.propTypes
 currently-unhandled	package-lock.json	/^        "currently-unhandled": "^0.4.1",$/;"	s	object:dependencies.loud-rejection.requires
 currently-unhandled	package-lock.json	/^    "currently-unhandled": {$/;"	o	object:dependencies
 cyan100	src/assets/palettes/cyan.scss	/^$cyan100: #b2ebf2;$/;"	v
@@ -4255,11 +4237,8 @@ dfn	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite
 diff-sequences	package-lock.json	/^        "diff-sequences": "^25.2.6",$/;"	s	object:dependencies.jest-diff.requires
 diff-sequences	package-lock.json	/^    "diff-sequences": {$/;"	o	object:dependencies
 difficultyOptions	src/data/sudokuData.js	/^  difficultyOptions: [$/;"	p	class:standardSudokus
-difficultyOptions	src/lib/settings/difficulty.js	/^const difficultyOptions = [$/;"	C
 diffie-hellman	package-lock.json	/^        "diffie-hellman": "^5.0.0",$/;"	s	object:dependencies.crypto-browserify.requires
 diffie-hellman	package-lock.json	/^    "diffie-hellman": {$/;"	o	object:dependencies
-displayText	src/components/Tile.js	/^  let displayText = ''$/;"	v
-displayTextClassList	src/components/Tile.js	/^  const displayTextClassList = []$/;"	C
 div	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
 dl	src/styles/reset.css	/^dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,$/;"	s
 dns-equal	package-lock.json	/^        "dns-equal": "^1.0.0",$/;"	s	object:dependencies.bonjour.requires
@@ -4352,7 +4331,6 @@ end-of-stream	package-lock.json	/^        "end-of-stream": "^1.1.0",$/;"	s	objec
 end-of-stream	package-lock.json	/^        "end-of-stream": "^1.1.0",$/;"	s	object:dependencies.pump.requires
 end-of-stream	package-lock.json	/^        "end-of-stream": "^1.1.0",$/;"	s	object:dependencies.stream-each.requires
 end-of-stream	package-lock.json	/^    "end-of-stream": {$/;"	o	object:dependencies
-enforce	src/lib/rules/enforce.js	/^const enforce = ({ currentBoard }, id) => {$/;"	C
 enhanced-resolve	package-lock.json	/^        "enhanced-resolve": "^4.1.0",$/;"	s	object:dependencies.webpack.requires
 enhanced-resolve	package-lock.json	/^        "enhanced-resolve": "^4.1.1",$/;"	s	object:dependencies.webpack-cli.requires
 enhanced-resolve	package-lock.json	/^    "enhanced-resolve": {$/;"	o	object:dependencies
@@ -4738,9 +4716,6 @@ get-value	package-lock.json	/^        "get-value": "^2.0.6",$/;"	s	object:depend
 get-value	package-lock.json	/^        "get-value": "^2.0.6",$/;"	s	object:dependencies.has-value.requires
 get-value	package-lock.json	/^        "get-value": "^2.0.6",$/;"	s	object:dependencies.union-value.requires
 get-value	package-lock.json	/^    "get-value": {$/;"	o	object:dependencies
-getDifficultyName	src/lib/settings/difficulty.js	/^function getDifficultyName(difficultyID) {$/;"	f
-getNewSudoku	src/lib/board-functions/changeGameState.js	/^const getNewSudoku = (difficulty) => {$/;"	C
-getTile	src/components/Tile.js	/^const getTile = (currentBoard, id) => {$/;"	C
 getpass	package-lock.json	/^        "getpass": "^0.1.1",$/;"	s	object:dependencies.sshpk.requires
 getpass	package-lock.json	/^    "getpass": {$/;"	o	object:dependencies
 glob	package-lock.json	/^            "glob": "^7.1.3"$/;"	s	object:dependencies.cacache.dependencies.rimraf.requires
@@ -4902,9 +4877,6 @@ h5	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2,
 h6	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
 handle-thing	package-lock.json	/^        "handle-thing": "^2.0.0",$/;"	s	object:dependencies.spdy.requires
 handle-thing	package-lock.json	/^    "handle-thing": {$/;"	o	object:dependencies
-handleClick	src/components/GameBoard.js	/^  handleClick(id) {$/;"	m	class:GameBoard
-handleClick	src/components/SudokuBoard.js	/^  handleClick: PropTypes.func.isRequired,$/;"	p	class:SudokuBoard.propTypes
-handleClick	src/components/Tile.js	/^  handleClick: PropTypes.func.isRequired,$/;"	p	class:Tile.propTypes
 har-schema	package-lock.json	/^        "har-schema": "^2.0.0"$/;"	s	object:dependencies.har-validator.requires
 har-schema	package-lock.json	/^    "har-schema": {$/;"	o	object:dependencies
 har-validator	package-lock.json	/^        "har-validator": "~5.1.3",$/;"	s	object:dependencies.request.requires
@@ -5008,7 +4980,6 @@ header	src/styles/reset.css	/^header, hgroup, main, menu, nav, section {$/;"	s
 header-color	src/styles/main.scss	/^$header-color: $blue;$/;"	v
 hgroup	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
 hgroup	src/styles/reset.css	/^header, hgroup, main, menu, nav, section {$/;"	s
-highlight	src/components/Tile.js	/^  highlight: PropTypes.string.isRequired,$/;"	p	class:Tile.propTypes
 hmac-drbg	package-lock.json	/^        "hmac-drbg": "^1.0.0",$/;"	s	object:dependencies.elliptic.requires
 hmac-drbg	package-lock.json	/^    "hmac-drbg": {$/;"	o	object:dependencies
 homedir-polyfill	package-lock.json	/^        "homedir-polyfill": "^1.0.1"$/;"	s	object:dependencies.expand-tilde.requires
@@ -5065,8 +5036,6 @@ icss-utils	package-lock.json	/^        "icss-utils": "^4.0.0",$/;"	s	object:depe
 icss-utils	package-lock.json	/^        "icss-utils": "^4.1.1",$/;"	s	object:dependencies.css-loader.requires
 icss-utils	package-lock.json	/^        "icss-utils": "^4.1.1",$/;"	s	object:dependencies.postcss-modules-local-by-default.requires
 icss-utils	package-lock.json	/^    "icss-utils": {$/;"	o	object:dependencies
-id	src/components/Tile.js	/^  id: PropTypes.string.isRequired,$/;"	p	class:Tile.propTypes
-idNum	src/components/Tile.js	/^  const idNum = parseInt(id.slice(5), 10)$/;"	C
 ieee754	package-lock.json	/^        "ieee754": "^1.1.4",$/;"	s	object:dependencies.buffer.requires
 ieee754	package-lock.json	/^    "ieee754": {$/;"	o	object:dependencies
 iferr	package-lock.json	/^        "iferr": "^0.1.5",$/;"	s	object:dependencies.copy-concurrently.requires
@@ -5096,7 +5065,6 @@ in-publish	package-lock.json	/^        "in-publish": "^2.0.0",$/;"	s	object:depe
 in-publish	package-lock.json	/^    "in-publish": {$/;"	o	object:dependencies
 indent-string	package-lock.json	/^        "indent-string": "^2.1.0",$/;"	s	object:dependencies.redent.requires
 indent-string	package-lock.json	/^    "indent-string": {$/;"	o	object:dependencies
-index	src/components/GameBoard.js	/^        index: 0,$/;"	p	class:super.state.currentDifficulty
 indexes-of	package-lock.json	/^        "indexes-of": "^1.0.1",$/;"	s	object:dependencies.postcss-selector-parser.requires
 indexes-of	package-lock.json	/^    "indexes-of": {$/;"	o	object:dependencies
 indigo100	src/assets/palettes/indigo.scss	/^$indigo100: #c5cae9;$/;"	v
@@ -5187,10 +5155,6 @@ ini	package-lock.json	/^    "ini": {$/;"	o	object:dependencies
 inquirer	package-lock.json	/^        "inquirer": "^7.0.0",$/;"	s	object:dependencies.eslint.requires
 inquirer	package-lock.json	/^    "inquirer": {$/;"	o	object:dependencies
 ins	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
-insertMode	src/components/GameBoard.js	/^      insertMode: '',$/;"	p	class:super.state
-insertMode	src/components/Menu.js	/^  insertMode: PropTypes.string.isRequired,$/;"	p	class:Menu.propTypes
-insertMode	src/lib/board-functions/changeBoardState.js	/^  const insertMode = ''$/;"	C
-insertValue	src/components/GameBoard.js	/^      insertValue: '',$/;"	p	class:super.state
 integrity	package-lock.json	/^              "integrity": "sha1-8GVWEJaj8dou9GJy+BXIQNh+DIk=",$/;"	s	object:dependencies.unset-value.dependencies.has-value.dependencies.isobject
 integrity	package-lock.json	/^              "integrity": "sha512-1apePfXM1UOSqw0o9IiFAovVz9M5S1Dg+4TrDwfMewQ6p\/rmMueb7tWZjQ1r/;"	s	object:dependencies.webpack-dev-server.dependencies.cliui.dependencies.ansi-regex
 integrity	package-lock.json	/^              "integrity": "sha512-1apePfXM1UOSqw0o9IiFAovVz9M5S1Dg+4TrDwfMewQ6p\/rmMueb7tWZjQ1r/;"	s	object:dependencies.webpack-dev-server.dependencies.string-width.dependencies.ansi-regex
@@ -7315,7 +7279,6 @@ jsx-ast-utils	package-lock.json	/^        "jsx-ast-utils": "^2.4.1",$/;"	s	objec
 jsx-ast-utils	package-lock.json	/^        "jsx-ast-utils": {$/;"	o	object:dependencies.eslint-plugin-jsx-a11y.dependencies
 jsx-ast-utils	package-lock.json	/^    "jsx-ast-utils": {$/;"	o	object:dependencies
 kbd	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
-keyCounter	src/components/Tile.js	/^  let keyCounter = 0$/;"	v
 keywords	package.json	/^  "keywords": [$/;"	a
 killable	package-lock.json	/^        "killable": "^1.0.1",$/;"	s	object:dependencies.webpack-dev-server.requires
 killable	package-lock.json	/^    "killable": {$/;"	o	object:dependencies
@@ -7501,7 +7464,6 @@ locate-path	package-lock.json	/^        "locate-path": {$/;"	o	object:dependenci
 locate-path	package-lock.json	/^        "locate-path": {$/;"	o	object:dependencies.read-pkg-up.dependencies
 locate-path	package-lock.json	/^        "locate-path": {$/;"	o	object:dependencies.yargs.dependencies
 locate-path	package-lock.json	/^    "locate-path": {$/;"	o	object:dependencies
-locked	src/components/Tile.js	/^  locked: PropTypes.string.isRequired,$/;"	p	class:Tile.propTypes
 lockfileVersion	package-lock.json	/^  "lockfileVersion": 1,$/;"	n
 lodash	package-lock.json	/^            "lodash": "^4.17.13"$/;"	s	object:dependencies.@babel/core.dependencies.@babel/traverse.requires
 lodash	package-lock.json	/^            "lodash": "^4.17.13"$/;"	s	object:dependencies.@babel/helper-explode-assignable-expression.dependencies.@babel/traverse.requires
@@ -7782,7 +7744,7 @@ mute-stream	package-lock.json	/^        "mute-stream": "0.0.8",$/;"	s	object:dep
 mute-stream	package-lock.json	/^    "mute-stream": {$/;"	o	object:dependencies
 name	package-lock.json	/^  "name": "sudoku",$/;"	s
 name	package.json	/^  "name": "sudoku",$/;"	s
-name	src/components/GameBoard.js	/^        name: 'very easy',$/;"	p	class:super.state.currentDifficulty
+name	src/components/Example.js	/^      name: 'nick',$/;"	p	class:super.state
 nan	package-lock.json	/^        "nan": "^2.12.1",$/;"	s	object:dependencies.fsevents.requires
 nan	package-lock.json	/^        "nan": "^2.13.2",$/;"	s	object:dependencies.node-sass.requires
 nan	package-lock.json	/^    "nan": {$/;"	o	object:dependencies
@@ -7801,9 +7763,6 @@ neo-async	package-lock.json	/^        "neo-async": "^2.5.0"$/;"	s	object:depende
 neo-async	package-lock.json	/^        "neo-async": "^2.6.1",$/;"	s	object:dependencies.sass-loader.requires
 neo-async	package-lock.json	/^        "neo-async": "^2.6.1",$/;"	s	object:dependencies.webpack.requires
 neo-async	package-lock.json	/^    "neo-async": {$/;"	o	object:dependencies
-newBoard	src/components/Tile.js	/^  const newBoard = currentBoard$/;"	C
-newGame	src/components/GameBoard.js	/^  newGame() {$/;"	m	class:GameBoard
-newGame	src/components/Menu.js	/^  newGame: PropTypes.func.isRequired,$/;"	p	class:Menu.propTypes
 nice-try	package-lock.json	/^        "nice-try": "^1.0.4",$/;"	s	object:dependencies.cross-spawn.requires
 nice-try	package-lock.json	/^    "nice-try": {$/;"	o	object:dependencies
 no-case	package-lock.json	/^        "no-case": "^2.2.0"$/;"	s	object:dependencies.param-case.requires
@@ -8395,9 +8354,6 @@ prop-types	package-lock.json	/^        "prop-types": "^15.7.2",$/;"	s	object:dep
 prop-types	package-lock.json	/^    "prop-types": {$/;"	o	object:dependencies
 prop-types	package.json	/^    "prop-types": "^15.7.2",$/;"	s	object:dependencies
 propTypes	src/Root.js	/^Root.propTypes = {$/;"	c	class:Root
-propTypes	src/components/Menu.js	/^Menu.propTypes = {$/;"	c	class:Menu
-propTypes	src/components/SudokuBoard.js	/^SudokuBoard.propTypes = {$/;"	c	class:SudokuBoard
-propTypes	src/components/Tile.js	/^Tile.propTypes = {$/;"	c	class:Tile
 proxy-addr	package-lock.json	/^        "proxy-addr": "~2.0.5",$/;"	s	object:dependencies.express.requires
 proxy-addr	package-lock.json	/^    "proxy-addr": {$/;"	o	object:dependencies
 prr	package-lock.json	/^        "prr": "~1.0.1"$/;"	s	object:dependencies.errno.requires
@@ -8474,7 +8430,6 @@ querystring-es3	package-lock.json	/^        "querystring-es3": "^0.2.0",$/;"	s	o
 querystring-es3	package-lock.json	/^    "querystring-es3": {$/;"	o	object:dependencies
 querystringify	package-lock.json	/^        "querystringify": "^2.1.1",$/;"	s	object:dependencies.url-parse.requires
 querystringify	package-lock.json	/^    "querystringify": {$/;"	o	object:dependencies
-randomIndex	src/lib/board-functions/changeGameState.js	/^  const randomIndex = Math.floor($/;"	C
 randombytes	package-lock.json	/^        "randombytes": "^2.0.0"$/;"	s	object:dependencies.diffie-hellman.requires
 randombytes	package-lock.json	/^        "randombytes": "^2.0.0",$/;"	s	object:dependencies.crypto-browserify.requires
 randombytes	package-lock.json	/^        "randombytes": "^2.0.1"$/;"	s	object:dependencies.browserify-rsa.requires
@@ -8605,7 +8560,6 @@ regexpp	package-lock.json	/^        "regexpp": "^2.0.1",$/;"	s	object:dependenci
 regexpp	package-lock.json	/^    "regexpp": {$/;"	o	object:dependencies
 regexpu-core	package-lock.json	/^        "regexpu-core": "^4.7.0"$/;"	s	object:dependencies.@babel/helper-create-regexp-features-plugin.requires
 regexpu-core	package-lock.json	/^    "regexpu-core": {$/;"	o	object:dependencies
-region	src/components/Tile.js	/^  region: PropTypes.number.isRequired,$/;"	p	class:Tile.propTypes
 regionSize	src/data/sudokuData.js	/^const regionSize = 3$/;"	C
 regjsgen	package-lock.json	/^        "regjsgen": "^0.5.1",$/;"	s	object:dependencies.regexpu-core.requires
 regjsgen	package-lock.json	/^    "regjsgen": {$/;"	o	object:dependencies
@@ -8615,10 +8569,9 @@ relateurl	package-lock.json	/^        "relateurl": "0.2.x",$/;"	s	object:depende
 relateurl	package-lock.json	/^    "relateurl": {$/;"	o	object:dependencies
 remove-trailing-separator	package-lock.json	/^            "remove-trailing-separator": "^1.0.1"$/;"	s	object:dependencies.anymatch.dependencies.normalize-path.requires
 remove-trailing-separator	package-lock.json	/^    "remove-trailing-separator": {$/;"	o	object:dependencies
-render	src/components/GameBoard.js	/^  render() {$/;"	m	class:GameBoard
-render	src/components/Menu.js	/^  render() {$/;"	m	class:Menu
-render	src/components/SudokuBoard.js	/^  render() {$/;"	m	class:SudokuBoard
-render	src/components/Tile.js	/^  render() {$/;"	m	class:Tile
+render	src/components/Example.js	/^  render() {$/;"	m	class:MyProvider
+render	src/components/Example.js	/^  render() {$/;"	m	class:Person
+render	src/components/Example.js	/^  render() {$/;"	m	class:TopContext
 renderkid	package-lock.json	/^        "renderkid": "^2.0.1",$/;"	s	object:dependencies.pretty-error.requires
 renderkid	package-lock.json	/^    "renderkid": {$/;"	o	object:dependencies
 repeat-element	package-lock.json	/^        "repeat-element": "^1.1.2",$/;"	s	object:dependencies.braces.requires
@@ -9718,8 +9671,6 @@ requires	package-lock.json	/^  "requires": true,$/;"	b
 requires-port	package-lock.json	/^        "requires-port": "^1.0.0"$/;"	s	object:dependencies.http-proxy.requires
 requires-port	package-lock.json	/^        "requires-port": "^1.0.0"$/;"	s	object:dependencies.url-parse.requires
 requires-port	package-lock.json	/^    "requires-port": {$/;"	o	object:dependencies
-resetGame	src/components/GameBoard.js	/^  resetGame() {$/;"	m	class:GameBoard
-resetGame	src/components/Menu.js	/^  resetGame: PropTypes.func.isRequired,$/;"	p	class:Menu.propTypes
 resolve	package-lock.json	/^        "resolve": "1.1.7"$/;"	s	object:dependencies.browser-resolve.requires
 resolve	package-lock.json	/^        "resolve": "^1.10.0",$/;"	s	object:dependencies.normalize-package-data.requires
 resolve	package-lock.json	/^        "resolve": "^1.12.0"$/;"	s	object:dependencies.babel-eslint.requires
@@ -11485,9 +11436,6 @@ ripemd160	package-lock.json	/^    "ripemd160": {$/;"	o	object:dependencies
 root	.eslintrc.js	/^  root: true,$/;"	p	class:module.exports
 root	src/index.html	/^  <div id="root"><\/div>$/;"	I
 rootContainer	src/index.js	/^const rootContainer = document.getElementById('root')$/;"	C
-row	src/components/Tile.js	/^  const row = Math.floor(idNum \/ 9)$/;"	C
-row	src/components/Tile.js	/^  row: PropTypes.number.isRequired,$/;"	p	class:Tile.propTypes
-row	src/lib/board-functions/changeGameState.js	/^  let row$/;"	v
 rsvp	package-lock.json	/^        "rsvp": "^4.8.4"$/;"	s	object:dependencies.capture-exit.requires
 rsvp	package-lock.json	/^    "rsvp": {$/;"	o	object:dependencies
 ruby	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
@@ -11634,9 +11582,7 @@ set-blocking	package-lock.json	/^    "set-blocking": {$/;"	o	object:dependencies
 set-value	package-lock.json	/^        "set-value": "^2.0.0",$/;"	s	object:dependencies.cache-base.requires
 set-value	package-lock.json	/^        "set-value": "^2.0.1"$/;"	s	object:dependencies.union-value.requires
 set-value	package-lock.json	/^    "set-value": {$/;"	o	object:dependencies
-setDifficulty	src/components/GameBoard.js	/^  setDifficulty(value) {$/;"	m	class:GameBoard
-setDifficulty	src/components/Menu.js	/^  setDifficulty: PropTypes.func.isRequired,$/;"	p	class:Menu.propTypes
-setDifficulty	src/lib/settings/difficulty.js	/^function setDifficulty(prevState, value) {$/;"	f
+setGameData	src/utils/useGameContext.js	/^  const [gameData, setGameData] = useState()$/;"	C
 setimmediate	package-lock.json	/^        "setimmediate": "^1.0.4"$/;"	s	object:dependencies.timers-browserify.requires
 setimmediate	package-lock.json	/^    "setimmediate": {$/;"	o	object:dependencies
 setprototypeof	package-lock.json	/^            "setprototypeof": "1.1.0",$/;"	s	object:dependencies.serve-index.dependencies.http-errors.requires
@@ -11663,7 +11609,6 @@ shell-quote	package-lock.json	/^        "shell-quote": "^1.6.1",$/;"	s	object:de
 shell-quote	package-lock.json	/^    "shell-quote": {$/;"	o	object:dependencies
 shellwords	package-lock.json	/^        "shellwords": "^0.1.1",$/;"	s	object:dependencies.node-notifier.requires
 shellwords	package-lock.json	/^    "shellwords": {$/;"	o	object:dependencies
-showDifficultyMenu	src/components/Menu.js	/^      showDifficultyMenu: false,$/;"	p	class:super.state
 side-channel	package-lock.json	/^        "side-channel": "^1.0.2"$/;"	s	object:dependencies.internal-slot.requires
 side-channel	package-lock.json	/^        "side-channel": "^1.0.2"$/;"	s	object:dependencies.string.prototype.matchall.requires
 side-channel	package-lock.json	/^    "side-channel": {$/;"	o	object:dependencies
@@ -11783,7 +11728,6 @@ spdy-transport	package-lock.json	/^    "spdy-transport": {$/;"	o	object:dependen
 split-string	package-lock.json	/^        "split-string": "^3.0.1"$/;"	s	object:dependencies.set-value.requires
 split-string	package-lock.json	/^        "split-string": "^3.0.2",$/;"	s	object:dependencies.braces.requires
 split-string	package-lock.json	/^    "split-string": {$/;"	o	object:dependencies
-splitSequence	src/lib/board-functions/changeGameState.js	/^  const splitSequence = startingSequence.split('')$/;"	C
 sprintf-js	package-lock.json	/^        "sprintf-js": "~1.0.2"$/;"	s	object:dependencies.argparse.requires
 sprintf-js	package-lock.json	/^    "sprintf-js": {$/;"	o	object:dependencies
 sshpk	package-lock.json	/^        "sshpk": "^1.7.0"$/;"	s	object:dependencies.http-signature.requires
@@ -11794,8 +11738,7 @@ stack-utils	package-lock.json	/^        "stack-utils": "^1.0.1"$/;"	s	object:dep
 stack-utils	package-lock.json	/^    "stack-utils": {$/;"	o	object:dependencies
 standardSudokus	src/data/sudokuData.js	/^const standardSudokus = {$/;"	c
 start	package.json	/^    "start": "npm run clean-dist && npm run devserver"$/;"	s	object:scripts
-state	src/components/GameBoard.js	/^    super(props)$/;"	c	class:super
-state	src/components/Menu.js	/^    super(props)$/;"	c	class:super
+state	src/components/Example.js	/^    super(props)$/;"	c	class:super
 static-extend	package-lock.json	/^        "static-extend": "^0.1.1"$/;"	s	object:dependencies.class-utils.requires
 static-extend	package-lock.json	/^    "static-extend": {$/;"	o	object:dependencies
 statuses	package-lock.json	/^            "statuses": ">= 1.4.0 < 2"$/;"	s	object:dependencies.serve-index.dependencies.http-errors.requires
@@ -11933,8 +11876,6 @@ style-loader	package.json	/^    "style-loader": "^1.2.1",$/;"	s	object:devDepend
 styles	src/styles/GlobalStyles.js	/^const styles = css`$/;"	C
 sub	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
 sudoku-container-border	src/styles/main.scss	/^$sudoku-container-border: 0; \/\/ 0.2em solid $aqua;$/;"	v
-sudokuChoices	src/lib/board-functions/changeGameState.js	/^  const sudokuChoices = gameData[sudokuDifficulty]$/;"	C
-sudokuDifficulty	src/lib/board-functions/changeGameState.js	/^  let sudokuDifficulty = 0$/;"	v
 summary	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
 summary	src/styles/reset.css	/^summary {$/;"	s
 sup	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
@@ -12068,11 +12009,6 @@ through2	package-lock.json	/^        "through2": "^2.0.0"$/;"	s	object:dependenc
 through2	package-lock.json	/^    "through2": {$/;"	o	object:dependencies
 thunky	package-lock.json	/^        "thunky": "^1.0.2"$/;"	s	object:dependencies.multicast-dns.requires
 thunky	package-lock.json	/^    "thunky": {$/;"	o	object:dependencies
-tile	src/components/Tile.js	/^  const tile = board[row].props.children[column]$/;"	C
-tile	src/components/Tile.js	/^  const tile = getTile(currentBoard, id)$/;"	C
-tile	src/lib/board-functions/changeBoardState.js	/^  const tile = getTile(currentBoard, id)$/;"	C
-tile	src/lib/board-functions/changeGameState.js	/^  let tile$/;"	v
-tile	src/lib/rules/enforce.js	/^  const tile = getTile(currentBoard, id)$/;"	C
 tile-background-color	src/styles/main.scss	/^$tile-background-color: $bg0_h;$/;"	v
 tile-bgc-active	src/styles/main.scss	/^$tile-bgc-active: $fg1;$/;"	v
 tile-bgc-highlight	src/styles/main.scss	/^$tile-bgc-highlight: $fg1;$/;"	v
@@ -12093,8 +12029,6 @@ tile-text-color-highlight	src/styles/main.scss	/^$tile-text-color-highlight: $bg
 tile-text-color-warning	src/styles/main.scss	/^$tile-text-color-warning: $bg0_h;$/;"	v
 tile-text-size	src/styles/main.scss	/^$tile-text-size: 3.25em;$/;"	v
 tile-width	src/styles/main.scss	/^$tile-width: 4.5em;$/;"	v
-tiletext	src/components/Tile.js	/^  const tiletext = []$/;"	C
-tiletext	src/components/Tile.js	/^  tiletext: PropTypes.node.isRequired,$/;"	p	class:Tile.propTypes
 time	src/styles/reset.css	/^time, mark, audio, video {$/;"	s
 timers-browserify	package-lock.json	/^        "timers-browserify": "^2.0.4",$/;"	s	object:dependencies.node-libs-browser.requires
 timers-browserify	package-lock.json	/^    "timers-browserify": {$/;"	o	object:dependencies
@@ -12148,11 +12082,6 @@ to-regex-range	package-lock.json	/^        "to-regex-range": {$/;"	o	object:depe
 to-regex-range	package-lock.json	/^        "to-regex-range": {$/;"	o	object:dependencies.jest-haste-map.dependencies
 to-regex-range	package-lock.json	/^        "to-regex-range": {$/;"	o	object:dependencies.jest-message-util.dependencies
 to-regex-range	package-lock.json	/^    "to-regex-range": {$/;"	o	object:dependencies
-toggleDifficultyMenu	src/components/Menu.js	/^  toggleDifficultyMenu(event) {$/;"	m	class:Menu
-toggleInsertMode	src/components/GameBoard.js	/^  toggleInsertMode(value) {$/;"	m	class:GameBoard
-toggleInsertMode	src/components/Menu.js	/^  toggleInsertMode: PropTypes.func.isRequired,$/;"	p	class:Menu.propTypes
-toggleInsertMode	src/lib/board-functions/toggleInsertMode.js	/^function toggleInsertMode(prevState, value) {$/;"	f
-toggleTileState	src/lib/board-functions/toggleTileState.js	/^function toggleTileState(currentTile, newEffect) {$/;"	f
 toidentifier	package-lock.json	/^        "toidentifier": "1.0.0"$/;"	s	object:dependencies.http-errors.requires
 toidentifier	package-lock.json	/^    "toidentifier": {$/;"	o	object:dependencies
 toposort	package-lock.json	/^        "toposort": "^1.0.0",$/;"	s	object:dependencies.html-webpack-plugin.requires
@@ -12257,6 +12186,7 @@ url-parse	package-lock.json	/^        "url-parse": "^1.4.3"$/;"	s	object:depende
 url-parse	package-lock.json	/^    "url-parse": {$/;"	o	object:dependencies
 use	package-lock.json	/^        "use": "^3.1.0"$/;"	s	object:dependencies.snapdragon.requires
 use	package-lock.json	/^    "use": {$/;"	o	object:dependencies
+useGameContext	src/utils/useGameContext.js	/^const useGameContext = () => {$/;"	C
 util	package-lock.json	/^        "util": "0.10.3"$/;"	s	object:dependencies.assert.requires
 util	package-lock.json	/^        "util": "^0.11.0",$/;"	s	object:dependencies.node-libs-browser.requires
 util	package-lock.json	/^        "util": {$/;"	o	object:dependencies.assert.dependencies
@@ -12287,7 +12217,6 @@ v8-to-istanbul	package-lock.json	/^        "v8-to-istanbul": "^4.1.3"$/;"	s	obje
 v8-to-istanbul	package-lock.json	/^    "v8-to-istanbul": {$/;"	o	object:dependencies
 validate-npm-package-license	package-lock.json	/^        "validate-npm-package-license": "^3.0.1"$/;"	s	object:dependencies.normalize-package-data.requires
 validate-npm-package-license	package-lock.json	/^    "validate-npm-package-license": {$/;"	o	object:dependencies
-value	src/components/Tile.js	/^  value: PropTypes.string.isRequired,$/;"	p	class:Tile.propTypes
 var	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
 vary	package-lock.json	/^        "vary": "~1.1.2"$/;"	s	object:dependencies.compression.requires
 vary	package-lock.json	/^        "vary": "~1.1.2"$/;"	s	object:dependencies.express.requires
@@ -14077,7 +14006,6 @@ w3c-xmlserializer	package-lock.json	/^    "w3c-xmlserializer": {$/;"	o	object:de
 walker	package-lock.json	/^        "walker": "^1.0.7",$/;"	s	object:dependencies.jest-haste-map.requires
 walker	package-lock.json	/^        "walker": "~1.0.5"$/;"	s	object:dependencies.sane.requires
 walker	package-lock.json	/^    "walker": {$/;"	o	object:dependencies
-warning	src/components/Tile.js	/^  warning: PropTypes.string.isRequired,$/;"	p	class:Tile.propTypes
 watchpack	package-lock.json	/^        "watchpack": "^1.6.1",$/;"	s	object:dependencies.webpack.requires
 watchpack	package-lock.json	/^    "watchpack": {$/;"	o	object:dependencies
 wbuf	package-lock.json	/^        "wbuf": "^1.1.0"$/;"	s	object:dependencies.hpack.js.requires
