@@ -1,14 +1,16 @@
+/* eslint-disable */
 import React, { createContext, useContext, useState } from 'react'
 import PropTypes from 'prop-types'
 
 const GameContext = createContext()
 
 export const GameContextProvider = ({ children }) => {
-  const [gameData, setGameData] = useState()
+  const [gameSettings, setGameSettings] = useState({
+    difficulty: 'easy',
+    theme: 'default',
+  })
 
-  setGameData({ difficulty: 'easy' })
-
-  const value = { gameData }
+  const value = { gameSettings }
 
   return <GameContext.Provider value={value}>{children}</GameContext.Provider>
 }

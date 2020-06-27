@@ -1,17 +1,18 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import Gameboard from './components/Gameboard'
+import Menu from './components/Menu'
 
 const AppContainer = styled.div`
-  margin: 0 auto;
-  padding: 0;
-  width: 62em;
-  height: 50em;
+  display: flex;
+  margin: 1em auto;
 `
 
 function App() {
   return (
-    <AppContainer className="app">
-      <p>test</p>
+    <AppContainer className="app-container">
+      <Gameboard />
+      <Menu />
     </AppContainer>
   )
 }

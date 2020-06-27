@@ -11,10 +11,6 @@
 *	src/styles/reset.css	/^*, *:before, *:after {$/;"	s
 *:after	src/styles/reset.css	/^*, *:before, *:after {$/;"	s
 *:before	src/styles/reset.css	/^*, *:before, *:after {$/;"	s
-.dev-text	src/styles/main.scss	/^.dev-text {$/;"	c
-.game-board	src/styles/main.scss	/^.game-board {$/;"	c
-.menu	src/styles/main.scss	/^.menu {$/;"	c
-.sudoku	src/styles/main.scss	/^.sudoku {$/;"	c
 0	package.json	/^    "html",$/;"	s	array:keywords
 1	package.json	/^    "css",$/;"	s	array:keywords
 10	package.json	/^    "eslint",$/;"	s	array:keywords
@@ -1019,12 +1015,16 @@
 @xtuc/long	package-lock.json	/^    "@xtuc\/long": {$/;"	o	object:dependencies
 App	src/App.js	/^function App() {$/;"	f
 AppContainer	src/App.js	/^const AppContainer = styled.div`$/;"	C
-Family	src/components/Example.js	/^const Family = (props) => ($/;"	C
-GameBoard	src/components/GameBoard.js	/^function GameBoard() {$/;"	f
 GameContext	src/utils/useGameContext.js	/^const GameContext = createContext()$/;"	C
 GameContextProvider	src/utils/useGameContext.js	/^export const GameContextProvider = ({ children }) => {$/;"	C
+Gameboard	src/components/Gameboard.js	/^function Gameboard() {$/;"	f
+GameboardContainer	src/components/Gameboard.js	/^const GameboardContainer = styled.section`$/;"	C
 GlobalStyles	src/styles/GlobalStyles.js	/^const GlobalStyles = () => <Global styles={styles} \/>$/;"	C
 HtmlWebpackPlugin	webpack.config.js	/^const HtmlWebpackPlugin = require('html-webpack-plugin')$/;"	C
+Menu	src/components/Menu.js	/^function Menu() {$/;"	f
+MenuButton	src/components/MenuButton.js	/^const MenuButton = () => {$/;"	C
+MenuContainer	src/components/Menu.js	/^const MenuContainer = styled.section`$/;"	C
+MenuHeader	src/components/Menu.js	/^const MenuHeader = styled.h3`$/;"	C
 Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-100.svg	/^<font id="Montserrat" horiz-adv-x="626" ><font-face$/;"	d
 Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-100.svg	/^<font id="Montserrat" horiz-adv-x="626" ><font-face$/;"	i
 Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-100italic.svg	/^<font id="Montserrat" horiz-adv-x="628" ><font-face$/;"	d
@@ -1061,11 +1061,9 @@ Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-italic.svg	/^<fo
 Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-italic.svg	/^<font id="Montserrat" horiz-adv-x="642" ><font-face$/;"	i
 Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-regular.svg	/^<font id="Montserrat" horiz-adv-x="639" ><font-face$/;"	d
 Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-regular.svg	/^<font id="Montserrat" horiz-adv-x="639" ><font-face$/;"	i
-MyContext	src/components/Example.js	/^const MyContext = createContext()$/;"	C
-MyProvider	src/components/Example.js	/^class MyProvider extends Component {$/;"	c
 PATH_DIST	webpack.config.js	/^const PATH_DIST = path.join(__dirname, '.\/dist')$/;"	C
 PATH_SOURCE	webpack.config.js	/^const PATH_SOURCE = path.join(__dirname, '.\/src')$/;"	C
-Person	src/components/Example.js	/^class Person extends Component {$/;"	c
+PageContainer	src/Root.js	/^const PageContainer = styled.main`$/;"	C
 Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-100.svg	/^<font id="Roboto" horiz-adv-x="1113" ><font-face$/;"	d
 Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-100.svg	/^<font id="Roboto" horiz-adv-x="1113" ><font-face$/;"	i
 Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-100italic.svg	/^<font id="Roboto" horiz-adv-x="1092" ><font-face$/;"	d
@@ -1091,7 +1089,8 @@ Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-italic.svg	/^<font id="Robot
 Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-regular.svg	/^<font id="Roboto" horiz-adv-x="1158" ><font-face$/;"	d
 Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-regular.svg	/^<font id="Roboto" horiz-adv-x="1158" ><font-face$/;"	i
 Root	src/Root.js	/^const Root = ({ children }) => {$/;"	C
-TopContext	src/components/Example.js	/^class TopContext extends Component {$/;"	c
+Tile	src/components/Tile.js	/^const Tile = (props) => {$/;"	C
+TileContainer	src/components/Tile.js	/^const TileContainer = styled.button`$/;"	C
 a	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
 abab	package-lock.json	/^        "abab": "^2.0.0",$/;"	s	object:dependencies.data-urls.requires
 abab	package-lock.json	/^        "abab": "^2.0.0",$/;"	s	object:dependencies.jsdom.requires
@@ -1119,8 +1118,8 @@ acorn-jsx	package-lock.json	/^    "acorn-jsx": {$/;"	o	object:dependencies
 acorn-walk	package-lock.json	/^        "acorn-walk": "^6.0.1"$/;"	s	object:dependencies.acorn-globals.requires
 acorn-walk	package-lock.json	/^    "acorn-walk": {$/;"	o	object:dependencies
 acronym	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
+active	src/lib/createEmptyBoard.js	/^    active: false,$/;"	p	class:status
 address	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
-age	src/components/Example.js	/^      age: 31,$/;"	p	class:super.state
 ajv	package-lock.json	/^            "ajv": "^6.1.0",$/;"	s	object:dependencies.terser-webpack-plugin.dependencies.schema-utils.requires
 ajv	package-lock.json	/^            "ajv": "^6.1.0",$/;"	s	object:dependencies.webpack-dev-server.dependencies.schema-utils.requires
 ajv	package-lock.json	/^            "ajv": "^6.1.0",$/;"	s	object:dependencies.webpack.dependencies.schema-utils.requires
@@ -1531,8 +1530,6 @@ bn.js	package-lock.json	/^        "bn.js": "^4.1.1",$/;"	s	object:dependencies.b
 bn.js	package-lock.json	/^        "bn.js": "^4.4.0",$/;"	s	object:dependencies.elliptic.requires
 bn.js	package-lock.json	/^    "bn.js": {$/;"	o	object:dependencies
 body	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
-body-bgc	src/styles/main.scss	/^$body-bgc: $bg0;$/;"	v
-body-color	src/styles/main.scss	/^$body-color: $fg0;$/;"	v
 body-parser	package-lock.json	/^        "body-parser": "1.19.0",$/;"	s	object:dependencies.express.requires
 body-parser	package-lock.json	/^    "body-parser": {$/;"	o	object:dependencies
 bonjour	package-lock.json	/^        "bonjour": "^3.5.0",$/;"	s	object:dependencies.webpack-dev-server.requires
@@ -1714,6 +1711,8 @@ camelcase	package-lock.json	/^        "camelcase": {$/;"	o	object:dependencies.c
 camelcase	package-lock.json	/^    "camelcase": {$/;"	o	object:dependencies
 camelcase-keys	package-lock.json	/^        "camelcase-keys": "^2.0.0",$/;"	s	object:dependencies.meow.requires
 camelcase-keys	package-lock.json	/^    "camelcase-keys": {$/;"	o	object:dependencies
+candidates	src/components/Tile.js	/^  candidates: PropTypes.arrayOf(PropTypes.number).isRequired,$/;"	p	class:Tile.propTypes
+candidates	src/lib/createEmptyBoard.js	/^  const candidates = []$/;"	C
 caniuse-lite	package-lock.json	/^        "caniuse-lite": "^1.0.30001043",$/;"	s	object:dependencies.browserslist.requires
 caniuse-lite	package-lock.json	/^    "caniuse-lite": {$/;"	o	object:dependencies
 canvas	src/styles/reset.css	/^tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,$/;"	s
@@ -1809,6 +1808,8 @@ cipher-base	package-lock.json	/^    "cipher-base": {$/;"	o	object:dependencies
 cite	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
 class-utils	package-lock.json	/^        "class-utils": "^0.3.5",$/;"	s	object:dependencies.base.requires
 class-utils	package-lock.json	/^    "class-utils": {$/;"	o	object:dependencies
+className	src/components/Tile.js	/^  className: PropTypes.string.isRequired,$/;"	p	class:Tile.propTypes
+className	src/lib/createEmptyBoard.js	/^  const className = ['gameboard-tile']$/;"	C
 clean-css	package-lock.json	/^        "clean-css": "4.2.x",$/;"	s	object:dependencies.html-minifier.requires
 clean-css	package-lock.json	/^    "clean-css": {$/;"	o	object:dependencies
 clean-dist	package.json	/^    "clean-dist": "rimraf dist\/*",$/;"	s	object:scripts
@@ -1980,6 +1981,7 @@ color8	src/assets/palettes/gruvbox-dark.scss	/^$color8: #928374;$/;"	v
 color8	src/assets/palettes/gruvbox-light.scss	/^$color8: #928374;$/;"	v
 color9	src/assets/palettes/gruvbox-dark.scss	/^$color9: #fb4934;$/;"	v
 color9	src/assets/palettes/gruvbox-light.scss	/^$color9: #9d0006;$/;"	v
+column	src/components/Tile.js	/^  column: PropTypes.number.isRequired,$/;"	p	class:Tile.propTypes
 combined-stream	package-lock.json	/^        "combined-stream": "^1.0.6",$/;"	s	object:dependencies.form-data.requires
 combined-stream	package-lock.json	/^        "combined-stream": "~1.0.6",$/;"	s	object:dependencies.request.requires
 combined-stream	package-lock.json	/^    "combined-stream": {$/;"	o	object:dependencies
@@ -2022,7 +2024,6 @@ console-control-strings	package-lock.json	/^        "console-control-strings": {
 console-control-strings	package-lock.json	/^    "console-control-strings": {$/;"	o	object:dependencies
 constants-browserify	package-lock.json	/^        "constants-browserify": "^1.0.0",$/;"	s	object:dependencies.node-libs-browser.requires
 constants-browserify	package-lock.json	/^    "constants-browserify": {$/;"	o	object:dependencies
-constructor	src/components/Example.js	/^  constructor(props) {$/;"	m	class:MyProvider
 contains-path	package-lock.json	/^        "contains-path": "^0.1.0",$/;"	s	object:dependencies.eslint-plugin-import.requires
 contains-path	package-lock.json	/^    "contains-path": {$/;"	o	object:dependencies
 content-disposition	package-lock.json	/^        "content-disposition": "0.5.3",$/;"	s	object:dependencies.express.requires
@@ -2040,7 +2041,6 @@ cookie	package-lock.json	/^        "cookie": "0.4.0",$/;"	s	object:dependencies.
 cookie	package-lock.json	/^    "cookie": {$/;"	o	object:dependencies
 cookie-signature	package-lock.json	/^        "cookie-signature": "1.0.6",$/;"	s	object:dependencies.express.requires
 cookie-signature	package-lock.json	/^    "cookie-signature": {$/;"	o	object:dependencies
-cool	src/components/Example.js	/^      cool: true,$/;"	p	class:super.state
 copy-concurrently	package-lock.json	/^        "copy-concurrently": "^1.0.0",$/;"	s	object:dependencies.move-concurrently.requires
 copy-concurrently	package-lock.json	/^    "copy-concurrently": {$/;"	o	object:dependencies
 copy-descriptor	package-lock.json	/^        "copy-descriptor": "^0.1.0",$/;"	s	object:dependencies.object-copy.requires
@@ -2074,6 +2074,8 @@ create-hmac	package-lock.json	/^        "create-hmac": "^1.1.0",$/;"	s	object:de
 create-hmac	package-lock.json	/^        "create-hmac": "^1.1.2",$/;"	s	object:dependencies.browserify-sign.requires
 create-hmac	package-lock.json	/^        "create-hmac": "^1.1.4",$/;"	s	object:dependencies.pbkdf2.requires
 create-hmac	package-lock.json	/^    "create-hmac": {$/;"	o	object:dependencies
+createEmptyBoard	src/lib/createEmptyBoard.js	/^const createEmptyBoard = ({$/;"	C
+createNewTile	src/lib/createEmptyBoard.js	/^const createNewTile = ({$/;"	C
 cross-spawn	package-lock.json	/^            "cross-spawn": "^7.0.0",$/;"	s	object:dependencies.jest-changed-files.dependencies.execa.requires
 cross-spawn	package-lock.json	/^        "cross-spawn": "^3.0.0",$/;"	s	object:dependencies.node-sass.requires
 cross-spawn	package-lock.json	/^        "cross-spawn": "^6.0.0",$/;"	s	object:dependencies.execa.requires
@@ -2102,6 +2104,14 @@ cssstyle	package-lock.json	/^        "cssstyle": "^2.0.0",$/;"	s	object:dependen
 cssstyle	package-lock.json	/^    "cssstyle": {$/;"	o	object:dependencies
 csstype	package-lock.json	/^        "csstype": "^2.5.7"$/;"	s	object:dependencies.@emotion/serialize.requires
 csstype	package-lock.json	/^    "csstype": {$/;"	o	object:dependencies
+currentColumn	src/lib/createEmptyBoard.js	/^  currentColumn: 1,$/;"	p	class:createNewTile.defaultProps
+currentColumn	src/lib/createEmptyBoard.js	/^  currentColumn: PropTypes.number,$/;"	p	class:createNewTile.propTypes
+currentColumn	src/lib/createEmptyBoard.js	/^  let currentColumn = 1$/;"	v
+currentRow	src/lib/createEmptyBoard.js	/^  currentRow: 1,$/;"	p	class:createNewRow.defaultProps
+currentRow	src/lib/createEmptyBoard.js	/^  currentRow: 1,$/;"	p	class:createNewTile.defaultProps
+currentRow	src/lib/createEmptyBoard.js	/^  currentRow: PropTypes.number,$/;"	p	class:createNewRow.propTypes
+currentRow	src/lib/createEmptyBoard.js	/^  currentRow: PropTypes.number,$/;"	p	class:createNewTile.propTypes
+currentRow	src/lib/createEmptyBoard.js	/^  let currentRow = 1$/;"	v
 currently-unhandled	package-lock.json	/^        "currently-unhandled": "^0.4.1",$/;"	s	object:dependencies.loud-rejection.requires
 currently-unhandled	package-lock.json	/^    "currently-unhandled": {$/;"	o	object:dependencies
 cyan100	src/assets/palettes/cyan.scss	/^$cyan100: #b2ebf2;$/;"	v
@@ -2268,6 +2278,9 @@ deepmerge	package-lock.json	/^        "deepmerge": "^4.2.2",$/;"	s	object:depend
 deepmerge	package-lock.json	/^    "deepmerge": {$/;"	o	object:dependencies
 default-gateway	package-lock.json	/^        "default-gateway": "^4.2.0",$/;"	s	object:dependencies.internal-ip.requires
 default-gateway	package-lock.json	/^    "default-gateway": {$/;"	o	object:dependencies
+defaultProps	src/components/Tile.js	/^Tile.defaultProps = {$/;"	c	class:Tile
+defaultProps	src/lib/createEmptyBoard.js	/^createNewRow.defaultProps = {$/;"	c	class:createNewRow
+defaultProps	src/lib/createEmptyBoard.js	/^createNewTile.defaultProps = {$/;"	c	class:createNewTile
 define-properties	package-lock.json	/^            "define-properties": "^1.1.3",$/;"	s	object:dependencies.eslint-config-airbnb-base.dependencies.object.entries.requires
 define-properties	package-lock.json	/^            "define-properties": "^1.1.3",$/;"	s	object:dependencies.eslint-config-airbnb.dependencies.object.entries.requires
 define-properties	package-lock.json	/^        "define-properties": "^1.1.2",$/;"	s	object:dependencies.object.assign.requires
@@ -4682,7 +4695,6 @@ function-bind	package-lock.json	/^        "function-bind": "^1.1.1",$/;"	s	objec
 function-bind	package-lock.json	/^    "function-bind": {$/;"	o	object:dependencies
 functional-red-black-tree	package-lock.json	/^        "functional-red-black-tree": "^1.0.1",$/;"	s	object:dependencies.eslint.requires
 functional-red-black-tree	package-lock.json	/^    "functional-red-black-tree": {$/;"	o	object:dependencies
-game-board-border	src/styles/main.scss	/^$game-board-border: 0; \/\/ 0.2em solid $purple;$/;"	v
 gameData	src/data/sudokuData.js	/^  gameData: [$/;"	p	class:standardSudokus
 gauge	package-lock.json	/^            "gauge": "~2.7.3",$/;"	s	object:dependencies.fsevents.dependencies.npmlog.requires
 gauge	package-lock.json	/^        "gauge": "~2.7.3",$/;"	s	object:dependencies.npmlog.requires
@@ -4977,9 +4989,9 @@ he	package-lock.json	/^        "he": "1.2.x",$/;"	s	object:dependencies.html-min
 he	package-lock.json	/^    "he": {$/;"	o	object:dependencies
 header	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
 header	src/styles/reset.css	/^header, hgroup, main, menu, nav, section {$/;"	s
-header-color	src/styles/main.scss	/^$header-color: $blue;$/;"	v
 hgroup	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
 hgroup	src/styles/reset.css	/^header, hgroup, main, menu, nav, section {$/;"	s
+highlight	src/lib/createEmptyBoard.js	/^    highlight: false,$/;"	p	class:status
 hmac-drbg	package-lock.json	/^        "hmac-drbg": "^1.0.0",$/;"	s	object:dependencies.elliptic.requires
 hmac-drbg	package-lock.json	/^    "hmac-drbg": {$/;"	o	object:dependencies
 homedir-polyfill	package-lock.json	/^        "homedir-polyfill": "^1.0.1"$/;"	s	object:dependencies.expand-tilde.requires
@@ -5036,6 +5048,11 @@ icss-utils	package-lock.json	/^        "icss-utils": "^4.0.0",$/;"	s	object:depe
 icss-utils	package-lock.json	/^        "icss-utils": "^4.1.1",$/;"	s	object:dependencies.css-loader.requires
 icss-utils	package-lock.json	/^        "icss-utils": "^4.1.1",$/;"	s	object:dependencies.postcss-modules-local-by-default.requires
 icss-utils	package-lock.json	/^    "icss-utils": {$/;"	o	object:dependencies
+id	src/components/Tile.js	/^  id: PropTypes.string.isRequired,$/;"	p	class:Tile.propTypes
+id	src/lib/createEmptyBoard.js	/^  const id = `tile-${idNum}`$/;"	C
+idNum	src/lib/createEmptyBoard.js	/^  idNum: 0,$/;"	p	class:createNewTile.defaultProps
+idNum	src/lib/createEmptyBoard.js	/^  idNum: PropTypes.number,$/;"	p	class:createNewTile.propTypes
+idNum	src/lib/createEmptyBoard.js	/^  let idNum = (currentRow - 1) * 9$/;"	v
 ieee754	package-lock.json	/^        "ieee754": "^1.1.4",$/;"	s	object:dependencies.buffer.requires
 ieee754	package-lock.json	/^    "ieee754": {$/;"	o	object:dependencies
 iferr	package-lock.json	/^        "iferr": "^0.1.5",$/;"	s	object:dependencies.copy-concurrently.requires
@@ -7464,6 +7481,7 @@ locate-path	package-lock.json	/^        "locate-path": {$/;"	o	object:dependenci
 locate-path	package-lock.json	/^        "locate-path": {$/;"	o	object:dependencies.read-pkg-up.dependencies
 locate-path	package-lock.json	/^        "locate-path": {$/;"	o	object:dependencies.yargs.dependencies
 locate-path	package-lock.json	/^    "locate-path": {$/;"	o	object:dependencies
+locked	src/lib/createEmptyBoard.js	/^    locked: false,$/;"	p	class:status
 lockfileVersion	package-lock.json	/^  "lockfileVersion": 1,$/;"	n
 lodash	package-lock.json	/^            "lodash": "^4.17.13"$/;"	s	object:dependencies.@babel/core.dependencies.@babel/traverse.requires
 lodash	package-lock.json	/^            "lodash": "^4.17.13"$/;"	s	object:dependencies.@babel/helper-explode-assignable-expression.dependencies.@babel/traverse.requires
@@ -7563,6 +7581,8 @@ map-visit	package-lock.json	/^        "map-visit": "^1.0.0",$/;"	s	object:depend
 map-visit	package-lock.json	/^    "map-visit": {$/;"	o	object:dependencies
 mark	src/styles/reset.css	/^time, mark, audio, video {$/;"	s
 maxColumns	src/data/sudokuData.js	/^const maxColumns = 9$/;"	C
+maxColumns	src/lib/createEmptyBoard.js	/^  maxColumns: 9,$/;"	p	class:createNewRow.defaultProps
+maxColumns	src/lib/createEmptyBoard.js	/^  maxColumns: PropTypes.number,$/;"	p	class:createNewRow.propTypes
 maxRows	src/data/sudokuData.js	/^const maxRows = 9$/;"	C
 md5.js	package-lock.json	/^        "md5.js": "^1.3.4",$/;"	s	object:dependencies.create-hash.requires
 md5.js	package-lock.json	/^        "md5.js": "^1.3.4",$/;"	s	object:dependencies.evp_bytestokey.requires
@@ -7578,17 +7598,6 @@ memorystream	package-lock.json	/^        "memorystream": "^0.3.1",$/;"	s	object:
 memorystream	package-lock.json	/^    "memorystream": {$/;"	o	object:dependencies
 menu	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
 menu	src/styles/reset.css	/^header, hgroup, main, menu, nav, section {$/;"	s
-menu-border	src/styles/main.scss	/^$menu-border: 0; \/\/ 0.1em solid $fg0;$/;"	v
-menu-button-background-color	src/styles/main.scss	/^$menu-button-background-color: $bg2;$/;"	v
-menu-button-border	src/styles/main.scss	/^$menu-button-border: 0.3em solid $fg2;$/;"	v
-menu-button-dropdown-bgc	src/styles/main.scss	/^$menu-button-dropdown-bgc: $alt-blue;$/;"	v
-menu-button-dropdown-border	src/styles/main.scss	/^$menu-button-dropdown-border: 0.2em solid $fg1;$/;"	v
-menu-button-dropdown-color	src/styles/main.scss	/^$menu-button-dropdown-color: $fg0;$/;"	v
-menu-button-focus-bgc	src/styles/main.scss	/^$menu-button-focus-bgc: $green;$/;"	v
-menu-button-text-color	src/styles/main.scss	/^$menu-button-text-color: $fg0;$/;"	v
-menu-container-border	src/styles/main.scss	/^$menu-container-border: 0; \/\/ 0.2em solid $yellow;$/;"	v
-menu-header-border	src/styles/main.scss	/^$menu-header-border: 0; \/\/ 0.1em solid $red;$/;"	v
-menu-header-text-color	src/styles/main.scss	/^$menu-header-text-color: $fg1;$/;"	v
 meow	package-lock.json	/^        "meow": "^3.7.0",$/;"	s	object:dependencies.node-sass.requires
 meow	package-lock.json	/^    "meow": {$/;"	o	object:dependencies
 merge-descriptors	package-lock.json	/^        "merge-descriptors": "1.0.1",$/;"	s	object:dependencies.express.requires
@@ -7744,7 +7753,6 @@ mute-stream	package-lock.json	/^        "mute-stream": "0.0.8",$/;"	s	object:dep
 mute-stream	package-lock.json	/^    "mute-stream": {$/;"	o	object:dependencies
 name	package-lock.json	/^  "name": "sudoku",$/;"	s
 name	package.json	/^  "name": "sudoku",$/;"	s
-name	src/components/Example.js	/^      name: 'nick',$/;"	p	class:super.state
 nan	package-lock.json	/^        "nan": "^2.12.1",$/;"	s	object:dependencies.fsevents.requires
 nan	package-lock.json	/^        "nan": "^2.13.2",$/;"	s	object:dependencies.node-sass.requires
 nan	package-lock.json	/^    "nan": {$/;"	o	object:dependencies
@@ -8118,7 +8126,6 @@ p-try	package-lock.json	/^        "p-try": {$/;"	o	object:dependencies.eslint-mo
 p-try	package-lock.json	/^        "p-try": {$/;"	o	object:dependencies.pkg-up.dependencies
 p-try	package-lock.json	/^        "p-try": {$/;"	o	object:dependencies.read-pkg-up.dependencies
 p-try	package-lock.json	/^    "p-try": {$/;"	o	object:dependencies
-page-border	src/styles/main.scss	/^$page-border: 0; \/\/ 0.2em solid $orange;$/;"	v
 pako	package-lock.json	/^        "pako": "~1.0.5"$/;"	s	object:dependencies.browserify-zlib.requires
 pako	package-lock.json	/^    "pako": {$/;"	o	object:dependencies
 parallel-transform	package-lock.json	/^        "parallel-transform": "^1.1.0",$/;"	s	object:dependencies.mississippi.requires
@@ -8354,6 +8361,9 @@ prop-types	package-lock.json	/^        "prop-types": "^15.7.2",$/;"	s	object:dep
 prop-types	package-lock.json	/^    "prop-types": {$/;"	o	object:dependencies
 prop-types	package.json	/^    "prop-types": "^15.7.2",$/;"	s	object:dependencies
 propTypes	src/Root.js	/^Root.propTypes = {$/;"	c	class:Root
+propTypes	src/components/Tile.js	/^Tile.propTypes = {$/;"	c	class:Tile
+propTypes	src/lib/createEmptyBoard.js	/^createNewRow.propTypes = {$/;"	c	class:createNewRow
+propTypes	src/lib/createEmptyBoard.js	/^createNewTile.propTypes = {$/;"	c	class:createNewTile
 proxy-addr	package-lock.json	/^        "proxy-addr": "~2.0.5",$/;"	s	object:dependencies.express.requires
 proxy-addr	package-lock.json	/^    "proxy-addr": {$/;"	o	object:dependencies
 prr	package-lock.json	/^        "prr": "~1.0.1"$/;"	s	object:dependencies.errno.requires
@@ -8560,7 +8570,17 @@ regexpp	package-lock.json	/^        "regexpp": "^2.0.1",$/;"	s	object:dependenci
 regexpp	package-lock.json	/^    "regexpp": {$/;"	o	object:dependencies
 regexpu-core	package-lock.json	/^        "regexpu-core": "^4.7.0"$/;"	s	object:dependencies.@babel/helper-create-regexp-features-plugin.requires
 regexpu-core	package-lock.json	/^    "regexpu-core": {$/;"	o	object:dependencies
+region	src/components/Tile.js	/^  region: PropTypes.number.isRequired,$/;"	p	class:Tile.propTypes
+region	src/lib/createEmptyBoard.js	/^  const region =$/;"	C
+regionHeight	src/lib/createEmptyBoard.js	/^  regionHeight: 3,$/;"	p	class:createNewRow.defaultProps
+regionHeight	src/lib/createEmptyBoard.js	/^  regionHeight: 3,$/;"	p	class:createNewTile.defaultProps
+regionHeight	src/lib/createEmptyBoard.js	/^  regionHeight: PropTypes.number,$/;"	p	class:createNewRow.propTypes
+regionHeight	src/lib/createEmptyBoard.js	/^  regionHeight: PropTypes.number,$/;"	p	class:createNewTile.propTypes
 regionSize	src/data/sudokuData.js	/^const regionSize = 3$/;"	C
+regionWidth	src/lib/createEmptyBoard.js	/^  regionWidth: 3,$/;"	p	class:createNewRow.defaultProps
+regionWidth	src/lib/createEmptyBoard.js	/^  regionWidth: 3,$/;"	p	class:createNewTile.defaultProps
+regionWidth	src/lib/createEmptyBoard.js	/^  regionWidth: PropTypes.number,$/;"	p	class:createNewRow.propTypes
+regionWidth	src/lib/createEmptyBoard.js	/^  regionWidth: PropTypes.number,$/;"	p	class:createNewTile.propTypes
 regjsgen	package-lock.json	/^        "regjsgen": "^0.5.1",$/;"	s	object:dependencies.regexpu-core.requires
 regjsgen	package-lock.json	/^    "regjsgen": {$/;"	o	object:dependencies
 regjsparser	package-lock.json	/^        "regjsparser": "^0.6.4",$/;"	s	object:dependencies.regexpu-core.requires
@@ -8569,9 +8589,6 @@ relateurl	package-lock.json	/^        "relateurl": "0.2.x",$/;"	s	object:depende
 relateurl	package-lock.json	/^    "relateurl": {$/;"	o	object:dependencies
 remove-trailing-separator	package-lock.json	/^            "remove-trailing-separator": "^1.0.1"$/;"	s	object:dependencies.anymatch.dependencies.normalize-path.requires
 remove-trailing-separator	package-lock.json	/^    "remove-trailing-separator": {$/;"	o	object:dependencies
-render	src/components/Example.js	/^  render() {$/;"	m	class:MyProvider
-render	src/components/Example.js	/^  render() {$/;"	m	class:Person
-render	src/components/Example.js	/^  render() {$/;"	m	class:TopContext
 renderkid	package-lock.json	/^        "renderkid": "^2.0.1",$/;"	s	object:dependencies.pretty-error.requires
 renderkid	package-lock.json	/^    "renderkid": {$/;"	o	object:dependencies
 repeat-element	package-lock.json	/^        "repeat-element": "^1.1.2",$/;"	s	object:dependencies.braces.requires
@@ -9671,6 +9688,7 @@ requires	package-lock.json	/^  "requires": true,$/;"	b
 requires-port	package-lock.json	/^        "requires-port": "^1.0.0"$/;"	s	object:dependencies.http-proxy.requires
 requires-port	package-lock.json	/^        "requires-port": "^1.0.0"$/;"	s	object:dependencies.url-parse.requires
 requires-port	package-lock.json	/^    "requires-port": {$/;"	o	object:dependencies
+resetBoard	src/utils/useBoardState.js	/^  const resetBoard = () => {$/;"	C
 resolve	package-lock.json	/^        "resolve": "1.1.7"$/;"	s	object:dependencies.browser-resolve.requires
 resolve	package-lock.json	/^        "resolve": "^1.10.0",$/;"	s	object:dependencies.normalize-package-data.requires
 resolve	package-lock.json	/^        "resolve": "^1.12.0"$/;"	s	object:dependencies.babel-eslint.requires
@@ -11436,6 +11454,7 @@ ripemd160	package-lock.json	/^    "ripemd160": {$/;"	o	object:dependencies
 root	.eslintrc.js	/^  root: true,$/;"	p	class:module.exports
 root	src/index.html	/^  <div id="root"><\/div>$/;"	I
 rootContainer	src/index.js	/^const rootContainer = document.getElementById('root')$/;"	C
+row	src/components/Tile.js	/^  row: PropTypes.number.isRequired,$/;"	p	class:Tile.propTypes
 rsvp	package-lock.json	/^        "rsvp": "^4.8.4"$/;"	s	object:dependencies.capture-exit.requires
 rsvp	package-lock.json	/^    "rsvp": {$/;"	o	object:dependencies
 ruby	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
@@ -11582,7 +11601,8 @@ set-blocking	package-lock.json	/^    "set-blocking": {$/;"	o	object:dependencies
 set-value	package-lock.json	/^        "set-value": "^2.0.0",$/;"	s	object:dependencies.cache-base.requires
 set-value	package-lock.json	/^        "set-value": "^2.0.1"$/;"	s	object:dependencies.union-value.requires
 set-value	package-lock.json	/^    "set-value": {$/;"	o	object:dependencies
-setGameData	src/utils/useGameContext.js	/^  const [gameData, setGameData] = useState()$/;"	C
+setBoardState	src/utils/useBoardState.js	/^  const [boardState, setBoardState] = useState(createEmptyBoard())$/;"	C
+setGameSettings	src/utils/useGameContext.js	/^  const [gameSettings, setGameSettings] = useState({$/;"	C
 setimmediate	package-lock.json	/^        "setimmediate": "^1.0.4"$/;"	s	object:dependencies.timers-browserify.requires
 setimmediate	package-lock.json	/^    "setimmediate": {$/;"	o	object:dependencies
 setprototypeof	package-lock.json	/^            "setprototypeof": "1.1.0",$/;"	s	object:dependencies.serve-index.dependencies.http-errors.requires
@@ -11738,9 +11758,10 @@ stack-utils	package-lock.json	/^        "stack-utils": "^1.0.1"$/;"	s	object:dep
 stack-utils	package-lock.json	/^    "stack-utils": {$/;"	o	object:dependencies
 standardSudokus	src/data/sudokuData.js	/^const standardSudokus = {$/;"	c
 start	package.json	/^    "start": "npm run clean-dist && npm run devserver"$/;"	s	object:scripts
-state	src/components/Example.js	/^    super(props)$/;"	c	class:super
 static-extend	package-lock.json	/^        "static-extend": "^0.1.1"$/;"	s	object:dependencies.class-utils.requires
 static-extend	package-lock.json	/^    "static-extend": {$/;"	o	object:dependencies
+status	src/components/Tile.js	/^  status: PropTypes.shape({$/;"	p	class:Tile.propTypes
+status	src/lib/createEmptyBoard.js	/^  const status = {$/;"	c
 statuses	package-lock.json	/^            "statuses": ">= 1.4.0 < 2"$/;"	s	object:dependencies.serve-index.dependencies.http-errors.requires
 statuses	package-lock.json	/^        "statuses": ">= 1.5.0 < 2",$/;"	s	object:dependencies.http-errors.requires
 statuses	package-lock.json	/^        "statuses": "~1.5.0"$/;"	s	object:dependencies.send.requires
@@ -11875,7 +11896,6 @@ style-loader	package-lock.json	/^    "style-loader": {$/;"	o	object:dependencies
 style-loader	package.json	/^    "style-loader": "^1.2.1",$/;"	s	object:devDependencies
 styles	src/styles/GlobalStyles.js	/^const styles = css`$/;"	C
 sub	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
-sudoku-container-border	src/styles/main.scss	/^$sudoku-container-border: 0; \/\/ 0.2em solid $aqua;$/;"	v
 summary	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
 summary	src/styles/reset.css	/^summary {$/;"	s
 sup	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
@@ -12009,26 +12029,8 @@ through2	package-lock.json	/^        "through2": "^2.0.0"$/;"	s	object:dependenc
 through2	package-lock.json	/^    "through2": {$/;"	o	object:dependencies
 thunky	package-lock.json	/^        "thunky": "^1.0.2"$/;"	s	object:dependencies.multicast-dns.requires
 thunky	package-lock.json	/^    "thunky": {$/;"	o	object:dependencies
-tile-background-color	src/styles/main.scss	/^$tile-background-color: $bg0_h;$/;"	v
-tile-bgc-active	src/styles/main.scss	/^$tile-bgc-active: $fg1;$/;"	v
-tile-bgc-highlight	src/styles/main.scss	/^$tile-bgc-highlight: $fg1;$/;"	v
-tile-bgc-warning	src/styles/main.scss	/^$tile-bgc-warning: $alt-red !important;$/;"	v
-tile-border-active	src/styles/main.scss	/^$tile-border-active: 0.25em solid $orange !important;$/;"	v
-tile-border-highlight	src/styles/main.scss	/^$tile-border-highlight: 0.25em solid $bg3;$/;"	v
-tile-border-inner-edge	src/styles/main.scss	/^$tile-border-inner-edge: 0.25em solid $alt-blue;$/;"	v
-tile-border-inner-edge-hover	src/styles/main.scss	/^$tile-border-inner-edge-hover: 0.25em solid $red;$/;"	v
-tile-border-outer-edge	src/styles/main.scss	/^$tile-border-outer-edge: 0.25em solid $fg3;$/;"	v
-tile-border-outer-edge-hover	src/styles/main.scss	/^$tile-border-outer-edge-hover: 0.25em solid $red;$/;"	v
-tile-border-thin	src/styles/main.scss	/^$tile-border-thin: 0.25em solid $bg4;$/;"	v
-tile-border-thin-hover	src/styles/main.scss	/^$tile-border-thin-hover: 0.25em solid $orange !important;$/;"	v
-tile-border-warning	src/styles/main.scss	/^$tile-border-warning: 0.25em solid $bg3;$/;"	v
-tile-height	src/styles/main.scss	/^$tile-height: 4.5em;$/;"	v
-tile-text-color	src/styles/main.scss	/^$tile-text-color: $fg0;$/;"	v
-tile-text-color-active	src/styles/main.scss	/^$tile-text-color-active: $bg0_h;$/;"	v
-tile-text-color-highlight	src/styles/main.scss	/^$tile-text-color-highlight: $bg0_h;$/;"	v
-tile-text-color-warning	src/styles/main.scss	/^$tile-text-color-warning: $bg0_h;$/;"	v
-tile-text-size	src/styles/main.scss	/^$tile-text-size: 3.25em;$/;"	v
-tile-width	src/styles/main.scss	/^$tile-width: 4.5em;$/;"	v
+tileText	src/components/Tile.js	/^  tileText: PropTypes.string.isRequired,$/;"	p	class:Tile.propTypes
+tileText	src/lib/createEmptyBoard.js	/^  const tileText = 'a'$/;"	C
 time	src/styles/reset.css	/^time, mark, audio, video {$/;"	s
 timers-browserify	package-lock.json	/^        "timers-browserify": "^2.0.4",$/;"	s	object:dependencies.node-libs-browser.requires
 timers-browserify	package-lock.json	/^    "timers-browserify": {$/;"	o	object:dependencies
@@ -12168,6 +12170,7 @@ unset-value	package-lock.json	/^        "unset-value": "^1.0.0"$/;"	s	object:dep
 unset-value	package-lock.json	/^    "unset-value": {$/;"	o	object:dependencies
 upath	package-lock.json	/^        "upath": "^1.1.1"$/;"	s	object:dependencies.chokidar.requires
 upath	package-lock.json	/^    "upath": {$/;"	o	object:dependencies
+updateBoard	src/utils/useBoardState.js	/^const updateBoard = (boardState) => {$/;"	C
 upper-case	package-lock.json	/^        "upper-case": "^1.1.1"$/;"	s	object:dependencies.camel-case.requires
 upper-case	package-lock.json	/^    "upper-case": {$/;"	o	object:dependencies
 uri-js	package-lock.json	/^            "uri-js": "^4.2.2"$/;"	s	object:dependencies.css-loader.dependencies.ajv.requires
@@ -12186,6 +12189,7 @@ url-parse	package-lock.json	/^        "url-parse": "^1.4.3"$/;"	s	object:depende
 url-parse	package-lock.json	/^    "url-parse": {$/;"	o	object:dependencies
 use	package-lock.json	/^        "use": "^3.1.0"$/;"	s	object:dependencies.snapdragon.requires
 use	package-lock.json	/^    "use": {$/;"	o	object:dependencies
+useBoardState	src/utils/useBoardState.js	/^const useBoardState = () => {$/;"	C
 useGameContext	src/utils/useGameContext.js	/^const useGameContext = () => {$/;"	C
 util	package-lock.json	/^        "util": "0.10.3"$/;"	s	object:dependencies.assert.requires
 util	package-lock.json	/^        "util": "^0.11.0",$/;"	s	object:dependencies.node-libs-browser.requires
@@ -12217,6 +12221,10 @@ v8-to-istanbul	package-lock.json	/^        "v8-to-istanbul": "^4.1.3"$/;"	s	obje
 v8-to-istanbul	package-lock.json	/^    "v8-to-istanbul": {$/;"	o	object:dependencies
 validate-npm-package-license	package-lock.json	/^        "validate-npm-package-license": "^3.0.1"$/;"	s	object:dependencies.normalize-package-data.requires
 validate-npm-package-license	package-lock.json	/^    "validate-npm-package-license": {$/;"	o	object:dependencies
+value	src/components/Tile.js	/^  value: '',$/;"	p	class:Tile.defaultProps
+value	src/components/Tile.js	/^  value: PropTypes.string,$/;"	p	class:Tile.propTypes
+value	src/lib/createEmptyBoard.js	/^  const value = ''$/;"	C
+value	src/utils/useGameContext.js	/^  const value = { gameSettings }$/;"	C
 var	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
 vary	package-lock.json	/^        "vary": "~1.1.2"$/;"	s	object:dependencies.compression.requires
 vary	package-lock.json	/^        "vary": "~1.1.2"$/;"	s	object:dependencies.express.requires
@@ -14006,6 +14014,7 @@ w3c-xmlserializer	package-lock.json	/^    "w3c-xmlserializer": {$/;"	o	object:de
 walker	package-lock.json	/^        "walker": "^1.0.7",$/;"	s	object:dependencies.jest-haste-map.requires
 walker	package-lock.json	/^        "walker": "~1.0.5"$/;"	s	object:dependencies.sane.requires
 walker	package-lock.json	/^    "walker": {$/;"	o	object:dependencies
+warning	src/lib/createEmptyBoard.js	/^    warning: false,$/;"	p	class:status
 watchpack	package-lock.json	/^        "watchpack": "^1.6.1",$/;"	s	object:dependencies.webpack.requires
 watchpack	package-lock.json	/^    "watchpack": {$/;"	o	object:dependencies
 wbuf	package-lock.json	/^        "wbuf": "^1.1.0"$/;"	s	object:dependencies.hpack.js.requires
