@@ -1,9 +1,6 @@
-/* eslint-disable */
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from '@emotion/styled'
-
-// import useGameContext from '../utils/useGameContext'
-import useBoardState from '../utils/useBoardState'
 
 import gruv from '../assets/palettes/gruvbox-light.scss'
 
@@ -64,17 +61,19 @@ const GameboardContainer = styled.section`
       border-left: 2px solid ${gruv.fg0};
     }
   }
-` //}
+` // }
 
-function Gameboard() {
-  // const { gameSettings } = useGameContext()
-  const { boardState, resetBoard } = useBoardState()
-
+// eslint-disable-next-line no-unused-vars
+function Gameboard({ boardState }) {
   return (
     <GameboardContainer className="gameboard-container">
       <div className="gameboard">{boardState}</div>
     </GameboardContainer>
   )
+}
+
+Gameboard.propTypes = {
+  boardState: PropTypes.node.isRequired,
 }
 
 export default Gameboard

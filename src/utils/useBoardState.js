@@ -1,19 +1,11 @@
-/* eslint-disable */
 import { useState } from 'react'
 import createEmptyBoard from '../lib/createEmptyBoard'
 
-const updateBoard = (boardState) => {
-  return boardState.map((row) => [...row])
-}
-
 const useBoardState = () => {
+  // eslint-disable-next-line no-unused-vars
   const [boardState, setBoardState] = useState(createEmptyBoard())
 
-  const resetBoard = () => {
-    setBoardState(createEmptyBoard())
-  }
-
-  return { boardState, resetBoard }
+  return { boardState }
 }
 
 export default useBoardState

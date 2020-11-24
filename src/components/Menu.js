@@ -1,11 +1,11 @@
-/* eslint-disable */
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from '@emotion/styled'
 
 import useGameContext from '../utils/useGameContext'
-import MenuButton from './MenuButton'
 
 const MenuContainer = styled.section`
+  // {{{
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -18,16 +18,20 @@ const MenuContainer = styled.section`
 const MenuHeader = styled.h3`
   width: 100%;
   text-align: center;
-`
+` // }}}
 
-function Menu() {
-  const { gameSettings, currentBoard } = useGameContext()
+// eslint-disable-next-line no-unused-vars
+function Menu({ boardState }) {
+  const { gameSettings } = useGameContext()
   return (
     <MenuContainer className="menu-container">
       <MenuHeader>Current Difficulty: {gameSettings.difficulty}</MenuHeader>
-      <MenuButton />
     </MenuContainer>
   )
+}
+
+Menu.propTypes = {
+  boardState: PropTypes.node.isRequired,
 }
 
 export default Menu
