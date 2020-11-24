@@ -886,6 +886,7 @@ row	src/components/Tile.js	/^  row: PropTypes.number.isRequired,$/;"	p	class:Til
 ruby	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
 s	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
 samp	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
+sass	webpack.config.js	/^const sass = require('sass')$/;"	C
 sass-loader	package.json	/^    "sass-loader": "~8.0.2",$/;"	s	object:devDependencies
 scripts	package.json	/^  "scripts": {$/;"	o
 section	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s

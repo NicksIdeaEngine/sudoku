@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const sass = require('sass')
 
 const PATH_SOURCE = path.join(__dirname, './src')
 const PATH_DIST = path.join(__dirname, './dist')
@@ -55,7 +56,13 @@ module.exports = (env) => ({
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' },
-          { loader: 'sass-loader' },
+          {
+            loader: 'sass-loader',
+            options: {
+              implementation: sass,
+              sassOptions: { fiber: false },
+            },
+          },
         ],
       },
       { test: /\.css$/i, use: ['css-loader'] },
