@@ -1,6 +1,6 @@
 {
   "name": "sudoku",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "This Sudoku app is created with love; for the thrill of puzzles.",
   "keywords": [
     "html",
@@ -9,17 +9,8 @@
     "web development",
     "react",
     "frontend",
-    "web design",
-    "webpack",
     "sudoku",
-    "games",
-    "eslint",
-    "babel",
-    "scss",
-    "sass",
-    "jest",
-    "git",
-    "npm"
+    "games"
   ],
   "author": "Nick Garcia <me@nickgarcia.me> (https://nickgarcia.me)",
   "homepage": "https://github.com/NicksIdeaEngine/sudoku",
@@ -36,8 +27,7 @@
     "devserver": "webpack-dev-server --env.development --config webpack.config.js",
     "test": "jest",
     "localtunnel": "lt --port 8080 --subdomain 'smolapp'",
-    "share": "run-s devserver localtunnel",
-    "start": "npm run clean-dist && npm run devserver"
+    "share": "run-s devserver localtunnel"
   },
   "repository": {
     "type": "git",
@@ -46,6 +36,19 @@
   "bugs": {
     "url": "https://github.com/NicksIdeaEngine/sudoku/issues",
     "email": "me@nickgarcia.me"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "browserslist": {
+    "production": [">0.5%", "not dead", "last 2 versions"],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "dependencies": {
     "@emotion/core": "~10.0.28",

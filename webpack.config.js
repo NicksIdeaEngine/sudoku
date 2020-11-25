@@ -1,9 +1,9 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const sass = require('sass')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const sass = require('sass');
 
-const PATH_SOURCE = path.join(__dirname, './src')
-const PATH_DIST = path.join(__dirname, './dist')
+const PATH_SOURCE = path.join(__dirname, './src');
+const PATH_DIST = path.join(__dirname, './dist');
 
 module.exports = (env) => ({
   mode: env.production ? 'production' : 'development',
@@ -65,11 +65,6 @@ module.exports = (env) => ({
           },
         ],
       },
-      { test: /\.css$/i, use: ['css-loader'] },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
-        use: ['file-loader'],
-      },
     ],
   },
   plugins: [
@@ -77,4 +72,4 @@ module.exports = (env) => ({
       template: path.join(PATH_SOURCE, './index.html'),
     }),
   ],
-})
+});

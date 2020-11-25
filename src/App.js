@@ -1,22 +1,18 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import Gameboard from './components/Gameboard'
-import Menu from './components/Menu'
-
-import useBoardState from './utils/useBoardState'
+import GameBoard from './components/GameBoard'
 
 const AppContainer = styled.div`
-  display: flex;
-  margin: 1em auto;
+  margin: 0 auto;
+  padding: 0;
+  width: 62em;
+  height: 50em;
 `
 
 function App() {
-  const { boardState } = useBoardState()
-
   return (
-    <AppContainer className="app-container">
-      <Gameboard boardState={boardState} />
-      <Menu boardState={boardState} />
+    <AppContainer className="app">
+      <GameBoard />
     </AppContainer>
   )
 }

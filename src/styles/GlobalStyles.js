@@ -1,6 +1,8 @@
 import React from 'react'
 import { Global, css } from '@emotion/core'
 
+import color from '../assets/palettes/blue-gray.scss'
+
 const styles = css`
   * {
     font-family: 'Roboto', sans-serif;
@@ -10,9 +12,11 @@ const styles = css`
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     overflow-y: scroll;
+    background-color: ${color.blueGray50};
   }
 
   body {
+    color: hsla(0, 0%, 0%, 0.8);
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
