@@ -476,6 +476,7 @@ fg3	src/assets/palettes/gruvbox-dark.scss	/^$fg3: #bdae93;$/;"	v
 fg3	src/assets/palettes/gruvbox-light.scss	/^$fg3: #665c54;$/;"	v
 fg4	src/assets/palettes/gruvbox-dark.scss	/^$fg4: #a89984;$/;"	v
 fg4	src/assets/palettes/gruvbox-light.scss	/^$fg4: #7c6f64;$/;"	v
+fibers	package.json	/^    "fibers": "~5.0.0",$/;"	s	object:devDependencies
 fieldset	src/styles/reset.css	/^dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,$/;"	s
 figcaption	src/styles/reset.css	/^article, aside, details, figcaption, figure, footer,$/;"	s
 figcaption	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
@@ -886,6 +887,7 @@ row	src/components/Tile.js	/^  row: PropTypes.number.isRequired,$/;"	p	class:Til
 ruby	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
 s	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
 samp	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
+sass	package.json	/^    "sass": "~1.29.0",$/;"	s	object:devDependencies
 sass	webpack.config.js	/^const sass = require('sass')$/;"	C
 sass-loader	package.json	/^    "sass-loader": "~8.0.2",$/;"	s	object:devDependencies
 scripts	package.json	/^  "scripts": {$/;"	o
