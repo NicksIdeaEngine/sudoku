@@ -7,614 +7,551 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	/0c78c0c4/
-.candidates	src/styles/main.scss	/^>>>>>>> parent of 6e8673d (Large update. Still having problems with Tile.candidates.)$/;"	c
-0	package.json	/^      "last 1 chrome version",$/;"	s	array:browserslist.development
+*	src/styles/reset.css	/^* {$/;"	s
+*	src/styles/reset.css	/^*, *:before, *:after {$/;"	s
+*:after	src/styles/reset.css	/^*, *:before, *:after {$/;"	s
+*:before	src/styles/reset.css	/^*, *:before, *:after {$/;"	s
+.dev-text	src/styles/main.scss	/^.dev-text {$/;"	c
+.game-board	src/styles/main.scss	/^.game-board {$/;"	c
+.menu	src/styles/main.scss	/^.menu {$/;"	c
+.sudoku	src/styles/main.scss	/^.sudoku {$/;"	c
 0	package.json	/^    "html",$/;"	s	array:keywords
-0	package.json	/^    "production": [">0.5%", "not dead", "last 2 versions"],$/;"	s	array:browserslist.production
-1	package.json	/^      "last 1 firefox version",$/;"	s	array:browserslist.development
 1	package.json	/^    "css",$/;"	s	array:keywords
-1	package.json	/^    "production": [">0.5%", "not dead", "last 2 versions"],$/;"	s	array:browserslist.production
-2	package.json	/^      "last 1 safari version"$/;"	s	array:browserslist.development
 2	package.json	/^    "javascript",$/;"	s	array:keywords
-2	package.json	/^    "production": [">0.5%", "not dead", "last 2 versions"],$/;"	s	array:browserslist.production
 3	package.json	/^    "web development",$/;"	s	array:keywords
 4	package.json	/^    "react",$/;"	s	array:keywords
 5	package.json	/^    "frontend",$/;"	s	array:keywords
 6	package.json	/^    "sudoku",$/;"	s	array:keywords
 7	package.json	/^    "games"$/;"	s	array:keywords
-@babel/cli	package.json	/^    "@babel\/cli": "~7.10.1",$/;"	s	object:devDependencies
-@babel/core	package.json	/^    "@babel\/core": "~7.10.2",$/;"	s	object:devDependencies
-@babel/preset-env	package.json	/^    "@babel\/preset-env": "~7.10.2",$/;"	s	object:devDependencies
-@babel/preset-react	package.json	/^    "@babel\/preset-react": "~7.10.1",$/;"	s	object:devDependencies
-@emotion/core	package.json	/^    "@emotion\/core": "~10.0.28",$/;"	s	object:dependencies
-@emotion/styled	package.json	/^    "@emotion\/styled": "~10.0.27",$/;"	s	object:dependencies
+:root	src/assets/palettes/amber.css	/^:root {$/;"	s
+:root	src/assets/palettes/blue-gray.css	/^:root {$/;"	s
+:root	src/assets/palettes/blue.css	/^:root {$/;"	s
+:root	src/assets/palettes/brown.css	/^:root {$/;"	s
+:root	src/assets/palettes/cyan.css	/^:root {$/;"	s
+:root	src/assets/palettes/deep-orange.css	/^:root {$/;"	s
+:root	src/assets/palettes/deep-purple.css	/^:root {$/;"	s
+:root	src/assets/palettes/gray.css	/^:root {$/;"	s
+:root	src/assets/palettes/green.css	/^:root {$/;"	s
+:root	src/assets/palettes/gruvbox-dark.css	/^:root {$/;"	s
+:root	src/assets/palettes/gruvbox-light.css	/^:root {$/;"	s
+:root	src/assets/palettes/indigo.css	/^:root {$/;"	s
+:root	src/assets/palettes/light-blue.css	/^:root {$/;"	s
+:root	src/assets/palettes/light-green.css	/^:root {$/;"	s
+:root	src/assets/palettes/lime.css	/^:root {$/;"	s
+:root	src/assets/palettes/orange.css	/^:root {$/;"	s
+:root	src/assets/palettes/pink.css	/^:root {$/;"	s
+:root	src/assets/palettes/purple.css	/^:root {$/;"	s
+:root	src/assets/palettes/red.css	/^:root {$/;"	s
+:root	src/assets/palettes/teal.css	/^:root {$/;"	s
+:root	src/assets/palettes/yellow.css	/^:root {$/;"	s
+@babel/core	package.json	/^    "@babel\/core": "7.12.3",$/;"	s	object:devDependencies
+@babel/plugin-proposal-class-properties	package.json	/^    "@babel\/plugin-proposal-class-properties": "7.12.1",$/;"	s	object:devDependencies
+@babel/preset-env	package.json	/^    "@babel\/preset-env": "7.12.1",$/;"	s	object:devDependencies
+@babel/preset-react	package.json	/^    "@babel\/preset-react": "7.12.5",$/;"	s	object:devDependencies
+App	src/App.js	/^function App() {$/;"	f
 AppContainer	src/App.js	/^const AppContainer = styled.div`$/;"	C
 GameBoard	src/components/GameBoard.js	/^class GameBoard extends Component {$/;"	c
-GameContext	src/utils/useGameContext.js	/^const GameContext = createContext()$/;"	C
-GameContextProvider	src/utils/useGameContext.js	/^export const GameContextProvider = ({ children }) => {$/;"	C
-Gameboard	src/components/Gameboard.js	/^function Gameboard({ boardState }) {$/;"	f
-GameboardContainer	src/components/Gameboard.js	/^const GameboardContainer = styled.section`$/;"	C
-HtmlWebpackPlugin	webpack.config.js	/^const HtmlWebpackPlugin = require('html-webpack-plugin');$/;"	C
+GlobalStyles	src/styles/GlobalStyles.js	/^const GlobalStyles = createGlobalStyle`$/;"	C
+HtmlWebpackPlugin	webpack.config.js	/^const HtmlWebpackPlugin = require('html-webpack-plugin')$/;"	C
 Menu	src/components/Menu.js	/^class Menu extends Component {$/;"	c
-Menu	src/components/Menu.js	/^function Menu({ boardState }) {$/;"	f
-MenuButton	src/components/MenuButton.js	/^const MenuButton = ({ text }) => {$/;"	C
-MenuContainer	src/components/Menu.js	/^const MenuContainer = styled.section`$/;"	C
-MenuHeader	src/components/Menu.js	/^const MenuHeader = styled.h3`$/;"	C
-PATH_DIST	webpack.config.js	/^const PATH_DIST = path.join(__dirname, '.\/dist');$/;"	C
-PATH_SOURCE	webpack.config.js	/^const PATH_SOURCE = path.join(__dirname, '.\/src');$/;"	C
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-100.svg	/^<font id="Montserrat" horiz-adv-x="626" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-100.svg	/^<font id="Montserrat" horiz-adv-x="626" ><font-face$/;"	i
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-100italic.svg	/^<font id="Montserrat" horiz-adv-x="628" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-100italic.svg	/^<font id="Montserrat" horiz-adv-x="628" ><font-face$/;"	i
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-200.svg	/^<font id="Montserrat" horiz-adv-x="629" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-200.svg	/^<font id="Montserrat" horiz-adv-x="629" ><font-face$/;"	i
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-200italic.svg	/^<font id="Montserrat" horiz-adv-x="632" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-200italic.svg	/^<font id="Montserrat" horiz-adv-x="632" ><font-face$/;"	i
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-300.svg	/^<font id="Montserrat" horiz-adv-x="634" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-300.svg	/^<font id="Montserrat" horiz-adv-x="634" ><font-face$/;"	i
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-300italic.svg	/^<font id="Montserrat" horiz-adv-x="636" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-300italic.svg	/^<font id="Montserrat" horiz-adv-x="636" ><font-face$/;"	i
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-500.svg	/^<font id="Montserrat" horiz-adv-x="646" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-500.svg	/^<font id="Montserrat" horiz-adv-x="646" ><font-face$/;"	i
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-500italic.svg	/^<font id="Montserrat" horiz-adv-x="649" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-500italic.svg	/^<font id="Montserrat" horiz-adv-x="649" ><font-face$/;"	i
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-600.svg	/^<font id="Montserrat" horiz-adv-x="654" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-600.svg	/^<font id="Montserrat" horiz-adv-x="654" ><font-face$/;"	i
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-600italic.svg	/^<font id="Montserrat" horiz-adv-x="657" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-600italic.svg	/^<font id="Montserrat" horiz-adv-x="657" ><font-face$/;"	i
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-700.svg	/^<font id="Montserrat" horiz-adv-x="662" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-700.svg	/^<font id="Montserrat" horiz-adv-x="662" ><font-face$/;"	i
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-700italic.svg	/^<font id="Montserrat" horiz-adv-x="665" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-700italic.svg	/^<font id="Montserrat" horiz-adv-x="665" ><font-face$/;"	i
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-800.svg	/^<font id="Montserrat" horiz-adv-x="672" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-800.svg	/^<font id="Montserrat" horiz-adv-x="672" ><font-face$/;"	i
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-800italic.svg	/^<font id="Montserrat" horiz-adv-x="675" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-800italic.svg	/^<font id="Montserrat" horiz-adv-x="675" ><font-face$/;"	i
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-900.svg	/^<font id="Montserrat" horiz-adv-x="682" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-900.svg	/^<font id="Montserrat" horiz-adv-x="682" ><font-face$/;"	i
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-900italic.svg	/^<font id="Montserrat" horiz-adv-x="685" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-900italic.svg	/^<font id="Montserrat" horiz-adv-x="685" ><font-face$/;"	i
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-italic.svg	/^<font id="Montserrat" horiz-adv-x="642" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-italic.svg	/^<font id="Montserrat" horiz-adv-x="642" ><font-face$/;"	i
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-regular.svg	/^<font id="Montserrat" horiz-adv-x="639" ><font-face$/;"	d
+Montserrat	src/assets/fonts/montserrat/svg/montserrat-v14-latin-regular.svg	/^<font id="Montserrat" horiz-adv-x="639" ><font-face$/;"	i
+PATH_DIST	webpack.config.js	/^const PATH_DIST = path.join(__dirname, '.\/dist')$/;"	C
+PATH_SOURCE	webpack.config.js	/^const PATH_SOURCE = path.join(__dirname, '.\/src')$/;"	C
 PageContainer	src/Root.js	/^const PageContainer = styled.main`$/;"	C
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-100.svg	/^<font id="Roboto" horiz-adv-x="1113" ><font-face$/;"	d
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-100.svg	/^<font id="Roboto" horiz-adv-x="1113" ><font-face$/;"	i
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-100italic.svg	/^<font id="Roboto" horiz-adv-x="1092" ><font-face$/;"	d
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-100italic.svg	/^<font id="Roboto" horiz-adv-x="1092" ><font-face$/;"	i
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-300.svg	/^<font id="Roboto" horiz-adv-x="1135" ><font-face$/;"	d
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-300.svg	/^<font id="Roboto" horiz-adv-x="1135" ><font-face$/;"	i
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-300italic.svg	/^<font id="Roboto" horiz-adv-x="1113" ><font-face$/;"	d
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-300italic.svg	/^<font id="Roboto" horiz-adv-x="1113" ><font-face$/;"	i
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-500.svg	/^<font id="Roboto" horiz-adv-x="1176" ><font-face$/;"	d
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-500.svg	/^<font id="Roboto" horiz-adv-x="1176" ><font-face$/;"	i
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-500italic.svg	/^<font id="Roboto" horiz-adv-x="1153" ><font-face$/;"	d
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-500italic.svg	/^<font id="Roboto" horiz-adv-x="1153" ><font-face$/;"	i
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-700.svg	/^<font id="Roboto" horiz-adv-x="1191" ><font-face$/;"	d
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-700.svg	/^<font id="Roboto" horiz-adv-x="1191" ><font-face$/;"	i
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-700italic.svg	/^<font id="Roboto" horiz-adv-x="1167" ><font-face$/;"	d
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-700italic.svg	/^<font id="Roboto" horiz-adv-x="1167" ><font-face$/;"	i
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-900.svg	/^<font id="Roboto" horiz-adv-x="1206" ><font-face$/;"	d
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-900.svg	/^<font id="Roboto" horiz-adv-x="1206" ><font-face$/;"	i
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-900italic.svg	/^<font id="Roboto" horiz-adv-x="1181" ><font-face$/;"	d
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-900italic.svg	/^<font id="Roboto" horiz-adv-x="1181" ><font-face$/;"	i
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-italic.svg	/^<font id="Roboto" horiz-adv-x="1135" ><font-face$/;"	d
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-italic.svg	/^<font id="Roboto" horiz-adv-x="1135" ><font-face$/;"	i
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-regular.svg	/^<font id="Roboto" horiz-adv-x="1158" ><font-face$/;"	d
+Roboto	src/assets/fonts/roboto/svg/roboto-v20-latin-regular.svg	/^<font id="Roboto" horiz-adv-x="1158" ><font-face$/;"	i
+Root	src/Root.js	/^const Root = ({ children }) => ($/;"	C
 SudokuBoard	src/components/SudokuBoard.js	/^class SudokuBoard extends Component {$/;"	c
 Tile	src/components/Tile.js	/^class Tile extends Component {$/;"	c
-Tile	src/components/Tile.js	/^const Tile = ({ id, row, column, tileText, className }) => {$/;"	C
-TileContainer	src/components/Tile.js	/^const TileContainer = styled.button`$/;"	C
-addCandidate	src/components/Tile.js	/^const addCandidate = ({ currentBoard }, id, candidate) => {$/;"	C
-amber100	src/colors/amber.scss	/^$amber100: #ffecb3;$/;"	v
-amber100	src/colors/material.scss	/^$amber100: #ffecb3;$/;"	v
-amber200	src/colors/amber.scss	/^$amber200: #ffe082;$/;"	v
-amber200	src/colors/material.scss	/^$amber200: #ffe082;$/;"	v
-amber300	src/colors/amber.scss	/^$amber300: #ffd54f;$/;"	v
-amber300	src/colors/material.scss	/^$amber300: #ffd54f;$/;"	v
-amber400	src/colors/amber.scss	/^$amber400: #ffca28;$/;"	v
-amber400	src/colors/material.scss	/^$amber400: #ffca28;$/;"	v
-amber50	src/colors/amber.scss	/^$amber50: #fff8e1;$/;"	v
-amber50	src/colors/material.scss	/^$amber50: #fff8e1;$/;"	v
-amber500	src/colors/amber.scss	/^$amber500: #ffc107;$/;"	v
-amber500	src/colors/material.scss	/^$amber500: #ffc107;$/;"	v
-amber600	src/colors/amber.scss	/^$amber600: #ffb300;$/;"	v
-amber600	src/colors/material.scss	/^$amber600: #ffb300;$/;"	v
-amber700	src/colors/amber.scss	/^$amber700: #ffa000;$/;"	v
-amber700	src/colors/material.scss	/^$amber700: #ffa000;$/;"	v
-amber800	src/colors/amber.scss	/^$amber800: #ff8f00;$/;"	v
-amber800	src/colors/material.scss	/^$amber800: #ff8f00;$/;"	v
-amber900	src/colors/amber.scss	/^$amber900: #ff6f00;$/;"	v
-amber900	src/colors/material.scss	/^$amber900: #ff6f00;$/;"	v
-ambera100	src/colors/amber.scss	/^$ambera100: #ffe57f;$/;"	v
-ambera100	src/colors/material.scss	/^$ambera100: #ffe57f;$/;"	v
-ambera200	src/colors/amber.scss	/^$ambera200: #ffd740;$/;"	v
-ambera200	src/colors/material.scss	/^$ambera200: #ffd740;$/;"	v
-ambera400	src/colors/amber.scss	/^$ambera400: #ffc400;$/;"	v
-ambera400	src/colors/material.scss	/^$ambera400: #ffc400;$/;"	v
-ambera700	src/colors/amber.scss	/^$ambera700: #ffab00;$/;"	v
-ambera700	src/colors/material.scss	/^$ambera700: #ffab00;$/;"	v
-aqua	src/colors/gruvbox-dark.scss	/^$aqua: #8ec07c;$/;"	v
-aqua	src/colors/gruvbox-light.scss	/^$aqua: #689d6a;$/;"	v
-arrowParens	package.json	/^    "arrowParens": "always",$/;"	s	object:prettier
+a	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
+abbr	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
+acronym	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
+active	src/components/Tile.js	/^  active: PropTypes.string.isRequired,$/;"	p	class:Tile.propTypes
+address	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
+alt-aqua	src/assets/palettes/gruvbox-dark.scss	/^$alt-aqua: #8ec07c;$/;"	v
+alt-aqua	src/assets/palettes/gruvbox-light.scss	/^$alt-aqua: #427b58;$/;"	v
+alt-blue	src/assets/palettes/gruvbox-dark.scss	/^$alt-blue: #83a598;$/;"	v
+alt-blue	src/assets/palettes/gruvbox-light.scss	/^$alt-blue: #076678;$/;"	v
+alt-gray	src/assets/palettes/gruvbox-dark.scss	/^$alt-gray: #a89984;$/;"	v
+alt-gray	src/assets/palettes/gruvbox-light.scss	/^$alt-gray: #7c6f64;$/;"	v
+alt-green	src/assets/palettes/gruvbox-dark.scss	/^$alt-green: #b8bb26;$/;"	v
+alt-green	src/assets/palettes/gruvbox-light.scss	/^$alt-green: #79740e;$/;"	v
+alt-orange	src/assets/palettes/gruvbox-dark.scss	/^$alt-orange: #fe8019;$/;"	v
+alt-orange	src/assets/palettes/gruvbox-light.scss	/^$alt-orange: #af3a03;$/;"	v
+alt-purple	src/assets/palettes/gruvbox-dark.scss	/^$alt-purple: #d3869b;$/;"	v
+alt-purple	src/assets/palettes/gruvbox-light.scss	/^$alt-purple: #8f3f71;$/;"	v
+alt-red	src/assets/palettes/gruvbox-dark.scss	/^$alt-red: #fb4934;$/;"	v
+alt-red	src/assets/palettes/gruvbox-light.scss	/^$alt-red: #9d0006;$/;"	v
+alt-yellow	src/assets/palettes/gruvbox-dark.scss	/^$alt-yellow: #fabd2f;$/;"	v
+alt-yellow	src/assets/palettes/gruvbox-light.scss	/^$alt-yellow: #b57614;$/;"	v
+amber100	src/assets/palettes/amber.scss	/^$amber100: #ffecb3;$/;"	v
+amber200	src/assets/palettes/amber.scss	/^$amber200: #ffe082;$/;"	v
+amber300	src/assets/palettes/amber.scss	/^$amber300: #ffd54f;$/;"	v
+amber400	src/assets/palettes/amber.scss	/^$amber400: #ffca28;$/;"	v
+amber50	src/assets/palettes/amber.scss	/^$amber50: #fff8e1;$/;"	v
+amber500	src/assets/palettes/amber.scss	/^$amber500: #ffc107;$/;"	v
+amber600	src/assets/palettes/amber.scss	/^$amber600: #ffb300;$/;"	v
+amber700	src/assets/palettes/amber.scss	/^$amber700: #ffa000;$/;"	v
+amber800	src/assets/palettes/amber.scss	/^$amber800: #ff8f00;$/;"	v
+amber900	src/assets/palettes/amber.scss	/^$amber900: #ff6f00;$/;"	v
+ambera100	src/assets/palettes/amber.scss	/^$ambera100: #ffe57f;$/;"	v
+ambera200	src/assets/palettes/amber.scss	/^$ambera200: #ffd740;$/;"	v
+ambera400	src/assets/palettes/amber.scss	/^$ambera400: #ffc400;$/;"	v
+ambera700	src/assets/palettes/amber.scss	/^$ambera700: #ffab00;$/;"	v
+applet	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
+aqua	src/assets/palettes/gruvbox-dark.scss	/^$aqua: #689d6a;$/;"	v
+aqua	src/assets/palettes/gruvbox-light.scss	/^$aqua: #689d6a;$/;"	v
+arrowParens	.prettierrc.js	/^  arrowParens: 'always',$/;"	p	class:module.exports
+article	src/styles/reset.css	/^article, aside, details, figcaption, figure, footer,$/;"	s
+article	src/styles/reset.css	/^tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,$/;"	s
+aside	src/styles/reset.css	/^article, aside, details, figcaption, figure, footer,$/;"	s
+aside	src/styles/reset.css	/^tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,$/;"	s
+audio	src/styles/reset.css	/^time, mark, audio, video {$/;"	s
 author	package.json	/^  "author": "Nick Garcia <me@nickgarcia.me> (https:\/\/nickgarcia.me)",$/;"	s
-babel-eslint	package.json	/^    "babel-eslint": "~10.1.0",$/;"	s	object:devDependencies
-babel-jest	package.json	/^    "babel-jest": "~25.5.1",$/;"	s	object:devDependencies
-babel-loader	package.json	/^    "babel-loader": "~8.0.6",$/;"	s	object:devDependencies
-babel-plugin-emotion	package.json	/^    "babel-plugin-emotion": "~10.0.33",$/;"	s	object:devDependencies
-bg	src/colors/gruvbox-dark.scss	/^$bg: #282828;$/;"	v
-bg	src/colors/gruvbox-light.scss	/^$bg: #fbf1c7;$/;"	v
-bg0	src/colors/gruvbox-dark.scss	/^$bg0: #282828;$/;"	v
-bg0	src/colors/gruvbox-light.scss	/^$bg0: #fbf1c7;$/;"	v
-bg0_h	src/colors/gruvbox-dark.scss	/^$bg0_h: #1d2021;$/;"	v
-bg0_h	src/colors/gruvbox-light.scss	/^$bg0_h: #f9f5d7;$/;"	v
-bg0_s	src/colors/gruvbox-dark.scss	/^$bg0_s: #32302f;$/;"	v
-bg0_s	src/colors/gruvbox-light.scss	/^$bg0_s: #f2e5bc;$/;"	v
-bg1	src/colors/gruvbox-dark.scss	/^$bg1: #3c3836;$/;"	v
-bg1	src/colors/gruvbox-light.scss	/^$bg1: #ebdbb2;$/;"	v
-bg2	src/colors/gruvbox-dark.scss	/^$bg2: #504945;$/;"	v
-bg2	src/colors/gruvbox-light.scss	/^$bg2: #d5c4a1;$/;"	v
-bg3	src/colors/gruvbox-dark.scss	/^$bg3: #665c54;$/;"	v
-bg3	src/colors/gruvbox-light.scss	/^$bg3: #bdae93;$/;"	v
-bg4	src/colors/gruvbox-dark.scss	/^$bg4: #7c6f64;$/;"	v
-bg4	src/colors/gruvbox-light.scss	/^$bg4: #a89984;$/;"	v
-black	src/colors/gray.scss	/^$black: #000000;$/;"	v
-black	src/colors/material.scss	/^$black: #000000;$/;"	v
-blue	src/colors/gruvbox-dark.scss	/^$blue: #83a598;$/;"	v
-blue	src/colors/gruvbox-light.scss	/^$blue: #458588;$/;"	v
-blue-gray100	src/colors/blue-gray.scss	/^$blue-gray100: #cfd8dc;$/;"	v
-blue-gray100	src/colors/material.scss	/^$blue-gray100: #cfd8dc;$/;"	v
-blue-gray200	src/colors/blue-gray.scss	/^$blue-gray200: #b0bec5;$/;"	v
-blue-gray200	src/colors/material.scss	/^$blue-gray200: #b0bec5;$/;"	v
-blue-gray300	src/colors/blue-gray.scss	/^$blue-gray300: #90a4ae;$/;"	v
-blue-gray300	src/colors/material.scss	/^$blue-gray300: #90a4ae;$/;"	v
-blue-gray400	src/colors/blue-gray.scss	/^$blue-gray400: #78909c;$/;"	v
-blue-gray400	src/colors/material.scss	/^$blue-gray400: #78909c;$/;"	v
-blue-gray50	src/colors/blue-gray.scss	/^$blue-gray50: #eceff1;$/;"	v
-blue-gray50	src/colors/material.scss	/^$blue-gray50: #eceff1;$/;"	v
-blue-gray500	src/colors/blue-gray.scss	/^$blue-gray500: #607d8b;$/;"	v
-blue-gray500	src/colors/material.scss	/^$blue-gray500: #607d8b;$/;"	v
-blue-gray600	src/colors/blue-gray.scss	/^$blue-gray600: #546e7a;$/;"	v
-blue-gray600	src/colors/material.scss	/^$blue-gray600: #546e7a;$/;"	v
-blue-gray700	src/colors/blue-gray.scss	/^$blue-gray700: #455a64;$/;"	v
-blue-gray700	src/colors/material.scss	/^$blue-gray700: #455a64;$/;"	v
-blue-gray800	src/colors/blue-gray.scss	/^$blue-gray800: #37474f;$/;"	v
-blue-gray800	src/colors/material.scss	/^$blue-gray800: #37474f;$/;"	v
-blue-gray900	src/colors/blue-gray.scss	/^$blue-gray900: #263238;$/;"	v
-blue-gray900	src/colors/material.scss	/^$blue-gray900: #263238;$/;"	v
-blue100	src/colors/blue.scss	/^$blue100: #bbdefb;$/;"	v
-blue100	src/colors/material.scss	/^$blue100: #bbdefb;$/;"	v
-blue200	src/colors/blue.scss	/^$blue200: #90caf9;$/;"	v
-blue200	src/colors/material.scss	/^$blue200: #90caf9;$/;"	v
-blue300	src/colors/blue.scss	/^$blue300: #64b5f6;$/;"	v
-blue300	src/colors/material.scss	/^$blue300: #64b5f6;$/;"	v
-blue400	src/colors/blue.scss	/^$blue400: #42a5f5;$/;"	v
-blue400	src/colors/material.scss	/^$blue400: #42a5f5;$/;"	v
-blue50	src/colors/blue.scss	/^$blue50: #e3f2fd;$/;"	v
-blue50	src/colors/material.scss	/^$blue50: #e3f2fd;$/;"	v
-blue500	src/colors/blue.scss	/^$blue500: #2196f3;$/;"	v
-blue500	src/colors/material.scss	/^$blue500: #2196f3;$/;"	v
-blue600	src/colors/blue.scss	/^$blue600: #1e88e5;$/;"	v
-blue600	src/colors/material.scss	/^$blue600: #1e88e5;$/;"	v
-blue700	src/colors/blue.scss	/^$blue700: #1976d2;$/;"	v
-blue700	src/colors/material.scss	/^$blue700: #1976d2;$/;"	v
-blue800	src/colors/blue.scss	/^$blue800: #1565c0;$/;"	v
-blue800	src/colors/material.scss	/^$blue800: #1565c0;$/;"	v
-blue900	src/colors/blue.scss	/^$blue900: #0d47a1;$/;"	v
-blue900	src/colors/material.scss	/^$blue900: #0d47a1;$/;"	v
-bluea100	src/colors/blue.scss	/^$bluea100: #82b1ff;$/;"	v
-bluea100	src/colors/material.scss	/^$bluea100: #82b1ff;$/;"	v
-bluea200	src/colors/blue.scss	/^$bluea200: #448aff;$/;"	v
-bluea200	src/colors/material.scss	/^$bluea200: #448aff;$/;"	v
-bluea400	src/colors/blue.scss	/^$bluea400: #2979ff;$/;"	v
-bluea400	src/colors/material.scss	/^$bluea400: #2979ff;$/;"	v
-bluea700	src/colors/blue.scss	/^$bluea700: #2962ff;$/;"	v
-bluea700	src/colors/material.scss	/^$bluea700: #2962ff;$/;"	v
-board	src/components/Tile.js	/^  const board = currentBoard;$/;"	C
-boardState	src/components/Gameboard.js	/^  boardState: PropTypes.node.isRequired,$/;"	p	class:Gameboard.propTypes
-boardState	src/components/Menu.js	/^  boardState: PropTypes.node.isRequired,$/;"	p	class:Menu.propTypes
+b	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
+babel-eslint	package.json	/^    "babel-eslint": "10.1.0",$/;"	s	object:devDependencies
+babel-loader	package.json	/^    "babel-loader": "8.1.0",$/;"	s	object:devDependencies
+babel-plugin-styled-components	package.json	/^    "babel-plugin-styled-components": "1.11.1",$/;"	s	object:devDependencies
+bg	src/assets/palettes/gruvbox-dark.scss	/^$bg: #1d2021;$/;"	v
+bg	src/assets/palettes/gruvbox-light.scss	/^$bg: #f9f5d7;$/;"	v
+bg0	src/assets/palettes/gruvbox-dark.scss	/^$bg0: #282828;$/;"	v
+bg0	src/assets/palettes/gruvbox-light.scss	/^$bg0: #fbf1c7;$/;"	v
+bg0_h	src/assets/palettes/gruvbox-dark.scss	/^$bg0_h: #1d2021;$/;"	v
+bg0_h	src/assets/palettes/gruvbox-light.scss	/^$bg0_h: #f9f5d7;$/;"	v
+bg0_s	src/assets/palettes/gruvbox-dark.scss	/^$bg0_s: #32302f;$/;"	v
+bg0_s	src/assets/palettes/gruvbox-light.scss	/^$bg0_s: #f2e5bc;$/;"	v
+bg1	src/assets/palettes/gruvbox-dark.scss	/^$bg1: #3c3836;$/;"	v
+bg1	src/assets/palettes/gruvbox-light.scss	/^$bg1: #ebdbb2;$/;"	v
+bg2	src/assets/palettes/gruvbox-dark.scss	/^$bg2: #504945;$/;"	v
+bg2	src/assets/palettes/gruvbox-light.scss	/^$bg2: #d5c4a1;$/;"	v
+bg3	src/assets/palettes/gruvbox-dark.scss	/^$bg3: #665c54;$/;"	v
+bg3	src/assets/palettes/gruvbox-light.scss	/^$bg3: #bdae93;$/;"	v
+bg4	src/assets/palettes/gruvbox-dark.scss	/^$bg4: #7c6f64;$/;"	v
+bg4	src/assets/palettes/gruvbox-light.scss	/^$bg4: #a89984;$/;"	v
+big	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
+black	src/assets/palettes/gray.scss	/^$black: #000000;$/;"	v
+blockquote	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
+blockquote	src/styles/reset.css	/^blockquote, q {$/;"	s
+blockquote:after	src/styles/reset.css	/^blockquote:before, blockquote:after,$/;"	s
+blockquote:before	src/styles/reset.css	/^blockquote:before, blockquote:after,$/;"	s
+blue	src/assets/palettes/gruvbox-dark.scss	/^$blue: #458588;$/;"	v
+blue	src/assets/palettes/gruvbox-light.scss	/^$blue: #458588;$/;"	v
+blue-gray100	src/assets/palettes/blue-gray.scss	/^$blue-gray100: #cfd8dc;$/;"	v
+blue-gray200	src/assets/palettes/blue-gray.scss	/^$blue-gray200: #b0bec5;$/;"	v
+blue-gray300	src/assets/palettes/blue-gray.scss	/^$blue-gray300: #90a4ae;$/;"	v
+blue-gray400	src/assets/palettes/blue-gray.scss	/^$blue-gray400: #78909c;$/;"	v
+blue-gray50	src/assets/palettes/blue-gray.scss	/^$blue-gray50: #eceff1;$/;"	v
+blue-gray500	src/assets/palettes/blue-gray.scss	/^$blue-gray500: #607d8b;$/;"	v
+blue-gray600	src/assets/palettes/blue-gray.scss	/^$blue-gray600: #546e7a;$/;"	v
+blue-gray700	src/assets/palettes/blue-gray.scss	/^$blue-gray700: #455a64;$/;"	v
+blue-gray800	src/assets/palettes/blue-gray.scss	/^$blue-gray800: #37474f;$/;"	v
+blue-gray900	src/assets/palettes/blue-gray.scss	/^$blue-gray900: #263238;$/;"	v
+blue100	src/assets/palettes/blue.scss	/^$blue100: #bbdefb;$/;"	v
+blue200	src/assets/palettes/blue.scss	/^$blue200: #90caf9;$/;"	v
+blue300	src/assets/palettes/blue.scss	/^$blue300: #64b5f6;$/;"	v
+blue400	src/assets/palettes/blue.scss	/^$blue400: #42a5f5;$/;"	v
+blue50	src/assets/palettes/blue.scss	/^$blue50: #e3f2fd;$/;"	v
+blue500	src/assets/palettes/blue.scss	/^$blue500: #2196f3;$/;"	v
+blue600	src/assets/palettes/blue.scss	/^$blue600: #1e88e5;$/;"	v
+blue700	src/assets/palettes/blue.scss	/^$blue700: #1976d2;$/;"	v
+blue800	src/assets/palettes/blue.scss	/^$blue800: #1565c0;$/;"	v
+blue900	src/assets/palettes/blue.scss	/^$blue900: #0d47a1;$/;"	v
+bluea100	src/assets/palettes/blue.scss	/^$bluea100: #82b1ff;$/;"	v
+bluea200	src/assets/palettes/blue.scss	/^$bluea200: #448aff;$/;"	v
+bluea400	src/assets/palettes/blue.scss	/^$bluea400: #2979ff;$/;"	v
+bluea700	src/assets/palettes/blue.scss	/^$bluea700: #2962ff;$/;"	v
+board	src/components/Tile.js	/^  const board = currentBoard$/;"	C
+body	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
 body-bgc	src/styles/main.scss	/^$body-bgc: $bg0;$/;"	v
 body-color	src/styles/main.scss	/^$body-color: $fg0;$/;"	v
-border	src/styles/size.js	/^  border: '0.08em',$/;"	p	class:size
-brown100	src/colors/brown.scss	/^$brown100: #d7ccc8;$/;"	v
-brown100	src/colors/material.scss	/^$brown100: #d7ccc8;$/;"	v
-brown200	src/colors/brown.scss	/^$brown200: #bcaaa4;$/;"	v
-brown200	src/colors/material.scss	/^$brown200: #bcaaa4;$/;"	v
-brown300	src/colors/brown.scss	/^$brown300: #a1887f;$/;"	v
-brown300	src/colors/material.scss	/^$brown300: #a1887f;$/;"	v
-brown400	src/colors/brown.scss	/^$brown400: #8d6e63;$/;"	v
-brown400	src/colors/material.scss	/^$brown400: #8d6e63;$/;"	v
-brown50	src/colors/brown.scss	/^$brown50: #efebe9;$/;"	v
-brown50	src/colors/material.scss	/^$brown50: #efebe9;$/;"	v
-brown500	src/colors/brown.scss	/^$brown500: #795548;$/;"	v
-brown500	src/colors/material.scss	/^$brown500: #795548;$/;"	v
-brown600	src/colors/brown.scss	/^$brown600: #6d4c41;$/;"	v
-brown600	src/colors/material.scss	/^$brown600: #6d4c41;$/;"	v
-brown700	src/colors/brown.scss	/^$brown700: #5d4037;$/;"	v
-brown700	src/colors/material.scss	/^$brown700: #5d4037;$/;"	v
-brown800	src/colors/brown.scss	/^$brown800: #4e342e;$/;"	v
-brown800	src/colors/material.scss	/^$brown800: #4e342e;$/;"	v
-brown900	src/colors/brown.scss	/^$brown900: #3e2723;$/;"	v
-brown900	src/colors/material.scss	/^$brown900: #3e2723;$/;"	v
-browser	.eslintrc.js	/^    browser: true,$/;"	p	class:module.exports.env
-browserslist	package.json	/^    "browserslist": "~4.12.0",$/;"	s	object:devDependencies
-browserslist	package.json	/^  "browserslist": {$/;"	o
+brown100	src/assets/palettes/brown.scss	/^$brown100: #d7ccc8;$/;"	v
+brown200	src/assets/palettes/brown.scss	/^$brown200: #bcaaa4;$/;"	v
+brown300	src/assets/palettes/brown.scss	/^$brown300: #a1887f;$/;"	v
+brown400	src/assets/palettes/brown.scss	/^$brown400: #8d6e63;$/;"	v
+brown50	src/assets/palettes/brown.scss	/^$brown50: #efebe9;$/;"	v
+brown500	src/assets/palettes/brown.scss	/^$brown500: #795548;$/;"	v
+brown600	src/assets/palettes/brown.scss	/^$brown600: #6d4c41;$/;"	v
+brown700	src/assets/palettes/brown.scss	/^$brown700: #5d4037;$/;"	v
+brown800	src/assets/palettes/brown.scss	/^$brown800: #4e342e;$/;"	v
+brown900	src/assets/palettes/brown.scss	/^$brown900: #3e2723;$/;"	v
+browserslist	package.json	/^    "browserslist": "4.14.6",$/;"	s	object:devDependencies
 bugs	package.json	/^  "bugs": {$/;"	o
 build	package.json	/^    "build": "webpack --env.production --config webpack.config.js",$/;"	s	object:scripts
 buildBoard	src/lib/board-functions/buildBoard.js	/^function buildBoard(maxRows = 9, maxColumns = 9, regionSize = 3) {$/;"	f
-candidateKey	src/components/Tile.js	/^  let candidateKey = '';$/;"	v
+candidateKey	src/components/Tile.js	/^  let candidateKey = ''$/;"	v
+candidates	src/components/Tile.js	/^  candidates: PropTypes.arrayOf($/;"	p	class:Tile.propTypes
+canvas	src/styles/reset.css	/^tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,$/;"	s
+caption	src/styles/reset.css	/^dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,$/;"	s
+center	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
 challenging	src/data/sudokuData.js	/^const challenging = [$/;"	C
-classList	src/lib/board-functions/changeBoardState.js	/^  let classList;$/;"	v
-className	src/lib/createEmptyBoard.js	/^  const className = ['gameboard-tile']$/;"	C
+children	src/Root.js	/^  children: PropTypes.node.isRequired,$/;"	p	class:Root.propTypes
+cite	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
+classList	src/lib/board-functions/changeBoardState.js	/^  let classList$/;"	v
+className	src/components/Tile.js	/^  className: PropTypes.string.isRequired,$/;"	p	class:Tile.propTypes
 clean-dist	package.json	/^    "clean-dist": "rimraf dist\/*",$/;"	s	object:scripts
 clean-public	package.json	/^    "clean-public": "rimraf public\/*",$/;"	s	object:scripts
 clearBoard	src/components/GameBoard.js	/^  clearBoard() {$/;"	m	class:GameBoard
 clearBoard	src/components/Menu.js	/^  clearBoard: PropTypes.func.isRequired,$/;"	p	class:Menu.propTypes
-clearBoard	src/lib/board-functions/changeBoardState.js	/^const clearBoard = (prevState) => {$/;"	C
 clearHighlight	src/components/GameBoard.js	/^  clearHighlight() {$/;"	m	class:GameBoard
 clearHighlight	src/components/Menu.js	/^  clearHighlight: PropTypes.func.isRequired,$/;"	p	class:Menu.propTypes
 clearHighlight	src/lib/board-functions/changeBoardState.js	/^const clearHighlight = (prevState) => {$/;"	C
 clearMocks	jest.config.js	/^  clearMocks: true,$/;"	p	class:module.exports
-color0	src/colors/gruvbox-dark.scss	/^$color0: #282828;$/;"	v
-color0	src/colors/gruvbox-light.scss	/^$color0: #fbf1c7;$/;"	v
-color1	src/colors/gruvbox-dark.scss	/^$color1: #cc241d;$/;"	v
-color1	src/colors/gruvbox-light.scss	/^$color1: #cc241d;$/;"	v
-color10	src/colors/gruvbox-dark.scss	/^$color10: #b8bb26;$/;"	v
-color10	src/colors/gruvbox-light.scss	/^$color10: #79740e;$/;"	v
-color11	src/colors/gruvbox-dark.scss	/^$color11: #fabd2f;$/;"	v
-color11	src/colors/gruvbox-light.scss	/^$color11: #b57614;$/;"	v
-color12	src/colors/gruvbox-dark.scss	/^$color12: #83a598;$/;"	v
-color12	src/colors/gruvbox-light.scss	/^$color12: #076678;$/;"	v
-color13	src/colors/gruvbox-dark.scss	/^$color13: #d3869b;$/;"	v
-color13	src/colors/gruvbox-light.scss	/^$color13: #8f3f71;$/;"	v
-color14	src/colors/gruvbox-dark.scss	/^$color14: #8ec07c;$/;"	v
-color14	src/colors/gruvbox-light.scss	/^$color14: #427b58;$/;"	v
-color15	src/colors/gruvbox-dark.scss	/^$color15: #ebdbb2;$/;"	v
-color15	src/colors/gruvbox-light.scss	/^$color15: #3c3836;$/;"	v
-color16	src/colors/gruvbox-dark.scss	/^$color16: #d65d0e;$/;"	v
-color16	src/colors/gruvbox-light.scss	/^$color16: #d65d0e;$/;"	v
-color17	src/colors/gruvbox-dark.scss	/^$color17: #fe8019;$/;"	v
-color17	src/colors/gruvbox-light.scss	/^$color17: #af3a03;$/;"	v
-color2	src/colors/gruvbox-dark.scss	/^$color2: #98971a;$/;"	v
-color2	src/colors/gruvbox-light.scss	/^$color2: #98971a;$/;"	v
-color3	src/colors/gruvbox-dark.scss	/^$color3: #d79921;$/;"	v
-color3	src/colors/gruvbox-light.scss	/^$color3: #d79921;$/;"	v
-color4	src/colors/gruvbox-dark.scss	/^$color4: #458588;$/;"	v
-color4	src/colors/gruvbox-light.scss	/^$color4: #458588;$/;"	v
-color5	src/colors/gruvbox-dark.scss	/^$color5: #b16286;$/;"	v
-color5	src/colors/gruvbox-light.scss	/^$color5: #b16286;$/;"	v
-color6	src/colors/gruvbox-dark.scss	/^$color6: #689d6a;$/;"	v
-color6	src/colors/gruvbox-light.scss	/^$color6: #689d6a;$/;"	v
-color7	src/colors/gruvbox-dark.scss	/^$color7: #a89984;$/;"	v
-color7	src/colors/gruvbox-light.scss	/^$color7: #7c6f64;$/;"	v
-color8	src/colors/gruvbox-dark.scss	/^$color8: #928374;$/;"	v
-color8	src/colors/gruvbox-light.scss	/^$color8: #928374;$/;"	v
-color9	src/colors/gruvbox-dark.scss	/^$color9: #fb4934;$/;"	v
-color9	src/colors/gruvbox-light.scss	/^$color9: #9d0006;$/;"	v
-column	src/components/Tile.js	/^  column: PropTypes.number.isRequired,$/;"	p	class:propTypes
-column	src/components/Tile.js	/^  const column = idNum % 9;$/;"	C
-column	src/lib/board-functions/changeGameState.js	/^  let column;$/;"	v
-commonjs	.eslintrc.js	/^    commonjs: true,$/;"	p	class:module.exports.env
+code	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
+code_variable	src/assets/fonts/fira_code/specimen.html	/^<div id="code_variable" class="code variable"><b># Fira Code Variable<\/b>$/;"	I
+color0	src/assets/palettes/gruvbox-dark.scss	/^$color0: #282828;$/;"	v
+color0	src/assets/palettes/gruvbox-light.scss	/^$color0: #fbf1c7;$/;"	v
+color1	src/assets/palettes/gruvbox-dark.scss	/^$color1: #cc241d;$/;"	v
+color1	src/assets/palettes/gruvbox-light.scss	/^$color1: #cc241d;$/;"	v
+color10	src/assets/palettes/gruvbox-dark.scss	/^$color10: #b8bb26;$/;"	v
+color10	src/assets/palettes/gruvbox-light.scss	/^$color10: #79740e;$/;"	v
+color11	src/assets/palettes/gruvbox-dark.scss	/^$color11: #fabd2f;$/;"	v
+color11	src/assets/palettes/gruvbox-light.scss	/^$color11: #b57614;$/;"	v
+color12	src/assets/palettes/gruvbox-dark.scss	/^$color12: #83a598;$/;"	v
+color12	src/assets/palettes/gruvbox-light.scss	/^$color12: #076678;$/;"	v
+color13	src/assets/palettes/gruvbox-dark.scss	/^$color13: #d3869b;$/;"	v
+color13	src/assets/palettes/gruvbox-light.scss	/^$color13: #8f3f71;$/;"	v
+color14	src/assets/palettes/gruvbox-dark.scss	/^$color14: #8ec07c;$/;"	v
+color14	src/assets/palettes/gruvbox-light.scss	/^$color14: #427b58;$/;"	v
+color15	src/assets/palettes/gruvbox-dark.scss	/^$color15: #ebdbb2;$/;"	v
+color15	src/assets/palettes/gruvbox-light.scss	/^$color15: #3c3836;$/;"	v
+color16	src/assets/palettes/gruvbox-dark.scss	/^$color16: #d65d0e;$/;"	v
+color16	src/assets/palettes/gruvbox-light.scss	/^$color16: #d65d0e;$/;"	v
+color17	src/assets/palettes/gruvbox-dark.scss	/^$color17: #fe8019;$/;"	v
+color17	src/assets/palettes/gruvbox-light.scss	/^$color17: #af3a03;$/;"	v
+color2	src/assets/palettes/gruvbox-dark.scss	/^$color2: #98971a;$/;"	v
+color2	src/assets/palettes/gruvbox-light.scss	/^$color2: #98971a;$/;"	v
+color3	src/assets/palettes/gruvbox-dark.scss	/^$color3: #d79921;$/;"	v
+color3	src/assets/palettes/gruvbox-light.scss	/^$color3: #d79921;$/;"	v
+color4	src/assets/palettes/gruvbox-dark.scss	/^$color4: #458588;$/;"	v
+color4	src/assets/palettes/gruvbox-light.scss	/^$color4: #458588;$/;"	v
+color5	src/assets/palettes/gruvbox-dark.scss	/^$color5: #b16286;$/;"	v
+color5	src/assets/palettes/gruvbox-light.scss	/^$color5: #b16286;$/;"	v
+color6	src/assets/palettes/gruvbox-dark.scss	/^$color6: #689d6a;$/;"	v
+color6	src/assets/palettes/gruvbox-light.scss	/^$color6: #689d6a;$/;"	v
+color7	src/assets/palettes/gruvbox-dark.scss	/^$color7: #a89984;$/;"	v
+color7	src/assets/palettes/gruvbox-light.scss	/^$color7: #7c6f64;$/;"	v
+color8	src/assets/palettes/gruvbox-dark.scss	/^$color8: #928374;$/;"	v
+color8	src/assets/palettes/gruvbox-light.scss	/^$color8: #928374;$/;"	v
+color9	src/assets/palettes/gruvbox-dark.scss	/^$color9: #fb4934;$/;"	v
+color9	src/assets/palettes/gruvbox-light.scss	/^$color9: #9d0006;$/;"	v
+column	src/components/Tile.js	/^  column: PropTypes.number.isRequired,$/;"	p	class:Tile.propTypes
+column	src/components/Tile.js	/^  const column = idNum % 9$/;"	C
+column	src/lib/board-functions/changeGameState.js	/^  let column$/;"	v
 componentDidMount	src/components/GameBoard.js	/^  componentDidMount() {$/;"	m	class:GameBoard
 constructor	src/components/GameBoard.js	/^  constructor(props) {$/;"	m	class:GameBoard
 constructor	src/components/Menu.js	/^  constructor(props) {$/;"	m	class:Menu
 constructor	src/components/SudokuBoard.js	/^  constructor(props) {$/;"	m	class:SudokuBoard
 constructor	src/components/Tile.js	/^  constructor(props) {$/;"	m	class:Tile
-core-js	package.json	/^    "core-js": "~3.6.5",$/;"	s	object:dependencies
+core-js	package.json	/^    "core-js": "3.6.5",$/;"	s	object:dependencies
 coverageDirectory	jest.config.js	/^  coverageDirectory: 'coverage',$/;"	p	class:module.exports
-createEmptyBoard	src/lib/createEmptyBoard.js	/^const createEmptyBoard = ({$/;"	C
-createNewTile	src/lib/createEmptyBoard.js	/^const createNewTile = ({$/;"	C
-css-loader	package.json	/^    "css-loader": "~3.6.0",$/;"	s	object:devDependencies
-currentBoard	src/components/GameBoard.js	/^      currentBoard: buildBoard(),$/;"	p	class:GameBoard.constructor.state
+coveragePathIgnorePatterns	jest.config.js	/^  coveragePathIgnorePatterns: ['\/node_modules\/'],$/;"	p	class:module.exports
+css-loader	package.json	/^    "css-loader": "3.6.0",$/;"	s	object:devDependencies
+currentBoard	src/components/GameBoard.js	/^      currentBoard: buildBoard(),$/;"	p	class:super.state
 currentBoard	src/components/SudokuBoard.js	/^  currentBoard: PropTypes.arrayOf(PropTypes.node.isRequired).isRequired,$/;"	p	class:SudokuBoard.propTypes
-currentColumn	src/lib/createEmptyBoard.js	/^  currentColumn: 1,$/;"	p	class:createNewTile.defaultProps
-currentColumn	src/lib/createEmptyBoard.js	/^  currentColumn: PropTypes.number,$/;"	p	class:createNewTile.propTypes
-currentColumn	src/lib/createEmptyBoard.js	/^  let currentColumn = 1$/;"	v
-currentDifficulty	src/components/GameBoard.js	/^      currentDifficulty: {$/;"	c	class:GameBoard.constructor.state
+currentDifficulty	src/components/GameBoard.js	/^      currentDifficulty: {$/;"	c	class:super.state
 currentDifficulty	src/components/Menu.js	/^  currentDifficulty: PropTypes.string.isRequired,$/;"	p	class:Menu.propTypes
-currentRow	src/lib/createEmptyBoard.js	/^  currentRow: 1,$/;"	p	class:createNewRow.defaultProps
-currentRow	src/lib/createEmptyBoard.js	/^  currentRow: 1,$/;"	p	class:createNewTile.defaultProps
-currentRow	src/lib/createEmptyBoard.js	/^  currentRow: PropTypes.number,$/;"	p	class:createNewRow.propTypes
-currentRow	src/lib/createEmptyBoard.js	/^  currentRow: PropTypes.number,$/;"	p	class:createNewTile.propTypes
-currentRow	src/lib/createEmptyBoard.js	/^  let currentRow = 1$/;"	v
-cyan100	src/colors/cyan.scss	/^$cyan100: #b2ebf2;$/;"	v
-cyan100	src/colors/material.scss	/^$cyan100: #b2ebf2;$/;"	v
-cyan200	src/colors/cyan.scss	/^$cyan200: #80deea;$/;"	v
-cyan200	src/colors/material.scss	/^$cyan200: #80deea;$/;"	v
-cyan300	src/colors/cyan.scss	/^$cyan300: #4dd0e1;$/;"	v
-cyan300	src/colors/material.scss	/^$cyan300: #4dd0e1;$/;"	v
-cyan400	src/colors/cyan.scss	/^$cyan400: #26c6da;$/;"	v
-cyan400	src/colors/material.scss	/^$cyan400: #26c6da;$/;"	v
-cyan50	src/colors/cyan.scss	/^$cyan50: #e0f7fa;$/;"	v
-cyan50	src/colors/material.scss	/^$cyan50: #e0f7fa;$/;"	v
-cyan500	src/colors/cyan.scss	/^$cyan500: #00bcd4;$/;"	v
-cyan500	src/colors/material.scss	/^$cyan500: #00bcd4;$/;"	v
-cyan600	src/colors/cyan.scss	/^$cyan600: #00acc1;$/;"	v
-cyan600	src/colors/material.scss	/^$cyan600: #00acc1;$/;"	v
-cyan700	src/colors/cyan.scss	/^$cyan700: #0097a7;$/;"	v
-cyan700	src/colors/material.scss	/^$cyan700: #0097a7;$/;"	v
-cyan800	src/colors/cyan.scss	/^$cyan800: #00838f;$/;"	v
-cyan800	src/colors/material.scss	/^$cyan800: #00838f;$/;"	v
-cyan900	src/colors/cyan.scss	/^$cyan900: #006064;$/;"	v
-cyan900	src/colors/material.scss	/^$cyan900: #006064;$/;"	v
-cyana100	src/colors/cyan.scss	/^$cyana100: #84ffff;$/;"	v
-cyana100	src/colors/material.scss	/^$cyana100: #84ffff;$/;"	v
-cyana200	src/colors/cyan.scss	/^$cyana200: #18ffff;$/;"	v
-cyana200	src/colors/material.scss	/^$cyana200: #18ffff;$/;"	v
-cyana400	src/colors/cyan.scss	/^$cyana400: #00e5ff;$/;"	v
-cyana400	src/colors/material.scss	/^$cyana400: #00e5ff;$/;"	v
-cyana700	src/colors/cyan.scss	/^$cyana700: #00b8d4;$/;"	v
-cyana700	src/colors/material.scss	/^$cyana700: #00b8d4;$/;"	v
-dark_aqua	src/colors/gruvbox-dark.scss	/^$dark_aqua: #689d6a;$/;"	v
-dark_aqua	src/colors/gruvbox-light.scss	/^$dark_aqua: #427b58;$/;"	v
-dark_blue	src/colors/gruvbox-dark.scss	/^$dark_blue: #458588;$/;"	v
-dark_blue	src/colors/gruvbox-light.scss	/^$dark_blue: #076678;$/;"	v
-dark_gray	src/colors/gruvbox-dark.scss	/^$dark_gray: #928374;$/;"	v
-dark_gray	src/colors/gruvbox-light.scss	/^$dark_gray: #7c6f64;$/;"	v
-dark_green	src/colors/gruvbox-dark.scss	/^$dark_green: #98971a;$/;"	v
-dark_green	src/colors/gruvbox-light.scss	/^$dark_green: #79740e;$/;"	v
-dark_orange	src/colors/gruvbox-dark.scss	/^$dark_orange: #d65d0e;$/;"	v
-dark_orange	src/colors/gruvbox-light.scss	/^$dark_orange: #af3a03;$/;"	v
-dark_purple	src/colors/gruvbox-dark.scss	/^$dark_purple: #b16286;$/;"	v
-dark_purple	src/colors/gruvbox-light.scss	/^$dark_purple: #8f3f71;$/;"	v
-dark_red	src/colors/gruvbox-dark.scss	/^$dark_red: #cc241d;$/;"	v
-dark_red	src/colors/gruvbox-light.scss	/^$dark_red: #9d0006;$/;"	v
-dark_yellow	src/colors/gruvbox-dark.scss	/^$dark_yellow: #d79921;$/;"	v
-dark_yellow	src/colors/gruvbox-light.scss	/^$dark_yellow: #b57614;$/;"	v
-deep-orange100	src/colors/deep-orange.scss	/^$deep-orange100: #ffccbc;$/;"	v
-deep-orange100	src/colors/material.scss	/^$deep-orange100: #ffccbc;$/;"	v
-deep-orange200	src/colors/deep-orange.scss	/^$deep-orange200: #ffab91;$/;"	v
-deep-orange200	src/colors/material.scss	/^$deep-orange200: #ffab91;$/;"	v
-deep-orange300	src/colors/deep-orange.scss	/^$deep-orange300: #ff8a65;$/;"	v
-deep-orange300	src/colors/material.scss	/^$deep-orange300: #ff8a65;$/;"	v
-deep-orange400	src/colors/deep-orange.scss	/^$deep-orange400: #ff7043;$/;"	v
-deep-orange400	src/colors/material.scss	/^$deep-orange400: #ff7043;$/;"	v
-deep-orange50	src/colors/deep-orange.scss	/^$deep-orange50: #fbe9e7;$/;"	v
-deep-orange50	src/colors/material.scss	/^$deep-orange50: #fbe9e7;$/;"	v
-deep-orange500	src/colors/deep-orange.scss	/^$deep-orange500: #ff5722;$/;"	v
-deep-orange500	src/colors/material.scss	/^$deep-orange500: #ff5722;$/;"	v
-deep-orange600	src/colors/deep-orange.scss	/^$deep-orange600: #f4511e;$/;"	v
-deep-orange600	src/colors/material.scss	/^$deep-orange600: #f4511e;$/;"	v
-deep-orange700	src/colors/deep-orange.scss	/^$deep-orange700: #e64a19;$/;"	v
-deep-orange700	src/colors/material.scss	/^$deep-orange700: #e64a19;$/;"	v
-deep-orange800	src/colors/deep-orange.scss	/^$deep-orange800: #d84315;$/;"	v
-deep-orange800	src/colors/material.scss	/^$deep-orange800: #d84315;$/;"	v
-deep-orange900	src/colors/deep-orange.scss	/^$deep-orange900: #bf360c;$/;"	v
-deep-orange900	src/colors/material.scss	/^$deep-orange900: #bf360c;$/;"	v
-deep-orangea100	src/colors/deep-orange.scss	/^$deep-orangea100: #ff9e80;$/;"	v
-deep-orangea100	src/colors/material.scss	/^$deep-orangea100: #ff9e80;$/;"	v
-deep-orangea200	src/colors/deep-orange.scss	/^$deep-orangea200: #ff6e40;$/;"	v
-deep-orangea200	src/colors/material.scss	/^$deep-orangea200: #ff6e40;$/;"	v
-deep-orangea400	src/colors/deep-orange.scss	/^$deep-orangea400: #ff3d00;$/;"	v
-deep-orangea400	src/colors/material.scss	/^$deep-orangea400: #ff3d00;$/;"	v
-deep-orangea700	src/colors/deep-orange.scss	/^$deep-orangea700: #dd2c00;$/;"	v
-deep-orangea700	src/colors/material.scss	/^$deep-orangea700: #dd2c00;$/;"	v
-deep-purple100	src/colors/deep-purple.scss	/^$deep-purple100: #d1c4e9;$/;"	v
-deep-purple100	src/colors/material.scss	/^$deep-purple100: #d1c4e9;$/;"	v
-deep-purple200	src/colors/deep-purple.scss	/^$deep-purple200: #b39ddb;$/;"	v
-deep-purple200	src/colors/material.scss	/^$deep-purple200: #b39ddb;$/;"	v
-deep-purple300	src/colors/deep-purple.scss	/^$deep-purple300: #9575cd;$/;"	v
-deep-purple300	src/colors/material.scss	/^$deep-purple300: #9575cd;$/;"	v
-deep-purple400	src/colors/deep-purple.scss	/^$deep-purple400: #7e57c2;$/;"	v
-deep-purple400	src/colors/material.scss	/^$deep-purple400: #7e57c2;$/;"	v
-deep-purple50	src/colors/deep-purple.scss	/^$deep-purple50: #ede7f6;$/;"	v
-deep-purple50	src/colors/material.scss	/^$deep-purple50: #ede7f6;$/;"	v
-deep-purple500	src/colors/deep-purple.scss	/^$deep-purple500: #673ab7;$/;"	v
-deep-purple500	src/colors/material.scss	/^$deep-purple500: #673ab7;$/;"	v
-deep-purple600	src/colors/deep-purple.scss	/^$deep-purple600: #5e35b1;$/;"	v
-deep-purple600	src/colors/material.scss	/^$deep-purple600: #5e35b1;$/;"	v
-deep-purple700	src/colors/deep-purple.scss	/^$deep-purple700: #512da8;$/;"	v
-deep-purple700	src/colors/material.scss	/^$deep-purple700: #512da8;$/;"	v
-deep-purple800	src/colors/deep-purple.scss	/^$deep-purple800: #4527a0;$/;"	v
-deep-purple800	src/colors/material.scss	/^$deep-purple800: #4527a0;$/;"	v
-deep-purple900	src/colors/deep-purple.scss	/^$deep-purple900: #311b92;$/;"	v
-deep-purple900	src/colors/material.scss	/^$deep-purple900: #311b92;$/;"	v
-deep-purplea100	src/colors/deep-purple.scss	/^$deep-purplea100: #b388ff;$/;"	v
-deep-purplea100	src/colors/material.scss	/^$deep-purplea100: #b388ff;$/;"	v
-deep-purplea200	src/colors/deep-purple.scss	/^$deep-purplea200: #7c4dff;$/;"	v
-deep-purplea200	src/colors/material.scss	/^$deep-purplea200: #7c4dff;$/;"	v
-deep-purplea400	src/colors/deep-purple.scss	/^$deep-purplea400: #651fff;$/;"	v
-deep-purplea400	src/colors/material.scss	/^$deep-purplea400: #651fff;$/;"	v
-deep-purplea700	src/colors/deep-purple.scss	/^$deep-purplea700: #6200ea;$/;"	v
-deep-purplea700	src/colors/material.scss	/^$deep-purplea700: #6200ea;$/;"	v
-defaultProps	src/lib/createEmptyBoard.js	/^createNewRow.defaultProps = {$/;"	c	class:createNewRow
-defaultProps	src/lib/createEmptyBoard.js	/^createNewTile.defaultProps = {$/;"	c	class:createNewTile
-dependencies	package.json	/^  "dependencies": {$/;"	o
+cyan100	src/assets/palettes/cyan.scss	/^$cyan100: #b2ebf2;$/;"	v
+cyan200	src/assets/palettes/cyan.scss	/^$cyan200: #80deea;$/;"	v
+cyan300	src/assets/palettes/cyan.scss	/^$cyan300: #4dd0e1;$/;"	v
+cyan400	src/assets/palettes/cyan.scss	/^$cyan400: #26c6da;$/;"	v
+cyan50	src/assets/palettes/cyan.scss	/^$cyan50: #e0f7fa;$/;"	v
+cyan500	src/assets/palettes/cyan.scss	/^$cyan500: #00bcd4;$/;"	v
+cyan600	src/assets/palettes/cyan.scss	/^$cyan600: #00acc1;$/;"	v
+cyan700	src/assets/palettes/cyan.scss	/^$cyan700: #0097a7;$/;"	v
+cyan800	src/assets/palettes/cyan.scss	/^$cyan800: #00838f;$/;"	v
+cyan900	src/assets/palettes/cyan.scss	/^$cyan900: #006064;$/;"	v
+cyana100	src/assets/palettes/cyan.scss	/^$cyana100: #84ffff;$/;"	v
+cyana200	src/assets/palettes/cyan.scss	/^$cyana200: #18ffff;$/;"	v
+cyana400	src/assets/palettes/cyan.scss	/^$cyana400: #00e5ff;$/;"	v
+cyana700	src/assets/palettes/cyan.scss	/^$cyana700: #00b8d4;$/;"	v
+dd	src/styles/reset.css	/^dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,$/;"	s
+deep-orange100	src/assets/palettes/deep-orange.scss	/^$deep-orange100: #ffccbc;$/;"	v
+deep-orange200	src/assets/palettes/deep-orange.scss	/^$deep-orange200: #ffab91;$/;"	v
+deep-orange300	src/assets/palettes/deep-orange.scss	/^$deep-orange300: #ff8a65;$/;"	v
+deep-orange400	src/assets/palettes/deep-orange.scss	/^$deep-orange400: #ff7043;$/;"	v
+deep-orange50	src/assets/palettes/deep-orange.scss	/^$deep-orange50: #fbe9e7;$/;"	v
+deep-orange500	src/assets/palettes/deep-orange.scss	/^$deep-orange500: #ff5722;$/;"	v
+deep-orange600	src/assets/palettes/deep-orange.scss	/^$deep-orange600: #f4511e;$/;"	v
+deep-orange700	src/assets/palettes/deep-orange.scss	/^$deep-orange700: #e64a19;$/;"	v
+deep-orange800	src/assets/palettes/deep-orange.scss	/^$deep-orange800: #d84315;$/;"	v
+deep-orange900	src/assets/palettes/deep-orange.scss	/^$deep-orange900: #bf360c;$/;"	v
+deep-orangea100	src/assets/palettes/deep-orange.scss	/^$deep-orangea100: #ff9e80;$/;"	v
+deep-orangea200	src/assets/palettes/deep-orange.scss	/^$deep-orangea200: #ff6e40;$/;"	v
+deep-orangea400	src/assets/palettes/deep-orange.scss	/^$deep-orangea400: #ff3d00;$/;"	v
+deep-orangea700	src/assets/palettes/deep-orange.scss	/^$deep-orangea700: #dd2c00;$/;"	v
+deep-purple100	src/assets/palettes/deep-purple.scss	/^$deep-purple100: #d1c4e9;$/;"	v
+deep-purple200	src/assets/palettes/deep-purple.scss	/^$deep-purple200: #b39ddb;$/;"	v
+deep-purple300	src/assets/palettes/deep-purple.scss	/^$deep-purple300: #9575cd;$/;"	v
+deep-purple400	src/assets/palettes/deep-purple.scss	/^$deep-purple400: #7e57c2;$/;"	v
+deep-purple50	src/assets/palettes/deep-purple.scss	/^$deep-purple50: #ede7f6;$/;"	v
+deep-purple500	src/assets/palettes/deep-purple.scss	/^$deep-purple500: #673ab7;$/;"	v
+deep-purple600	src/assets/palettes/deep-purple.scss	/^$deep-purple600: #5e35b1;$/;"	v
+deep-purple700	src/assets/palettes/deep-purple.scss	/^$deep-purple700: #512da8;$/;"	v
+deep-purple800	src/assets/palettes/deep-purple.scss	/^$deep-purple800: #4527a0;$/;"	v
+deep-purple900	src/assets/palettes/deep-purple.scss	/^$deep-purple900: #311b92;$/;"	v
+deep-purplea100	src/assets/palettes/deep-purple.scss	/^$deep-purplea100: #b388ff;$/;"	v
+deep-purplea200	src/assets/palettes/deep-purple.scss	/^$deep-purplea200: #7c4dff;$/;"	v
+deep-purplea400	src/assets/palettes/deep-purple.scss	/^$deep-purplea400: #651fff;$/;"	v
+deep-purplea700	src/assets/palettes/deep-purple.scss	/^$deep-purplea700: #6200ea;$/;"	v
+del	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
+dependencies	package.json	/^    "dependencies": {$/;"	o
 description	package.json	/^  "description": "This Sudoku app is created with love; for the thrill of puzzles.",$/;"	s
+details	src/styles/reset.css	/^article, aside, details, figcaption, figure, footer,$/;"	s
+details	src/styles/reset.css	/^tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,$/;"	s
 dev	package.json	/^    "dev": "webpack --env.development --config webpack.config.js",$/;"	s	object:scripts
 devDependencies	package.json	/^  "devDependencies": {$/;"	o
-development	package.json	/^    "development": [$/;"	a	object:browserslist
 devserver	package.json	/^    "devserver": "webpack-dev-server --env.development --config webpack.config.js",$/;"	s	object:scripts
+dfn	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
 difficultyOptions	src/data/sudokuData.js	/^  difficultyOptions: [$/;"	p	class:standardSudokus
 difficultyOptions	src/lib/settings/difficulty.js	/^const difficultyOptions = [$/;"	C
-displayText	src/components/Tile.js	/^  let displayText = '';$/;"	v
-displayTextClassList	src/components/Tile.js	/^  const displayTextClassList = [];$/;"	C
+displayText	src/components/Tile.js	/^  let displayText = ''$/;"	v
+displayTextClassList	src/components/Tile.js	/^  const displayTextClassList = []$/;"	C
+div	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
+dl	src/styles/reset.css	/^dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,$/;"	s
+dt	src/styles/reset.css	/^dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,$/;"	s
 easy	src/data/sudokuData.js	/^const easy = [$/;"	C
+em	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
 email	package.json	/^    "email": "me@nickgarcia.me"$/;"	s	object:bugs
+embed	src/styles/reset.css	/^tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,$/;"	s
 enforce	src/lib/rules/enforce.js	/^const enforce = ({ currentBoard }, id) => {$/;"	C
-env	.eslintrc.js	/^  env: {$/;"	c	class:module.exports
-es2020	.eslintrc.js	/^    es2020: true,$/;"	p	class:module.exports.env
-eslint	package.json	/^    "eslint": "~6.8.0",$/;"	s	object:devDependencies
-eslint-config-airbnb	package.json	/^    "eslint-config-airbnb": "~18.2.0",$/;"	s	object:devDependencies
-eslint-config-prettier	package.json	/^    "eslint-config-prettier": "~6.11.0",$/;"	s	object:devDependencies
-eslint-loader	package.json	/^    "eslint-loader": "~3.0.4",$/;"	s	object:devDependencies
-eslint-plugin-babel	package.json	/^    "eslint-plugin-babel": "~5.3.0",$/;"	s	object:devDependencies
-eslint-plugin-emotion	package.json	/^    "eslint-plugin-emotion": "~10.0.27",$/;"	s	object:devDependencies
-eslint-plugin-html	package.json	/^    "eslint-plugin-html": "~6.0.2",$/;"	s	object:devDependencies
-eslint-plugin-import	package.json	/^    "eslint-plugin-import": "~2.22.1",$/;"	s	object:devDependencies
-eslint-plugin-jest	package.json	/^    "eslint-plugin-jest": "~23.13.2",$/;"	s	object:devDependencies
-eslint-plugin-jest-formatting	package.json	/^    "eslint-plugin-jest-formatting": "~1.2.0",$/;"	s	object:devDependencies
-eslint-plugin-jsx-a11y	package.json	/^    "eslint-plugin-jsx-a11y": "~6.4.1",$/;"	s	object:devDependencies
-eslint-plugin-prettier	package.json	/^    "eslint-plugin-prettier": "~3.1.4",$/;"	s	object:devDependencies
-eslint-plugin-react	package.json	/^    "eslint-plugin-react": "~7.21.5",$/;"	s	object:devDependencies
-eslint-plugin-react-hooks	package.json	/^    "eslint-plugin-react-hooks": "~1.7.0",$/;"	s	object:devDependencies
+eslint	package.json	/^    "eslint": "7.9.0",$/;"	s	object:devDependencies
+eslint-config-airbnb	package.json	/^    "eslint-config-airbnb": "18.2.0",$/;"	s	object:devDependencies
+eslint-config-prettier	package.json	/^    "eslint-config-prettier": "6.11.0",$/;"	s	object:devDependencies
+eslint-loader	package.json	/^    "eslint-loader": "4.0.2",$/;"	s	object:devDependencies
+eslint-plugin-babel	package.json	/^    "eslint-plugin-babel": "5.3.1",$/;"	s	object:devDependencies
+eslint-plugin-html	package.json	/^    "eslint-plugin-html": "6.1.0",$/;"	s	object:devDependencies
+eslint-plugin-import	package.json	/^    "eslint-plugin-import": "2.22.1",$/;"	s	object:devDependencies
+eslint-plugin-jest	package.json	/^    "eslint-plugin-jest": "23.20.0",$/;"	s	object:devDependencies
+eslint-plugin-jest-formatting	package.json	/^    "eslint-plugin-jest-formatting": "1.2.0",$/;"	s	object:devDependencies
+eslint-plugin-jsx-a11y	package.json	/^    "eslint-plugin-jsx-a11y": "6.3.1",$/;"	s	object:devDependencies
+eslint-plugin-prettier	package.json	/^    "eslint-plugin-prettier": "3.1.4",$/;"	s	object:devDependencies
+eslint-plugin-react	package.json	/^    "eslint-plugin-react": "7.21.1",$/;"	s	object:devDependencies
+eslint-plugin-react-hooks	package.json	/^    "eslint-plugin-react-hooks": "4.1.2",$/;"	s	object:devDependencies
 exports	.eslintrc.js	/^module.exports = {$/;"	c	class:module
+exports	.prettierrc.js	/^module.exports = {$/;"	c	class:module
 exports	babel.config.js	/^module.exports = {$/;"	c	class:module
 exports	jest.config.js	/^module.exports = {$/;"	c	class:module
 extreme	src/data/sudokuData.js	/^const extreme = [$/;"	C
-fg	src/colors/gruvbox-dark.scss	/^$fg: #ebdbb2;$/;"	v
-fg	src/colors/gruvbox-light.scss	/^$fg: #3c3836;$/;"	v
-fg0	src/colors/gruvbox-dark.scss	/^$fg0: #fbf1c7;$/;"	v
-fg0	src/colors/gruvbox-light.scss	/^$fg0: #282828;$/;"	v
-fg1	src/colors/gruvbox-dark.scss	/^$fg1: #ebdbb2;$/;"	v
-fg1	src/colors/gruvbox-light.scss	/^$fg1: #3c3836;$/;"	v
-fg2	src/colors/gruvbox-dark.scss	/^$fg2: #d5c4a1;$/;"	v
-fg2	src/colors/gruvbox-light.scss	/^$fg2: #504945;$/;"	v
-fg3	src/colors/gruvbox-dark.scss	/^$fg3: #bdae93;$/;"	v
-fg3	src/colors/gruvbox-light.scss	/^$fg3: #665c54;$/;"	v
-fg4	src/colors/gruvbox-dark.scss	/^$fg4: #a89984;$/;"	v
-fg4	src/colors/gruvbox-light.scss	/^$fg4: #7c6f64;$/;"	v
-fibers	package.json	/^    "fibers": "~5.0.0",$/;"	s	object:devDependencies
-file-loader	package.json	/^    "file-loader": "~6.0.0",$/;"	s	object:devDependencies
+fg	src/assets/palettes/gruvbox-dark.scss	/^$fg: #fbf1c7;$/;"	v
+fg	src/assets/palettes/gruvbox-light.scss	/^$fg: #282828;$/;"	v
+fg0	src/assets/palettes/gruvbox-dark.scss	/^$fg0: #fbf1c7;$/;"	v
+fg0	src/assets/palettes/gruvbox-light.scss	/^$fg0: #282828;$/;"	v
+fg1	src/assets/palettes/gruvbox-dark.scss	/^$fg1: #ebdbb2;$/;"	v
+fg1	src/assets/palettes/gruvbox-light.scss	/^$fg1: #3c3836;$/;"	v
+fg2	src/assets/palettes/gruvbox-dark.scss	/^$fg2: #d5c4a1;$/;"	v
+fg2	src/assets/palettes/gruvbox-light.scss	/^$fg2: #504945;$/;"	v
+fg3	src/assets/palettes/gruvbox-dark.scss	/^$fg3: #bdae93;$/;"	v
+fg3	src/assets/palettes/gruvbox-light.scss	/^$fg3: #665c54;$/;"	v
+fg4	src/assets/palettes/gruvbox-dark.scss	/^$fg4: #a89984;$/;"	v
+fg4	src/assets/palettes/gruvbox-light.scss	/^$fg4: #7c6f64;$/;"	v
+fieldset	src/styles/reset.css	/^dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,$/;"	s
+figcaption	src/styles/reset.css	/^article, aside, details, figcaption, figure, footer,$/;"	s
+figcaption	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
+figure	src/styles/reset.css	/^article, aside, details, figcaption, figure, footer,$/;"	s
+figure	src/styles/reset.css	/^tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,$/;"	s
+file-loader	package.json	/^    "file-loader": "6.2.0",$/;"	s	object:devDependencies
+footer	src/styles/reset.css	/^article, aside, details, figcaption, figure, footer,$/;"	s
+footer	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
+form	src/styles/reset.css	/^dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,$/;"	s
 game-board-border	src/styles/main.scss	/^$game-board-border: 0; \/\/ 0.2em solid $purple;$/;"	v
 gameData	src/data/sudokuData.js	/^  gameData: [$/;"	p	class:standardSudokus
 getDifficultyName	src/lib/settings/difficulty.js	/^function getDifficultyName(difficultyID) {$/;"	f
 getNewSudoku	src/lib/board-functions/changeGameState.js	/^const getNewSudoku = (difficulty) => {$/;"	C
 getTile	src/components/Tile.js	/^const getTile = (currentBoard, id) => {$/;"	C
-getTileText	src/components/Tile.js	/^const getTileText = (tile) => {$/;"	C
-gray100	src/colors/gray.scss	/^$gray100: #f5f5f5;$/;"	v
-gray100	src/colors/material.scss	/^$gray100: #f5f5f5;$/;"	v
-gray200	src/colors/gray.scss	/^$gray200: #eeeeee;$/;"	v
-gray200	src/colors/material.scss	/^$gray200: #eeeeee;$/;"	v
-gray300	src/colors/gray.scss	/^$gray300: #e0e0e0;$/;"	v
-gray300	src/colors/material.scss	/^$gray300: #e0e0e0;$/;"	v
-gray400	src/colors/gray.scss	/^$gray400: #bdbdbd;$/;"	v
-gray400	src/colors/material.scss	/^$gray400: #bdbdbd;$/;"	v
-gray50	src/colors/gray.scss	/^$gray50: #fafafa;$/;"	v
-gray50	src/colors/material.scss	/^$gray50: #fafafa;$/;"	v
-gray500	src/colors/gray.scss	/^$gray500: #9e9e9e;$/;"	v
-gray500	src/colors/material.scss	/^$gray500: #9e9e9e;$/;"	v
-gray600	src/colors/gray.scss	/^$gray600: #757575;$/;"	v
-gray600	src/colors/material.scss	/^$gray600: #757575;$/;"	v
-gray700	src/colors/gray.scss	/^$gray700: #616161;$/;"	v
-gray700	src/colors/material.scss	/^$gray700: #616161;$/;"	v
-gray800	src/colors/gray.scss	/^$gray800: #424242;$/;"	v
-gray800	src/colors/material.scss	/^$gray800: #424242;$/;"	v
-gray900	src/colors/gray.scss	/^$gray900: #212121;$/;"	v
-gray900	src/colors/material.scss	/^$gray900: #212121;$/;"	v
-green	src/colors/gruvbox-dark.scss	/^$green: #b8bb26;$/;"	v
-green	src/colors/gruvbox-light.scss	/^$green: #98971a;$/;"	v
-green100	src/colors/green.scss	/^$green100: #c8e6c9;$/;"	v
-green100	src/colors/material.scss	/^$green100: #c8e6c9;$/;"	v
-green200	src/colors/green.scss	/^$green200: #a5d6a7;$/;"	v
-green200	src/colors/material.scss	/^$green200: #a5d6a7;$/;"	v
-green300	src/colors/green.scss	/^$green300: #81c784;$/;"	v
-green300	src/colors/material.scss	/^$green300: #81c784;$/;"	v
-green400	src/colors/green.scss	/^$green400: #66bb6a;$/;"	v
-green400	src/colors/material.scss	/^$green400: #66bb6a;$/;"	v
-green50	src/colors/green.scss	/^$green50: #e8f5e9;$/;"	v
-green50	src/colors/material.scss	/^$green50: #e8f5e9;$/;"	v
-green500	src/colors/green.scss	/^$green500: #4caf50;$/;"	v
-green500	src/colors/material.scss	/^$green500: #4caf50;$/;"	v
-green600	src/colors/green.scss	/^$green600: #43a047;$/;"	v
-green600	src/colors/material.scss	/^$green600: #43a047;$/;"	v
-green700	src/colors/green.scss	/^$green700: #388e3c;$/;"	v
-green700	src/colors/material.scss	/^$green700: #388e3c;$/;"	v
-green800	src/colors/green.scss	/^$green800: #2e7d32;$/;"	v
-green800	src/colors/material.scss	/^$green800: #2e7d32;$/;"	v
-green900	src/colors/green.scss	/^$green900: #1b5e20;$/;"	v
-green900	src/colors/material.scss	/^$green900: #1b5e20;$/;"	v
-greena100	src/colors/green.scss	/^$greena100: #b9f6ca;$/;"	v
-greena100	src/colors/material.scss	/^$greena100: #b9f6ca;$/;"	v
-greena200	src/colors/green.scss	/^$greena200: #69f0ae;$/;"	v
-greena200	src/colors/material.scss	/^$greena200: #69f0ae;$/;"	v
-greena400	src/colors/green.scss	/^$greena400: #00e676;$/;"	v
-greena400	src/colors/material.scss	/^$greena400: #00e676;$/;"	v
-greena700	src/colors/green.scss	/^$greena700: #00c853;$/;"	v
-greena700	src/colors/material.scss	/^$greena700: #00c853;$/;"	v
+gray	src/assets/palettes/gruvbox-dark.scss	/^$gray: #928374;$/;"	v
+gray	src/assets/palettes/gruvbox-light.scss	/^$gray: #928374;$/;"	v
+gray100	src/assets/palettes/gray.scss	/^$gray100: #f5f5f5;$/;"	v
+gray200	src/assets/palettes/gray.scss	/^$gray200: #eeeeee;$/;"	v
+gray300	src/assets/palettes/gray.scss	/^$gray300: #e0e0e0;$/;"	v
+gray400	src/assets/palettes/gray.scss	/^$gray400: #bdbdbd;$/;"	v
+gray50	src/assets/palettes/gray.scss	/^$gray50: #fafafa;$/;"	v
+gray500	src/assets/palettes/gray.scss	/^$gray500: #9e9e9e;$/;"	v
+gray600	src/assets/palettes/gray.scss	/^$gray600: #757575;$/;"	v
+gray700	src/assets/palettes/gray.scss	/^$gray700: #616161;$/;"	v
+gray800	src/assets/palettes/gray.scss	/^$gray800: #424242;$/;"	v
+gray900	src/assets/palettes/gray.scss	/^$gray900: #212121;$/;"	v
+green	src/assets/palettes/gruvbox-dark.scss	/^$green: #98971a;$/;"	v
+green	src/assets/palettes/gruvbox-light.scss	/^$green: #98971a;$/;"	v
+green100	src/assets/palettes/green.scss	/^$green100: #c8e6c9;$/;"	v
+green200	src/assets/palettes/green.scss	/^$green200: #a5d6a7;$/;"	v
+green300	src/assets/palettes/green.scss	/^$green300: #81c784;$/;"	v
+green400	src/assets/palettes/green.scss	/^$green400: #66bb6a;$/;"	v
+green50	src/assets/palettes/green.scss	/^$green50: #e8f5e9;$/;"	v
+green500	src/assets/palettes/green.scss	/^$green500: #4caf50;$/;"	v
+green600	src/assets/palettes/green.scss	/^$green600: #43a047;$/;"	v
+green700	src/assets/palettes/green.scss	/^$green700: #388e3c;$/;"	v
+green800	src/assets/palettes/green.scss	/^$green800: #2e7d32;$/;"	v
+green900	src/assets/palettes/green.scss	/^$green900: #1b5e20;$/;"	v
+greena100	src/assets/palettes/green.scss	/^$greena100: #b9f6ca;$/;"	v
+greena200	src/assets/palettes/green.scss	/^$greena200: #69f0ae;$/;"	v
+greena400	src/assets/palettes/green.scss	/^$greena400: #00e676;$/;"	v
+greena700	src/assets/palettes/green.scss	/^$greena700: #00c853;$/;"	v
+h1	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
+h2	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
+h3	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
+h4	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
+h5	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
+h6	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
 handleClick	src/components/GameBoard.js	/^  handleClick(id) {$/;"	m	class:GameBoard
 handleClick	src/components/SudokuBoard.js	/^  handleClick: PropTypes.func.isRequired,$/;"	p	class:SudokuBoard.propTypes
+handleClick	src/components/Tile.js	/^  handleClick: PropTypes.func.isRequired,$/;"	p	class:Tile.propTypes
 hard	src/data/sudokuData.js	/^const hard = [$/;"	C
+header	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
+header	src/styles/reset.css	/^header, hgroup, main, menu, nav, section {$/;"	s
 header-color	src/styles/main.scss	/^$header-color: $blue;$/;"	v
-highlightRelatedTiles	src/lib/board-functions/changeBoardState.js	/^const highlightRelatedTiles = (prevState, id) => {$/;"	C
+hgroup	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
+hgroup	src/styles/reset.css	/^header, hgroup, main, menu, nav, section {$/;"	s
+highlight	src/components/Tile.js	/^  highlight: PropTypes.string.isRequired,$/;"	p	class:Tile.propTypes
 homepage	package.json	/^  "homepage": "https:\/\/github.com\/NicksIdeaEngine\/sudoku",$/;"	s
-html-webpack-plugin	package.json	/^    "html-webpack-plugin": "~3.2.0",$/;"	s	object:devDependencies
-id	src/components/Tile.js	/^  id: PropTypes.string.isRequired,$/;"	p	class:propTypes
-id	src/lib/createEmptyBoard.js	/^  const id = `tile-${idNum}`$/;"	C
-idNum	src/components/Tile.js	/^  const idNum = parseInt(id.slice(5), 10);$/;"	C
-idNum	src/lib/createEmptyBoard.js	/^  idNum: 0,$/;"	p	class:createNewTile.defaultProps
-idNum	src/lib/createEmptyBoard.js	/^  idNum: PropTypes.number,$/;"	p	class:createNewTile.propTypes
-idNum	src/lib/createEmptyBoard.js	/^  let idNum = (currentRow - 1) * 9$/;"	v
-index	src/components/GameBoard.js	/^        index: 0,$/;"	p	class:GameBoard.constructor.state.currentDifficulty
-indigo100	src/colors/indigo.scss	/^$indigo100: #c5cae9;$/;"	v
-indigo100	src/colors/material.scss	/^$indigo100: #c5cae9;$/;"	v
-indigo200	src/colors/indigo.scss	/^$indigo200: #9fa8da;$/;"	v
-indigo200	src/colors/material.scss	/^$indigo200: #9fa8da;$/;"	v
-indigo300	src/colors/indigo.scss	/^$indigo300: #7986cb;$/;"	v
-indigo300	src/colors/material.scss	/^$indigo300: #7986cb;$/;"	v
-indigo400	src/colors/indigo.scss	/^$indigo400: #5c6bc0;$/;"	v
-indigo400	src/colors/material.scss	/^$indigo400: #5c6bc0;$/;"	v
-indigo50	src/colors/indigo.scss	/^$indigo50: #e8eaf6;$/;"	v
-indigo50	src/colors/material.scss	/^$indigo50: #e8eaf6;$/;"	v
-indigo500	src/colors/indigo.scss	/^$indigo500: #3f51b5;$/;"	v
-indigo500	src/colors/material.scss	/^$indigo500: #3f51b5;$/;"	v
-indigo600	src/colors/indigo.scss	/^$indigo600: #3949ab;$/;"	v
-indigo600	src/colors/material.scss	/^$indigo600: #3949ab;$/;"	v
-indigo700	src/colors/indigo.scss	/^$indigo700: #303f9f;$/;"	v
-indigo700	src/colors/material.scss	/^$indigo700: #303f9f;$/;"	v
-indigo800	src/colors/indigo.scss	/^$indigo800: #283593;$/;"	v
-indigo800	src/colors/material.scss	/^$indigo800: #283593;$/;"	v
-indigo900	src/colors/indigo.scss	/^$indigo900: #1a237e;$/;"	v
-indigo900	src/colors/material.scss	/^$indigo900: #1a237e;$/;"	v
-indigoa100	src/colors/indigo.scss	/^$indigoa100: #8c9eff;$/;"	v
-indigoa100	src/colors/material.scss	/^$indigoa100: #8c9eff;$/;"	v
-indigoa200	src/colors/indigo.scss	/^$indigoa200: #536dfe;$/;"	v
-indigoa200	src/colors/material.scss	/^$indigoa200: #536dfe;$/;"	v
-indigoa400	src/colors/indigo.scss	/^$indigoa400: #3d5afe;$/;"	v
-indigoa400	src/colors/material.scss	/^$indigoa400: #3d5afe;$/;"	v
-indigoa700	src/colors/indigo.scss	/^$indigoa700: #304ffe;$/;"	v
-indigoa700	src/colors/material.scss	/^$indigoa700: #304ffe;$/;"	v
-insertMode	src/components/GameBoard.js	/^      insertMode: '',$/;"	p	class:GameBoard.constructor.state
+html	src/styles/reset.css	/^html {$/;"	s
+html	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
+html-webpack-plugin	package.json	/^    "html-webpack-plugin": "4.5.0",$/;"	s	object:devDependencies
+i	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
+id	src/components/Tile.js	/^  id: PropTypes.string.isRequired,$/;"	p	class:Tile.propTypes
+idNum	src/components/Tile.js	/^  const idNum = parseInt(id.slice(5), 10)$/;"	C
+iframe	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
+img	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
+index	src/components/GameBoard.js	/^        index: 0,$/;"	p	class:super.state.currentDifficulty
+indigo100	src/assets/palettes/indigo.scss	/^$indigo100: #c5cae9;$/;"	v
+indigo200	src/assets/palettes/indigo.scss	/^$indigo200: #9fa8da;$/;"	v
+indigo300	src/assets/palettes/indigo.scss	/^$indigo300: #7986cb;$/;"	v
+indigo400	src/assets/palettes/indigo.scss	/^$indigo400: #5c6bc0;$/;"	v
+indigo50	src/assets/palettes/indigo.scss	/^$indigo50: #e8eaf6;$/;"	v
+indigo500	src/assets/palettes/indigo.scss	/^$indigo500: #3f51b5;$/;"	v
+indigo600	src/assets/palettes/indigo.scss	/^$indigo600: #3949ab;$/;"	v
+indigo700	src/assets/palettes/indigo.scss	/^$indigo700: #303f9f;$/;"	v
+indigo800	src/assets/palettes/indigo.scss	/^$indigo800: #283593;$/;"	v
+indigo900	src/assets/palettes/indigo.scss	/^$indigo900: #1a237e;$/;"	v
+indigoa100	src/assets/palettes/indigo.scss	/^$indigoa100: #8c9eff;$/;"	v
+indigoa200	src/assets/palettes/indigo.scss	/^$indigoa200: #536dfe;$/;"	v
+indigoa400	src/assets/palettes/indigo.scss	/^$indigoa400: #3d5afe;$/;"	v
+indigoa700	src/assets/palettes/indigo.scss	/^$indigoa700: #304ffe;$/;"	v
+ins	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
+insertMode	src/components/GameBoard.js	/^      insertMode: '',$/;"	p	class:super.state
 insertMode	src/components/Menu.js	/^  insertMode: PropTypes.string.isRequired,$/;"	p	class:Menu.propTypes
-insertMode	src/lib/board-functions/changeBoardState.js	/^  const insertMode = '';$/;"	C
-insertValue	src/components/GameBoard.js	/^      insertValue: '',$/;"	p	class:GameBoard.constructor.state
-jest	.eslintrc.js	/^    jest: true,$/;"	p	class:module.exports.env
-jest	package.json	/^    "jest": "~25.5.4",$/;"	s	object:devDependencies
-jest/globals	.eslintrc.js	/^    'jest\/globals': true,$/;"	p	class:module.exports.env
-keyCounter	src/components/Tile.js	/^  let keyCounter = 0;$/;"	v
+insertMode	src/lib/board-functions/changeBoardState.js	/^  const insertMode = ''$/;"	C
+insertValue	src/components/GameBoard.js	/^      insertValue: '',$/;"	p	class:super.state
+jest	package.json	/^    "jest": "25.5.4",$/;"	s	object:devDependencies
+kbd	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
+keyCounter	src/components/Tile.js	/^  let keyCounter = 0$/;"	v
 keywords	package.json	/^  "keywords": [$/;"	a
-large	src/styles/size.js	/^  large: '1.25em',$/;"	p	class:size
+label	src/styles/reset.css	/^dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,$/;"	s
+legend	src/styles/reset.css	/^dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,$/;"	s
+li	src/styles/reset.css	/^dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,$/;"	s
 license	package.json	/^  "license": "MIT",$/;"	s
-light-blue100	src/colors/light-blue.scss	/^$light-blue100: #b3e5fc;$/;"	v
-light-blue100	src/colors/material.scss	/^$light-blue100: #b3e5fc;$/;"	v
-light-blue200	src/colors/light-blue.scss	/^$light-blue200: #81d4fa;$/;"	v
-light-blue200	src/colors/material.scss	/^$light-blue200: #81d4fa;$/;"	v
-light-blue300	src/colors/light-blue.scss	/^$light-blue300: #4fc3f7;$/;"	v
-light-blue300	src/colors/material.scss	/^$light-blue300: #4fc3f7;$/;"	v
-light-blue400	src/colors/light-blue.scss	/^$light-blue400: #29b6f6;$/;"	v
-light-blue400	src/colors/material.scss	/^$light-blue400: #29b6f6;$/;"	v
-light-blue50	src/colors/light-blue.scss	/^$light-blue50: #e1f5fe;$/;"	v
-light-blue50	src/colors/material.scss	/^$light-blue50: #e1f5fe;$/;"	v
-light-blue500	src/colors/light-blue.scss	/^$light-blue500: #03a9f4;$/;"	v
-light-blue500	src/colors/material.scss	/^$light-blue500: #03a9f4;$/;"	v
-light-blue600	src/colors/light-blue.scss	/^$light-blue600: #039be5;$/;"	v
-light-blue600	src/colors/material.scss	/^$light-blue600: #039be5;$/;"	v
-light-blue700	src/colors/light-blue.scss	/^$light-blue700: #0288d1;$/;"	v
-light-blue700	src/colors/material.scss	/^$light-blue700: #0288d1;$/;"	v
-light-blue800	src/colors/light-blue.scss	/^$light-blue800: #0277bd;$/;"	v
-light-blue800	src/colors/material.scss	/^$light-blue800: #0277bd;$/;"	v
-light-blue900	src/colors/light-blue.scss	/^$light-blue900: #01579b;$/;"	v
-light-blue900	src/colors/material.scss	/^$light-blue900: #01579b;$/;"	v
-light-bluea100	src/colors/light-blue.scss	/^$light-bluea100: #80d8ff;$/;"	v
-light-bluea100	src/colors/material.scss	/^$light-bluea100: #80d8ff;$/;"	v
-light-bluea200	src/colors/light-blue.scss	/^$light-bluea200: #40c4ff;$/;"	v
-light-bluea200	src/colors/material.scss	/^$light-bluea200: #40c4ff;$/;"	v
-light-bluea400	src/colors/light-blue.scss	/^$light-bluea400: #00b0ff;$/;"	v
-light-bluea400	src/colors/material.scss	/^$light-bluea400: #00b0ff;$/;"	v
-light-bluea700	src/colors/light-blue.scss	/^$light-bluea700: #0091ea;$/;"	v
-light-bluea700	src/colors/material.scss	/^$light-bluea700: #0091ea;$/;"	v
-light-green100	src/colors/light-green.scss	/^$light-green100: #dcedc8;$/;"	v
-light-green100	src/colors/material.scss	/^$light-green100: #dcedc8;$/;"	v
-light-green200	src/colors/light-green.scss	/^$light-green200: #c5e1a5;$/;"	v
-light-green200	src/colors/material.scss	/^$light-green200: #c5e1a5;$/;"	v
-light-green300	src/colors/light-green.scss	/^$light-green300: #aed581;$/;"	v
-light-green300	src/colors/material.scss	/^$light-green300: #aed581;$/;"	v
-light-green400	src/colors/light-green.scss	/^$light-green400: #9ccc65;$/;"	v
-light-green400	src/colors/material.scss	/^$light-green400: #9ccc65;$/;"	v
-light-green50	src/colors/light-green.scss	/^$light-green50: #f1f8e9;$/;"	v
-light-green50	src/colors/material.scss	/^$light-green50: #f1f8e9;$/;"	v
-light-green500	src/colors/light-green.scss	/^$light-green500: #8bc34a;$/;"	v
-light-green500	src/colors/material.scss	/^$light-green500: #8bc34a;$/;"	v
-light-green600	src/colors/light-green.scss	/^$light-green600: #7cb342;$/;"	v
-light-green600	src/colors/material.scss	/^$light-green600: #7cb342;$/;"	v
-light-green700	src/colors/light-green.scss	/^$light-green700: #689f38;$/;"	v
-light-green700	src/colors/material.scss	/^$light-green700: #689f38;$/;"	v
-light-green800	src/colors/light-green.scss	/^$light-green800: #558b2f;$/;"	v
-light-green800	src/colors/material.scss	/^$light-green800: #558b2f;$/;"	v
-light-green900	src/colors/light-green.scss	/^$light-green900: #33691e;$/;"	v
-light-green900	src/colors/material.scss	/^$light-green900: #33691e;$/;"	v
-light-greena100	src/colors/light-green.scss	/^$light-greena100: #ccff90;$/;"	v
-light-greena100	src/colors/material.scss	/^$light-greena100: #ccff90;$/;"	v
-light-greena200	src/colors/light-green.scss	/^$light-greena200: #b2ff59;$/;"	v
-light-greena200	src/colors/material.scss	/^$light-greena200: #b2ff59;$/;"	v
-light-greena400	src/colors/light-green.scss	/^$light-greena400: #76ff03;$/;"	v
-light-greena400	src/colors/material.scss	/^$light-greena400: #76ff03;$/;"	v
-light-greena700	src/colors/light-green.scss	/^$light-greena700: #64dd17;$/;"	v
-light-greena700	src/colors/material.scss	/^$light-greena700: #64dd17;$/;"	v
-light_gray	src/colors/gruvbox-dark.scss	/^$light_gray: #a89984;$/;"	v
-light_gray	src/colors/gruvbox-light.scss	/^$light_gray: #928374;$/;"	v
-lime100	src/colors/lime.scss	/^$lime100: #f0f4c3;$/;"	v
-lime100	src/colors/material.scss	/^$lime100: #f0f4c3;$/;"	v
-lime200	src/colors/lime.scss	/^$lime200: #e6ee9c;$/;"	v
-lime200	src/colors/material.scss	/^$lime200: #e6ee9c;$/;"	v
-lime300	src/colors/lime.scss	/^$lime300: #dce775;$/;"	v
-lime300	src/colors/material.scss	/^$lime300: #dce775;$/;"	v
-lime400	src/colors/lime.scss	/^$lime400: #d4e157;$/;"	v
-lime400	src/colors/material.scss	/^$lime400: #d4e157;$/;"	v
-lime50	src/colors/lime.scss	/^$lime50: #f9fbe7;$/;"	v
-lime50	src/colors/material.scss	/^$lime50: #f9fbe7;$/;"	v
-lime500	src/colors/lime.scss	/^$lime500: #cddc39;$/;"	v
-lime500	src/colors/material.scss	/^$lime500: #cddc39;$/;"	v
-lime600	src/colors/lime.scss	/^$lime600: #c0ca33;$/;"	v
-lime600	src/colors/material.scss	/^$lime600: #c0ca33;$/;"	v
-lime700	src/colors/lime.scss	/^$lime700: #afb42b;$/;"	v
-lime700	src/colors/material.scss	/^$lime700: #afb42b;$/;"	v
-lime800	src/colors/lime.scss	/^$lime800: #9e9d24;$/;"	v
-lime800	src/colors/material.scss	/^$lime800: #9e9d24;$/;"	v
-lime900	src/colors/lime.scss	/^$lime900: #827717;$/;"	v
-lime900	src/colors/material.scss	/^$lime900: #827717;$/;"	v
-limea100	src/colors/lime.scss	/^$limea100: #f4ff81;$/;"	v
-limea100	src/colors/material.scss	/^$limea100: #f4ff81;$/;"	v
-limea200	src/colors/lime.scss	/^$limea200: #eeff41;$/;"	v
-limea200	src/colors/material.scss	/^$limea200: #eeff41;$/;"	v
-limea400	src/colors/lime.scss	/^$limea400: #c6ff00;$/;"	v
-limea400	src/colors/material.scss	/^$limea400: #c6ff00;$/;"	v
-limea700	src/colors/lime.scss	/^$limea700: #aeea00;$/;"	v
-limea700	src/colors/material.scss	/^$limea700: #aeea00;$/;"	v
+light-blue100	src/assets/palettes/light-blue.scss	/^$light-blue100: #b3e5fc;$/;"	v
+light-blue200	src/assets/palettes/light-blue.scss	/^$light-blue200: #81d4fa;$/;"	v
+light-blue300	src/assets/palettes/light-blue.scss	/^$light-blue300: #4fc3f7;$/;"	v
+light-blue400	src/assets/palettes/light-blue.scss	/^$light-blue400: #29b6f6;$/;"	v
+light-blue50	src/assets/palettes/light-blue.scss	/^$light-blue50: #e1f5fe;$/;"	v
+light-blue500	src/assets/palettes/light-blue.scss	/^$light-blue500: #03a9f4;$/;"	v
+light-blue600	src/assets/palettes/light-blue.scss	/^$light-blue600: #039be5;$/;"	v
+light-blue700	src/assets/palettes/light-blue.scss	/^$light-blue700: #0288d1;$/;"	v
+light-blue800	src/assets/palettes/light-blue.scss	/^$light-blue800: #0277bd;$/;"	v
+light-blue900	src/assets/palettes/light-blue.scss	/^$light-blue900: #01579b;$/;"	v
+light-bluea100	src/assets/palettes/light-blue.scss	/^$light-bluea100: #80d8ff;$/;"	v
+light-bluea200	src/assets/palettes/light-blue.scss	/^$light-bluea200: #40c4ff;$/;"	v
+light-bluea400	src/assets/palettes/light-blue.scss	/^$light-bluea400: #00b0ff;$/;"	v
+light-bluea700	src/assets/palettes/light-blue.scss	/^$light-bluea700: #0091ea;$/;"	v
+light-green100	src/assets/palettes/light-green.scss	/^$light-green100: #dcedc8;$/;"	v
+light-green200	src/assets/palettes/light-green.scss	/^$light-green200: #c5e1a5;$/;"	v
+light-green300	src/assets/palettes/light-green.scss	/^$light-green300: #aed581;$/;"	v
+light-green400	src/assets/palettes/light-green.scss	/^$light-green400: #9ccc65;$/;"	v
+light-green50	src/assets/palettes/light-green.scss	/^$light-green50: #f1f8e9;$/;"	v
+light-green500	src/assets/palettes/light-green.scss	/^$light-green500: #8bc34a;$/;"	v
+light-green600	src/assets/palettes/light-green.scss	/^$light-green600: #7cb342;$/;"	v
+light-green700	src/assets/palettes/light-green.scss	/^$light-green700: #689f38;$/;"	v
+light-green800	src/assets/palettes/light-green.scss	/^$light-green800: #558b2f;$/;"	v
+light-green900	src/assets/palettes/light-green.scss	/^$light-green900: #33691e;$/;"	v
+light-greena100	src/assets/palettes/light-green.scss	/^$light-greena100: #ccff90;$/;"	v
+light-greena200	src/assets/palettes/light-green.scss	/^$light-greena200: #b2ff59;$/;"	v
+light-greena400	src/assets/palettes/light-green.scss	/^$light-greena400: #76ff03;$/;"	v
+light-greena700	src/assets/palettes/light-green.scss	/^$light-greena700: #64dd17;$/;"	v
+lime100	src/assets/palettes/lime.scss	/^$lime100: #f0f4c3;$/;"	v
+lime200	src/assets/palettes/lime.scss	/^$lime200: #e6ee9c;$/;"	v
+lime300	src/assets/palettes/lime.scss	/^$lime300: #dce775;$/;"	v
+lime400	src/assets/palettes/lime.scss	/^$lime400: #d4e157;$/;"	v
+lime50	src/assets/palettes/lime.scss	/^$lime50: #f9fbe7;$/;"	v
+lime500	src/assets/palettes/lime.scss	/^$lime500: #cddc39;$/;"	v
+lime600	src/assets/palettes/lime.scss	/^$lime600: #c0ca33;$/;"	v
+lime700	src/assets/palettes/lime.scss	/^$lime700: #afb42b;$/;"	v
+lime800	src/assets/palettes/lime.scss	/^$lime800: #9e9d24;$/;"	v
+lime900	src/assets/palettes/lime.scss	/^$lime900: #827717;$/;"	v
+limea100	src/assets/palettes/lime.scss	/^$limea100: #f4ff81;$/;"	v
+limea200	src/assets/palettes/lime.scss	/^$limea200: #eeff41;$/;"	v
+limea400	src/assets/palettes/lime.scss	/^$limea400: #c6ff00;$/;"	v
+limea700	src/assets/palettes/lime.scss	/^$limea700: #aeea00;$/;"	v
+localtunnel	package.json	/^    "localtunnel": "2.0.0",$/;"	s	object:devDependencies
 localtunnel	package.json	/^    "localtunnel": "lt --port 8080 --subdomain 'smolapp'",$/;"	s	object:scripts
-localtunnel	package.json	/^    "localtunnel": "~2.0.0",$/;"	s	object:devDependencies
+locked	src/components/Tile.js	/^  locked: PropTypes.string.isRequired,$/;"	p	class:Tile.propTypes
 main	package.json	/^  "main": ".\/src\/index.js",$/;"	s
-maxColumns	src/data/sudokuData.js	/^const maxColumns = 9;$/;"	C
-maxColumns	src/lib/createEmptyBoard.js	/^  maxColumns: 9,$/;"	p	class:createNewRow.defaultProps
-maxColumns	src/lib/createEmptyBoard.js	/^  maxColumns: PropTypes.number,$/;"	p	class:createNewRow.propTypes
-maxRows	src/data/sudokuData.js	/^const maxRows = 9;$/;"	C
-medium	src/styles/size.js	/^  medium: '1em',$/;"	p	class:size
+main	src/styles/reset.css	/^header, hgroup, main, menu, nav, section {$/;"	s
+mark	src/styles/reset.css	/^time, mark, audio, video {$/;"	s
+maxColumns	src/data/sudokuData.js	/^const maxColumns = 9$/;"	C
+maxRows	src/data/sudokuData.js	/^const maxRows = 9$/;"	C
+menu	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
+menu	src/styles/reset.css	/^header, hgroup, main, menu, nav, section {$/;"	s
 menu-border	src/styles/main.scss	/^$menu-border: 0; \/\/ 0.1em solid $fg0;$/;"	v
 menu-button-background-color	src/styles/main.scss	/^$menu-button-background-color: $bg2;$/;"	v
 menu-button-border	src/styles/main.scss	/^$menu-button-border: 0.3em solid $fg2;$/;"	v
-menu-button-dropdown-bgc	src/styles/main.scss	/^$menu-button-dropdown-bgc: $dark_blue;$/;"	v
+menu-button-dropdown-bgc	src/styles/main.scss	/^$menu-button-dropdown-bgc: $alt-blue;$/;"	v
 menu-button-dropdown-border	src/styles/main.scss	/^$menu-button-dropdown-border: 0.2em solid $fg1;$/;"	v
 menu-button-dropdown-color	src/styles/main.scss	/^$menu-button-dropdown-color: $fg0;$/;"	v
 menu-button-focus-bgc	src/styles/main.scss	/^$menu-button-focus-bgc: $green;$/;"	v
@@ -624,153 +561,135 @@ menu-header-border	src/styles/main.scss	/^$menu-header-border: 0; \/\/ 0.1em sol
 menu-header-text-color	src/styles/main.scss	/^$menu-header-text-color: $fg1;$/;"	v
 moderate	src/data/sudokuData.js	/^const moderate = [$/;"	C
 name	package.json	/^  "name": "sudoku",$/;"	s
-name	src/components/GameBoard.js	/^        name: 'very easy',$/;"	p	class:GameBoard.constructor.state.currentDifficulty
-newBoard	src/components/Tile.js	/^  const newBoard = currentBoard;$/;"	C
+name	src/components/GameBoard.js	/^        name: 'very easy',$/;"	p	class:super.state.currentDifficulty
+nav	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
+nav	src/styles/reset.css	/^header, hgroup, main, menu, nav, section {$/;"	s
+newBoard	src/components/Tile.js	/^  const newBoard = currentBoard$/;"	C
 newGame	src/components/GameBoard.js	/^  newGame() {$/;"	m	class:GameBoard
 newGame	src/components/Menu.js	/^  newGame: PropTypes.func.isRequired,$/;"	p	class:Menu.propTypes
-newGame	src/lib/board-functions/changeGameState.js	/^const newGame = (prevState) => {$/;"	C
-node	.eslintrc.js	/^    node: true,$/;"	p	class:module.exports.env
-npm-run-all	package.json	/^    "npm-run-all": "~4.1.5",$/;"	s	object:devDependencies
-orange	src/colors/gruvbox-dark.scss	/^$orange: #fe8019;$/;"	v
-orange	src/colors/gruvbox-light.scss	/^$orange: #d65d0e;$/;"	v
-orange100	src/colors/material.scss	/^$orange100: #ffe0b2;$/;"	v
-orange100	src/colors/orange.scss	/^$orange100: #ffe0b2;$/;"	v
-orange200	src/colors/material.scss	/^$orange200: #ffcc80;$/;"	v
-orange200	src/colors/orange.scss	/^$orange200: #ffcc80;$/;"	v
-orange300	src/colors/material.scss	/^$orange300: #ffb74d;$/;"	v
-orange300	src/colors/orange.scss	/^$orange300: #ffb74d;$/;"	v
-orange400	src/colors/material.scss	/^$orange400: #ffa726;$/;"	v
-orange400	src/colors/orange.scss	/^$orange400: #ffa726;$/;"	v
-orange50	src/colors/material.scss	/^$orange50: #fff3e0;$/;"	v
-orange50	src/colors/orange.scss	/^$orange50: #fff3e0;$/;"	v
-orange500	src/colors/material.scss	/^$orange500: #ff9800;$/;"	v
-orange500	src/colors/orange.scss	/^$orange500: #ff9800;$/;"	v
-orange600	src/colors/material.scss	/^$orange600: #fb8c00;$/;"	v
-orange600	src/colors/orange.scss	/^$orange600: #fb8c00;$/;"	v
-orange700	src/colors/material.scss	/^$orange700: #f57c00;$/;"	v
-orange700	src/colors/orange.scss	/^$orange700: #f57c00;$/;"	v
-orange800	src/colors/material.scss	/^$orange800: #ef6c00;$/;"	v
-orange800	src/colors/orange.scss	/^$orange800: #ef6c00;$/;"	v
-orange900	src/colors/material.scss	/^$orange900: #e65100;$/;"	v
-orange900	src/colors/orange.scss	/^$orange900: #e65100;$/;"	v
-orangea100	src/colors/material.scss	/^$orangea100: #ffd180;$/;"	v
-orangea100	src/colors/orange.scss	/^$orangea100: #ffd180;$/;"	v
-orangea200	src/colors/material.scss	/^$orangea200: #ffab40;$/;"	v
-orangea200	src/colors/orange.scss	/^$orangea200: #ffab40;$/;"	v
-orangea400	src/colors/material.scss	/^$orangea400: #ff9100;$/;"	v
-orangea400	src/colors/orange.scss	/^$orangea400: #ff9100;$/;"	v
-orangea700	src/colors/material.scss	/^$orangea700: #ff6d00;$/;"	v
-orangea700	src/colors/orange.scss	/^$orangea700: #ff6d00;$/;"	v
+npm-run-all	package.json	/^    "npm-run-all": "4.1.5",$/;"	s	object:devDependencies
+ns00d9b1ef0101	src/assets/fonts/roboto/svg/roboto-v20-latin-500italic.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns0191499b0101	src/assets/fonts/roboto/svg/roboto-v20-latin-700.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns060aa9ac0101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-100.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns20e252f30101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-800.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns2a7166c80101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-700italic.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns33b3dd150101	src/assets/fonts/roboto/svg/roboto-v20-latin-100.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns39f39cb00101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-500.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns3e55d7f30101	src/assets/fonts/roboto/svg/roboto-v20-latin-900italic.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns4e372dc20101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-100italic.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns5304e66d0101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-200.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns621b9eed0101	src/assets/fonts/roboto/svg/roboto-v20-latin-300italic.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns679cd0190101	src/assets/fonts/roboto/svg/roboto-v20-latin-500.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns6a9d03d60101	src/assets/fonts/roboto/svg/roboto-v20-latin-regular.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns6ddc8fb40101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-900.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns79d070490101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-800italic.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns86edd9710101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-600.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns8bb353c60101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-500italic.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns8bd7c99a0101	src/assets/fonts/roboto/svg/roboto-v20-latin-italic.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns9b85c31d0101	src/assets/fonts/roboto/svg/roboto-v20-latin-900.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns9d9637430101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-200italic.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns9f97c4f10101	src/assets/fonts/roboto/svg/roboto-v20-latin-700italic.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+ns9fff232e0101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-300.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+nsb69de2d10101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-italic.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+nsc35d8beb0101	src/assets/fonts/roboto/svg/roboto-v20-latin-100italic.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+nsc92f79ca0101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-900italic.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+nscda856970101	src/assets/fonts/roboto/svg/roboto-v20-latin-300.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+nsd3e816320101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-700.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+nsdb125d470101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-600italic.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+nsecf540c40101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-300italic.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+nsee2643ed0101	src/assets/fonts/montserrat/svg/montserrat-v14-latin-regular.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+object	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
+ol	src/styles/reset.css	/^dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,$/;"	s
+ol	src/styles/reset.css	/^ol, ul {$/;"	s
+orange	src/assets/palettes/gruvbox-dark.scss	/^$orange: #d65d0e;$/;"	v
+orange	src/assets/palettes/gruvbox-light.scss	/^$orange: #d65d0e;$/;"	v
+orange100	src/assets/palettes/orange.scss	/^$orange100: #ffe0b2;$/;"	v
+orange200	src/assets/palettes/orange.scss	/^$orange200: #ffcc80;$/;"	v
+orange300	src/assets/palettes/orange.scss	/^$orange300: #ffb74d;$/;"	v
+orange400	src/assets/palettes/orange.scss	/^$orange400: #ffa726;$/;"	v
+orange50	src/assets/palettes/orange.scss	/^$orange50: #fff3e0;$/;"	v
+orange500	src/assets/palettes/orange.scss	/^$orange500: #ff9800;$/;"	v
+orange600	src/assets/palettes/orange.scss	/^$orange600: #fb8c00;$/;"	v
+orange700	src/assets/palettes/orange.scss	/^$orange700: #f57c00;$/;"	v
+orange800	src/assets/palettes/orange.scss	/^$orange800: #ef6c00;$/;"	v
+orange900	src/assets/palettes/orange.scss	/^$orange900: #e65100;$/;"	v
+orangea100	src/assets/palettes/orange.scss	/^$orangea100: #ffd180;$/;"	v
+orangea200	src/assets/palettes/orange.scss	/^$orangea200: #ffab40;$/;"	v
+orangea400	src/assets/palettes/orange.scss	/^$orangea400: #ff9100;$/;"	v
+orangea700	src/assets/palettes/orange.scss	/^$orangea700: #ff6d00;$/;"	v
+output	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
+p	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
 page-border	src/styles/main.scss	/^$page-border: 0; \/\/ 0.2em solid $orange;$/;"	v
-path	webpack.config.js	/^const path = require('path');$/;"	C
-pink100	src/colors/material.scss	/^$pink100: #f8bbd0;$/;"	v
-pink100	src/colors/pink.scss	/^$pink100: #f8bbd0;$/;"	v
-pink200	src/colors/material.scss	/^$pink200: #f48fb1;$/;"	v
-pink200	src/colors/pink.scss	/^$pink200: #f48fb1;$/;"	v
-pink300	src/colors/material.scss	/^$pink300: #f06292;$/;"	v
-pink300	src/colors/pink.scss	/^$pink300: #f06292;$/;"	v
-pink400	src/colors/material.scss	/^$pink400: #ec407a;$/;"	v
-pink400	src/colors/pink.scss	/^$pink400: #ec407a;$/;"	v
-pink50	src/colors/material.scss	/^$pink50: #fce4ec;$/;"	v
-pink50	src/colors/pink.scss	/^$pink50: #fce4ec;$/;"	v
-pink500	src/colors/material.scss	/^$pink500: #e91e63;$/;"	v
-pink500	src/colors/pink.scss	/^$pink500: #e91e63;$/;"	v
-pink600	src/colors/material.scss	/^$pink600: #d81b60;$/;"	v
-pink600	src/colors/pink.scss	/^$pink600: #d81b60;$/;"	v
-pink700	src/colors/material.scss	/^$pink700: #c2185b;$/;"	v
-pink700	src/colors/pink.scss	/^$pink700: #c2185b;$/;"	v
-pink800	src/colors/material.scss	/^$pink800: #ad1457;$/;"	v
-pink800	src/colors/pink.scss	/^$pink800: #ad1457;$/;"	v
-pink900	src/colors/material.scss	/^$pink900: #880e4f;$/;"	v
-pink900	src/colors/pink.scss	/^$pink900: #880e4f;$/;"	v
-pinka100	src/colors/material.scss	/^$pinka100: #ff80ab;$/;"	v
-pinka100	src/colors/pink.scss	/^$pinka100: #ff80ab;$/;"	v
-pinka200	src/colors/material.scss	/^$pinka200: #ff4081;$/;"	v
-pinka200	src/colors/pink.scss	/^$pinka200: #ff4081;$/;"	v
-pinka400	src/colors/material.scss	/^$pinka400: #f50057;$/;"	v
-pinka400	src/colors/pink.scss	/^$pinka400: #f50057;$/;"	v
-pinka700	src/colors/material.scss	/^$pinka700: #c51162;$/;"	v
-pinka700	src/colors/pink.scss	/^$pinka700: #c51162;$/;"	v
-plugins	babel.config.js	/^  plugins: [$/;"	p	class:module.exports
+path	webpack.config.js	/^const path = require('path')$/;"	C
+pink100	src/assets/palettes/pink.scss	/^$pink100: #f8bbd0;$/;"	v
+pink200	src/assets/palettes/pink.scss	/^$pink200: #f48fb1;$/;"	v
+pink300	src/assets/palettes/pink.scss	/^$pink300: #f06292;$/;"	v
+pink400	src/assets/palettes/pink.scss	/^$pink400: #ec407a;$/;"	v
+pink50	src/assets/palettes/pink.scss	/^$pink50: #fce4ec;$/;"	v
+pink500	src/assets/palettes/pink.scss	/^$pink500: #e91e63;$/;"	v
+pink600	src/assets/palettes/pink.scss	/^$pink600: #d81b60;$/;"	v
+pink700	src/assets/palettes/pink.scss	/^$pink700: #c2185b;$/;"	v
+pink800	src/assets/palettes/pink.scss	/^$pink800: #ad1457;$/;"	v
+pink900	src/assets/palettes/pink.scss	/^$pink900: #880e4f;$/;"	v
+pinka100	src/assets/palettes/pink.scss	/^$pinka100: #ff80ab;$/;"	v
+pinka200	src/assets/palettes/pink.scss	/^$pinka200: #ff4081;$/;"	v
+pinka400	src/assets/palettes/pink.scss	/^$pinka400: #f50057;$/;"	v
+pinka700	src/assets/palettes/pink.scss	/^$pinka700: #c51162;$/;"	v
+pre	src/styles/reset.css	/^blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,$/;"	s
 prebuild	package.json	/^    "prebuild": "npm run clean-dist",$/;"	s	object:scripts
 predev	package.json	/^    "predev": "npm run clean-dist",$/;"	s	object:scripts
-presets	babel.config.js	/^  presets: [$/;"	p	class:module.exports
-prettier	package.json	/^    "prettier": "~1.19.1",$/;"	s	object:devDependencies
-prettier	package.json	/^  "prettier": {$/;"	o
+presets	babel.config.js	/^  presets: ['@babel\/preset-react', '@babel\/preset-env'],$/;"	p	class:module.exports
+prettier	package.json	/^    "prettier": "2.1.2",$/;"	s	object:devDependencies
+printWidth	.prettierrc.js	/^  printWidth: 80,$/;"	p	class:module.exports
 private	package.json	/^  "private": true,$/;"	b
-production	package.json	/^    "production": [">0.5%", "not dead", "last 2 versions"],$/;"	a	object:browserslist
-prop-types	package.json	/^    "prop-types": "~15.7.2",$/;"	s	object:dependencies
-propTypes	src/components/Gameboard.js	/^Gameboard.propTypes = {$/;"	c	class:Gameboard
+prop-types	package.json	/^    "prop-types": "15.7.2",$/;"	s	object:dependencies
+propTypes	src/Root.js	/^Root.propTypes = {$/;"	c	class:Root
 propTypes	src/components/Menu.js	/^Menu.propTypes = {$/;"	c	class:Menu
 propTypes	src/components/SudokuBoard.js	/^SudokuBoard.propTypes = {$/;"	c	class:SudokuBoard
-propTypes	src/components/Tile.js	/^>>>>>>> parent of 6e8673d (Large update. Still having problems with Tile.candidates.)$/;"	c
-propTypes	src/lib/createEmptyBoard.js	/^createNewRow.propTypes = {$/;"	c	class:createNewRow
-propTypes	src/lib/createEmptyBoard.js	/^createNewTile.propTypes = {$/;"	c	class:createNewTile
-purple	src/colors/gruvbox-dark.scss	/^$purple: #d3869b;$/;"	v
-purple	src/colors/gruvbox-light.scss	/^$purple: #b16286;$/;"	v
-purple100	src/colors/material.scss	/^$purple100: #e1bee7;$/;"	v
-purple100	src/colors/purple.scss	/^$purple100: #e1bee7;$/;"	v
-purple200	src/colors/material.scss	/^$purple200: #ce93d8;$/;"	v
-purple200	src/colors/purple.scss	/^$purple200: #ce93d8;$/;"	v
-purple300	src/colors/material.scss	/^$purple300: #ba68c8;$/;"	v
-purple300	src/colors/purple.scss	/^$purple300: #ba68c8;$/;"	v
-purple400	src/colors/material.scss	/^$purple400: #ab47bc;$/;"	v
-purple400	src/colors/purple.scss	/^$purple400: #ab47bc;$/;"	v
-purple50	src/colors/material.scss	/^$purple50: #f3e5f5;$/;"	v
-purple50	src/colors/purple.scss	/^$purple50: #f3e5f5;$/;"	v
-purple500	src/colors/material.scss	/^$purple500: #9c27b0;$/;"	v
-purple500	src/colors/purple.scss	/^$purple500: #9c27b0;$/;"	v
-purple600	src/colors/material.scss	/^$purple600: #8e24aa;$/;"	v
-purple600	src/colors/purple.scss	/^$purple600: #8e24aa;$/;"	v
-purple700	src/colors/material.scss	/^$purple700: #7b1fa2;$/;"	v
-purple700	src/colors/purple.scss	/^$purple700: #7b1fa2;$/;"	v
-purple800	src/colors/material.scss	/^$purple800: #6a1b9a;$/;"	v
-purple800	src/colors/purple.scss	/^$purple800: #6a1b9a;$/;"	v
-purple900	src/colors/material.scss	/^$purple900: #4a148c;$/;"	v
-purple900	src/colors/purple.scss	/^$purple900: #4a148c;$/;"	v
-purplea100	src/colors/material.scss	/^$purplea100: #ea80fc;$/;"	v
-purplea100	src/colors/purple.scss	/^$purplea100: #ea80fc;$/;"	v
-purplea200	src/colors/material.scss	/^$purplea200: #e040fb;$/;"	v
-purplea200	src/colors/purple.scss	/^$purplea200: #e040fb;$/;"	v
-purplea400	src/colors/material.scss	/^$purplea400: #d500f9;$/;"	v
-purplea400	src/colors/purple.scss	/^$purplea400: #d500f9;$/;"	v
-purplea700	src/colors/material.scss	/^$purplea700: #aa00ff;$/;"	v
-purplea700	src/colors/purple.scss	/^$purplea700: #aa00ff;$/;"	v
+propTypes	src/components/Tile.js	/^Tile.propTypes = {$/;"	c	class:Tile
+purple	src/assets/palettes/gruvbox-dark.scss	/^$purple: #b16286;$/;"	v
+purple	src/assets/palettes/gruvbox-light.scss	/^$purple: #b16286;$/;"	v
+purple100	src/assets/palettes/purple.scss	/^$purple100: #e1bee7;$/;"	v
+purple200	src/assets/palettes/purple.scss	/^$purple200: #ce93d8;$/;"	v
+purple300	src/assets/palettes/purple.scss	/^$purple300: #ba68c8;$/;"	v
+purple400	src/assets/palettes/purple.scss	/^$purple400: #ab47bc;$/;"	v
+purple50	src/assets/palettes/purple.scss	/^$purple50: #f3e5f5;$/;"	v
+purple500	src/assets/palettes/purple.scss	/^$purple500: #9c27b0;$/;"	v
+purple600	src/assets/palettes/purple.scss	/^$purple600: #8e24aa;$/;"	v
+purple700	src/assets/palettes/purple.scss	/^$purple700: #7b1fa2;$/;"	v
+purple800	src/assets/palettes/purple.scss	/^$purple800: #6a1b9a;$/;"	v
+purple900	src/assets/palettes/purple.scss	/^$purple900: #4a148c;$/;"	v
+purplea100	src/assets/palettes/purple.scss	/^$purplea100: #ea80fc;$/;"	v
+purplea200	src/assets/palettes/purple.scss	/^$purplea200: #e040fb;$/;"	v
+purplea400	src/assets/palettes/purple.scss	/^$purplea400: #d500f9;$/;"	v
+purplea700	src/assets/palettes/purple.scss	/^$purplea700: #aa00ff;$/;"	v
+q	src/styles/reset.css	/^blockquote, q {$/;"	s
+q	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
+q:after	src/styles/reset.css	/^q:before, q:after {$/;"	s
+q:before	src/styles/reset.css	/^q:before, q:after {$/;"	s
 randomIndex	src/lib/board-functions/changeGameState.js	/^  const randomIndex = Math.floor($/;"	C
-react	package.json	/^    "react": "~16.13.1",$/;"	s	object:dependencies
-react-dom	package.json	/^    "react-dom": "~16.13.1"$/;"	s	object:dependencies
-react-test-renderer	package.json	/^    "react-test-renderer": "~16.13.1",$/;"	s	object:devDependencies
-red	src/colors/gruvbox-dark.scss	/^$red: #fb4934;$/;"	v
-red	src/colors/gruvbox-light.scss	/^$red: #cc241d;$/;"	v
-red100	src/colors/material.scss	/^$red100: #ffcdd2;$/;"	v
-red100	src/colors/red.scss	/^$red100: #ffcdd2;$/;"	v
-red200	src/colors/material.scss	/^$red200: #ef9a9a;$/;"	v
-red200	src/colors/red.scss	/^$red200: #ef9a9a;$/;"	v
-red300	src/colors/material.scss	/^$red300: #e57373;$/;"	v
-red300	src/colors/red.scss	/^$red300: #e57373;$/;"	v
-red400	src/colors/material.scss	/^$red400: #ef5350;$/;"	v
-red400	src/colors/red.scss	/^$red400: #ef5350;$/;"	v
-red50	src/colors/material.scss	/^$red50: #ffebee;$/;"	v
-red50	src/colors/red.scss	/^$red50: #ffebee;$/;"	v
-red500	src/colors/material.scss	/^$red500: #f44336;$/;"	v
-red500	src/colors/red.scss	/^$red500: #f44336;$/;"	v
-red600	src/colors/material.scss	/^$red600: #e53935;$/;"	v
-red600	src/colors/red.scss	/^$red600: #e53935;$/;"	v
-red700	src/colors/material.scss	/^$red700: #d32f2f;$/;"	v
-red700	src/colors/red.scss	/^$red700: #d32f2f;$/;"	v
-red800	src/colors/material.scss	/^$red800: #c62828;$/;"	v
-red800	src/colors/red.scss	/^$red800: #c62828;$/;"	v
-red900	src/colors/material.scss	/^$red900: #b71c1c;$/;"	v
-red900	src/colors/red.scss	/^$red900: #b71c1c;$/;"	v
-reda100	src/colors/material.scss	/^$reda100: #ff8a80;$/;"	v
-reda100	src/colors/red.scss	/^$reda100: #ff8a80;$/;"	v
-reda200	src/colors/material.scss	/^$reda200: #ff5252;$/;"	v
-reda200	src/colors/red.scss	/^$reda200: #ff5252;$/;"	v
-reda400	src/colors/material.scss	/^$reda400: #ff1744;$/;"	v
-reda400	src/colors/red.scss	/^$reda400: #ff1744;$/;"	v
-reda700	src/colors/material.scss	/^$reda700: #d50000;$/;"	v
-reda700	src/colors/red.scss	/^$reda700: #d50000;$/;"	v
-regionSize	src/data/sudokuData.js	/^const regionSize = 3;$/;"	C
+react	package.json	/^    "react": "16.14.0",$/;"	s	object:dependencies
+react-dom	package.json	/^    "react-dom": "16.14.0",$/;"	s	object:dependencies
+react-helmet	package.json	/^    "react-helmet": "6.1.0",$/;"	s	object:dependencies
+react-test-renderer	package.json	/^    "react-test-renderer": "16.14.0",$/;"	s	object:devDependencies
+red	src/assets/palettes/gruvbox-dark.scss	/^$red: #cc241d;$/;"	v
+red	src/assets/palettes/gruvbox-light.scss	/^$red: #cc241d;$/;"	v
+red100	src/assets/palettes/red.scss	/^$red100: #ffcdd2;$/;"	v
+red200	src/assets/palettes/red.scss	/^$red200: #ef9a9a;$/;"	v
+red300	src/assets/palettes/red.scss	/^$red300: #e57373;$/;"	v
+red400	src/assets/palettes/red.scss	/^$red400: #ef5350;$/;"	v
+red50	src/assets/palettes/red.scss	/^$red50: #ffebee;$/;"	v
+red500	src/assets/palettes/red.scss	/^$red500: #f44336;$/;"	v
+red600	src/assets/palettes/red.scss	/^$red600: #e53935;$/;"	v
+red700	src/assets/palettes/red.scss	/^$red700: #d32f2f;$/;"	v
+red800	src/assets/palettes/red.scss	/^$red800: #c62828;$/;"	v
+red900	src/assets/palettes/red.scss	/^$red900: #b71c1c;$/;"	v
+reda100	src/assets/palettes/red.scss	/^$reda100: #ff8a80;$/;"	v
+reda200	src/assets/palettes/red.scss	/^$reda200: #ff5252;$/;"	v
+reda400	src/assets/palettes/red.scss	/^$reda400: #ff1744;$/;"	v
+reda700	src/assets/palettes/red.scss	/^$reda700: #d50000;$/;"	v
+region	src/components/Tile.js	/^  region: PropTypes.number.isRequired,$/;"	p	class:Tile.propTypes
+regionSize	src/data/sudokuData.js	/^const regionSize = 3$/;"	C
 render	src/components/GameBoard.js	/^  render() {$/;"	m	class:GameBoard
 render	src/components/Menu.js	/^  render() {$/;"	m	class:Menu
 render	src/components/SudokuBoard.js	/^  render() {$/;"	m	class:SudokuBoard
@@ -778,81 +697,85 @@ render	src/components/Tile.js	/^  render() {$/;"	m	class:Tile
 repository	package.json	/^  "repository": {$/;"	o
 resetGame	src/components/GameBoard.js	/^  resetGame() {$/;"	m	class:GameBoard
 resetGame	src/components/Menu.js	/^  resetGame: PropTypes.func.isRequired,$/;"	p	class:Menu.propTypes
-resetGame	src/lib/board-functions/changeGameState.js	/^const resetGame = (prevState) => {$/;"	C
-rimraf	package.json	/^    "rimraf": "~3.0.2",$/;"	s	object:devDependencies
+rimraf	package.json	/^    "rimraf": "3.0.2",$/;"	s	object:devDependencies
 root	.eslintrc.js	/^  root: true,$/;"	p	class:module.exports
 root	src/index.html	/^  <div id="root"><\/div>$/;"	I
-rootContainer	src/index.js	/^const rootContainer = document.getElementById('root');$/;"	C
-row	src/components/Tile.js	/^  const row = Math.floor(idNum \/ 9);$/;"	C
-row	src/components/Tile.js	/^  row: PropTypes.number.isRequired,$/;"	p	class:propTypes
-row	src/lib/board-functions/changeGameState.js	/^  let row;$/;"	v
-sass	package.json	/^    "sass": "~1.29.0",$/;"	s	object:devDependencies
-sass	webpack.config.js	/^const sass = require('sass');$/;"	C
-sass-loader	package.json	/^    "sass-loader": "~8.0.2",$/;"	s	object:devDependencies
+rootContainer	src/index.js	/^const rootContainer = document.getElementById('root')$/;"	C
+row	src/components/Tile.js	/^  const row = Math.floor(idNum \/ 9)$/;"	C
+row	src/components/Tile.js	/^  row: PropTypes.number.isRequired,$/;"	p	class:Tile.propTypes
+row	src/lib/board-functions/changeGameState.js	/^  let row$/;"	v
+ruby	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
+s	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
+samp	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
+sass	package.json	/^    "sass": "1.29.0",$/;"	s	object:devDependencies
+sass	webpack.config.js	/^const sass = require('sass')$/;"	C
+sass-loader	package.json	/^    "sass-loader": "8.0.2",$/;"	s	object:devDependencies
 scripts	package.json	/^  "scripts": {$/;"	o
-setBoardState	src/utils/useBoardState.js	/^  const [boardState, setBoardState] = useState(createEmptyBoard())$/;"	C
+section	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
+section	src/styles/reset.css	/^header, hgroup, main, menu, nav, section {$/;"	s
+semi	.prettierrc.js	/^  semi: false,$/;"	p	class:module.exports
 setDifficulty	src/components/GameBoard.js	/^  setDifficulty(value) {$/;"	m	class:GameBoard
 setDifficulty	src/components/Menu.js	/^  setDifficulty: PropTypes.func.isRequired,$/;"	p	class:Menu.propTypes
 setDifficulty	src/lib/settings/difficulty.js	/^function setDifficulty(prevState, value) {$/;"	f
-setGameSettings	src/utils/useGameContext.js	/^  const [gameSettings, setGameSettings] = useState({$/;"	C
 share	package.json	/^    "share": "run-s devserver localtunnel"$/;"	s	object:scripts
-showDifficultyMenu	src/components/Menu.js	/^      showDifficultyMenu: false,$/;"	p	class:Menu.constructor.state
-singleQuote	package.json	/^    "singleQuote": true,$/;"	b	object:prettier
-size	src/styles/size.js	/^const size = {$/;"	c
+showDifficultyMenu	src/components/Menu.js	/^      showDifficultyMenu: false,$/;"	p	class:super.state
+singleQuote	.prettierrc.js	/^  singleQuote: true,$/;"	p	class:module.exports
 sizeParameters	src/data/sudokuData.js	/^  sizeParameters: {$/;"	p	class:standardSudokus
-small	src/styles/size.js	/^  small: '0.8em',$/;"	p	class:size
-splitSequence	src/lib/board-functions/changeGameState.js	/^  const splitSequence = startingSequence.split('');$/;"	C
+small	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
+span	src/styles/reset.css	/^html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,$/;"	s
+span_wght	src/assets/fonts/fira_code/specimen.html	/^<input type="range" min="300" max="700" value="400" step="10" style="width: 300px;" oninput="onW/;"	I
+splitSequence	src/lib/board-functions/changeGameState.js	/^  const splitSequence = startingSequence.split('')$/;"	C
 standardSudokus	src/data/sudokuData.js	/^const standardSudokus = {$/;"	c
-startingSequence	src/components/GameBoard.js	/^      startingSequence: '',$/;"	p	class:GameBoard.constructor.state
-state	src/components/GameBoard.js	/^    this.state = {$/;"	c	class:GameBoard.constructor
-state	src/components/Menu.js	/^    this.state = {$/;"	c	class:Menu.constructor
-style-loader	package.json	/^    "style-loader": "~1.2.1",$/;"	s	object:devDependencies
-styles	src/styles/GlobalStyles.js	/^const styles = css`$/;"	C
+start	package.json	/^    "start": "npm run devserver",$/;"	s	object:scripts
+state	src/components/GameBoard.js	/^    super(props)$/;"	c	class:super
+state	src/components/Menu.js	/^    super(props)$/;"	c	class:super
+strike	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
+strong	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
+style-loader	package.json	/^    "style-loader": "1.3.0",$/;"	s	object:devDependencies
+styled-components	package.json	/^    "styled-components": "5.2.0"$/;"	s	object:dependencies
+sub	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
 sudoku-container-border	src/styles/main.scss	/^$sudoku-container-border: 0; \/\/ 0.2em solid $aqua;$/;"	v
-sudokuChoices	src/lib/board-functions/changeGameState.js	/^  const sudokuChoices = gameData[sudokuDifficulty];$/;"	C
-sudokuDifficulty	src/lib/board-functions/changeGameState.js	/^  let sudokuDifficulty = 0;$/;"	v
-teal100	src/colors/material.scss	/^$teal100: #b2dfdb;$/;"	v
-teal100	src/colors/teal.scss	/^$teal100: #b2dfdb;$/;"	v
-teal200	src/colors/material.scss	/^$teal200: #80cbc4;$/;"	v
-teal200	src/colors/teal.scss	/^$teal200: #80cbc4;$/;"	v
-teal300	src/colors/material.scss	/^$teal300: #4db6ac;$/;"	v
-teal300	src/colors/teal.scss	/^$teal300: #4db6ac;$/;"	v
-teal400	src/colors/material.scss	/^$teal400: #26a69a;$/;"	v
-teal400	src/colors/teal.scss	/^$teal400: #26a69a;$/;"	v
-teal50	src/colors/material.scss	/^$teal50: #e0f2f1;$/;"	v
-teal50	src/colors/teal.scss	/^$teal50: #e0f2f1;$/;"	v
-teal500	src/colors/material.scss	/^$teal500: #009688;$/;"	v
-teal500	src/colors/teal.scss	/^$teal500: #009688;$/;"	v
-teal600	src/colors/material.scss	/^$teal600: #00897b;$/;"	v
-teal600	src/colors/teal.scss	/^$teal600: #00897b;$/;"	v
-teal700	src/colors/material.scss	/^$teal700: #00796b;$/;"	v
-teal700	src/colors/teal.scss	/^$teal700: #00796b;$/;"	v
-teal800	src/colors/material.scss	/^$teal800: #00695c;$/;"	v
-teal800	src/colors/teal.scss	/^$teal800: #00695c;$/;"	v
-teal900	src/colors/material.scss	/^$teal900: #004d40;$/;"	v
-teal900	src/colors/teal.scss	/^$teal900: #004d40;$/;"	v
-teala100	src/colors/material.scss	/^$teala100: #a7ffeb;$/;"	v
-teala100	src/colors/teal.scss	/^$teala100: #a7ffeb;$/;"	v
-teala200	src/colors/material.scss	/^$teala200: #64ffda;$/;"	v
-teala200	src/colors/teal.scss	/^$teala200: #64ffda;$/;"	v
-teala400	src/colors/material.scss	/^$teala400: #1de9b6;$/;"	v
-teala400	src/colors/teal.scss	/^$teala400: #1de9b6;$/;"	v
-teala700	src/colors/material.scss	/^$teala700: #00bfa5;$/;"	v
-teala700	src/colors/teal.scss	/^$teala700: #00bfa5;$/;"	v
+sudokuChoices	src/lib/board-functions/changeGameState.js	/^  const sudokuChoices = gameData[sudokuDifficulty]$/;"	C
+sudokuDifficulty	src/lib/board-functions/changeGameState.js	/^  let sudokuDifficulty = 0$/;"	v
+summary	src/styles/reset.css	/^figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,$/;"	s
+summary	src/styles/reset.css	/^summary {$/;"	s
+sup	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
+tabWidth	.prettierrc.js	/^  tabWidth: 2,$/;"	p	class:module.exports
+table	src/styles/reset.css	/^dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,$/;"	s
+table	src/styles/reset.css	/^table {$/;"	s
+tbody	src/styles/reset.css	/^dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,$/;"	s
+td	src/styles/reset.css	/^tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,$/;"	s
+teal100	src/assets/palettes/teal.scss	/^$teal100: #b2dfdb;$/;"	v
+teal200	src/assets/palettes/teal.scss	/^$teal200: #80cbc4;$/;"	v
+teal300	src/assets/palettes/teal.scss	/^$teal300: #4db6ac;$/;"	v
+teal400	src/assets/palettes/teal.scss	/^$teal400: #26a69a;$/;"	v
+teal50	src/assets/palettes/teal.scss	/^$teal50: #e0f2f1;$/;"	v
+teal500	src/assets/palettes/teal.scss	/^$teal500: #009688;$/;"	v
+teal600	src/assets/palettes/teal.scss	/^$teal600: #00897b;$/;"	v
+teal700	src/assets/palettes/teal.scss	/^$teal700: #00796b;$/;"	v
+teal800	src/assets/palettes/teal.scss	/^$teal800: #00695c;$/;"	v
+teal900	src/assets/palettes/teal.scss	/^$teal900: #004d40;$/;"	v
+teala100	src/assets/palettes/teal.scss	/^$teala100: #a7ffeb;$/;"	v
+teala200	src/assets/palettes/teal.scss	/^$teala200: #64ffda;$/;"	v
+teala400	src/assets/palettes/teal.scss	/^$teala400: #1de9b6;$/;"	v
+teala700	src/assets/palettes/teal.scss	/^$teala700: #00bfa5;$/;"	v
 test	package.json	/^    "test": "jest",$/;"	s	object:scripts
 testEnvironment	jest.config.js	/^  testEnvironment: 'node',$/;"	p	class:module.exports
-tile	src/components/Tile.js	/^  const tile = board[row].props.children[column];$/;"	C
-tile	src/components/Tile.js	/^  const tile = getTile(currentBoard, id);$/;"	C
-tile	src/lib/board-functions/changeBoardState.js	/^  const tile = getTile(currentBoard, id);$/;"	C
-tile	src/lib/board-functions/changeGameState.js	/^  let tile;$/;"	v
-tile	src/lib/rules/enforce.js	/^  const tile = getTile(currentBoard, id);$/;"	C
+tfoot	src/styles/reset.css	/^tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,$/;"	s
+th	src/styles/reset.css	/^tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,$/;"	s
+thead	src/styles/reset.css	/^tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,$/;"	s
+tile	src/components/Tile.js	/^  const tile = board[row].props.children[column]$/;"	C
+tile	src/components/Tile.js	/^  const tile = getTile(currentBoard, id)$/;"	C
+tile	src/lib/board-functions/changeBoardState.js	/^  const tile = getTile(currentBoard, id)$/;"	C
+tile	src/lib/board-functions/changeGameState.js	/^  let tile$/;"	v
+tile	src/lib/rules/enforce.js	/^  const tile = getTile(currentBoard, id)$/;"	C
 tile-background-color	src/styles/main.scss	/^$tile-background-color: $bg0_h;$/;"	v
 tile-bgc-active	src/styles/main.scss	/^$tile-bgc-active: $fg1;$/;"	v
 tile-bgc-highlight	src/styles/main.scss	/^$tile-bgc-highlight: $fg1;$/;"	v
-tile-bgc-warning	src/styles/main.scss	/^$tile-bgc-warning: $dark_red !important;$/;"	v
+tile-bgc-warning	src/styles/main.scss	/^$tile-bgc-warning: $alt-red !important;$/;"	v
 tile-border-active	src/styles/main.scss	/^$tile-border-active: 0.25em solid $orange !important;$/;"	v
 tile-border-highlight	src/styles/main.scss	/^$tile-border-highlight: 0.25em solid $bg3;$/;"	v
-tile-border-inner-edge	src/styles/main.scss	/^$tile-border-inner-edge: 0.25em solid $dark_blue;$/;"	v
+tile-border-inner-edge	src/styles/main.scss	/^$tile-border-inner-edge: 0.25em solid $alt-blue;$/;"	v
 tile-border-inner-edge-hover	src/styles/main.scss	/^$tile-border-inner-edge-hover: 0.25em solid $red;$/;"	v
 tile-border-outer-edge	src/styles/main.scss	/^$tile-border-outer-edge: 0.25em solid $fg3;$/;"	v
 tile-border-outer-edge-hover	src/styles/main.scss	/^$tile-border-outer-edge-hover: 0.25em solid $red;$/;"	v
@@ -866,60 +789,50 @@ tile-text-color-highlight	src/styles/main.scss	/^$tile-text-color-highlight: $bg
 tile-text-color-warning	src/styles/main.scss	/^$tile-text-color-warning: $bg0_h;$/;"	v
 tile-text-size	src/styles/main.scss	/^$tile-text-size: 3.25em;$/;"	v
 tile-width	src/styles/main.scss	/^$tile-width: 4.5em;$/;"	v
-tileText	src/lib/createEmptyBoard.js	/^  const tileText = 'a'$/;"	C
-tiletext	src/components/Tile.js	/^  const tiletext = [];$/;"	C
+tiletext	src/components/Tile.js	/^  const tiletext = []$/;"	C
+tiletext	src/components/Tile.js	/^  tiletext: PropTypes.node.isRequired,$/;"	p	class:Tile.propTypes
+time	src/styles/reset.css	/^time, mark, audio, video {$/;"	s
 toggleDifficultyMenu	src/components/Menu.js	/^  toggleDifficultyMenu(event) {$/;"	m	class:Menu
 toggleInsertMode	src/components/GameBoard.js	/^  toggleInsertMode(value) {$/;"	m	class:GameBoard
 toggleInsertMode	src/components/Menu.js	/^  toggleInsertMode: PropTypes.func.isRequired,$/;"	p	class:Menu.propTypes
 toggleInsertMode	src/lib/board-functions/toggleInsertMode.js	/^function toggleInsertMode(prevState, value) {$/;"	f
 toggleTileState	src/lib/board-functions/toggleTileState.js	/^function toggleTileState(currentTile, newEffect) {$/;"	f
-trailingComma	package.json	/^    "trailingComma": "all"$/;"	s	object:prettier
+tr	src/styles/reset.css	/^tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,$/;"	s
+trailingComma	.prettierrc.js	/^  trailingComma: 'es5',$/;"	p	class:module.exports
 tricky	src/data/sudokuData.js	/^const tricky = [$/;"	C
+tt	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
 type	package.json	/^    "type": "git",$/;"	s	object:repository
+u	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
+ul	src/styles/reset.css	/^dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,$/;"	s
+ul	src/styles/reset.css	/^ol, ul {$/;"	s
 ultraExtreme	src/data/sudokuData.js	/^const ultraExtreme = [$/;"	C
-unit	src/styles/size.js	/^  unit: 0.0625,$/;"	p	class:size
-updateBoardWithTile	src/components/Tile.js	/^const updateBoardWithTile = (currentBoard, tile) => {$/;"	C
 url	package.json	/^    "url": "https:\/\/github.com\/NicksIdeaEngine\/sudoku.git"$/;"	s	object:repository
 url	package.json	/^    "url": "https:\/\/github.com\/NicksIdeaEngine\/sudoku\/issues",$/;"	s	object:bugs
-useBoardState	src/utils/useBoardState.js	/^const useBoardState = () => {$/;"	C
-useGameContext	src/utils/useGameContext.js	/^const useGameContext = () => {$/;"	C
-value	src/utils/useGameContext.js	/^  const value = { gameSettings }$/;"	C
-version	package.json	/^  "version": "0.1.0",$/;"	s
+value	src/components/Tile.js	/^  value: PropTypes.string.isRequired,$/;"	p	class:Tile.propTypes
+var	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
+verbose	jest.config.js	/^  verbose: true,$/;"	p	class:module.exports
+version	package.json	/^  "version": "0.1.1",$/;"	s
 veryEasy	src/data/sudokuData.js	/^const veryEasy = [$/;"	C
 veryHard	src/data/sudokuData.js	/^const veryHard = [$/;"	C
-webpack	package.json	/^    "webpack": "~4.43.0",$/;"	s	object:devDependencies
-webpack-cli	package.json	/^    "webpack-cli": "~3.3.12",$/;"	s	object:devDependencies
-webpack-dev-server	package.json	/^    "webpack-dev-server": "~3.11.0"$/;"	s	object:devDependencies
-white	src/colors/gray.scss	/^$white: #ffffff;$/;"	v
-white	src/colors/material.scss	/^$white: #ffffff;$/;"	v
-xlarge	src/styles/size.js	/^  xlarge: '1.563em',$/;"	p	class:size
-yellow	src/colors/gruvbox-dark.scss	/^$yellow: #fabd2f;$/;"	v
-yellow	src/colors/gruvbox-light.scss	/^$yellow: #d79921;$/;"	v
-yellow100	src/colors/material.scss	/^$yellow100: #fff9c4;$/;"	v
-yellow100	src/colors/yellow.scss	/^$yellow100: #fff9c4;$/;"	v
-yellow200	src/colors/material.scss	/^$yellow200: #fff59d;$/;"	v
-yellow200	src/colors/yellow.scss	/^$yellow200: #fff59d;$/;"	v
-yellow300	src/colors/material.scss	/^$yellow300: #fff176;$/;"	v
-yellow300	src/colors/yellow.scss	/^$yellow300: #fff176;$/;"	v
-yellow400	src/colors/material.scss	/^$yellow400: #ffee58;$/;"	v
-yellow400	src/colors/yellow.scss	/^$yellow400: #ffee58;$/;"	v
-yellow50	src/colors/material.scss	/^$yellow50: #fffde7;$/;"	v
-yellow50	src/colors/yellow.scss	/^$yellow50: #fffde7;$/;"	v
-yellow500	src/colors/material.scss	/^$yellow500: #ffeb3b;$/;"	v
-yellow500	src/colors/yellow.scss	/^$yellow500: #ffeb3b;$/;"	v
-yellow600	src/colors/material.scss	/^$yellow600: #fdd835;$/;"	v
-yellow600	src/colors/yellow.scss	/^$yellow600: #fdd835;$/;"	v
-yellow700	src/colors/material.scss	/^$yellow700: #fbc02d;$/;"	v
-yellow700	src/colors/yellow.scss	/^$yellow700: #fbc02d;$/;"	v
-yellow800	src/colors/material.scss	/^$yellow800: #f9a825;$/;"	v
-yellow800	src/colors/yellow.scss	/^$yellow800: #f9a825;$/;"	v
-yellow900	src/colors/material.scss	/^$yellow900: #f57f17;$/;"	v
-yellow900	src/colors/yellow.scss	/^$yellow900: #f57f17;$/;"	v
-yellowa100	src/colors/material.scss	/^$yellowa100: #ffff8d;$/;"	v
-yellowa100	src/colors/yellow.scss	/^$yellowa100: #ffff8d;$/;"	v
-yellowa200	src/colors/material.scss	/^$yellowa200: #ffff00;$/;"	v
-yellowa200	src/colors/yellow.scss	/^$yellowa200: #ffff00;$/;"	v
-yellowa400	src/colors/material.scss	/^$yellowa400: #ffea00;$/;"	v
-yellowa400	src/colors/yellow.scss	/^$yellowa400: #ffea00;$/;"	v
-yellowa700	src/colors/material.scss	/^$yellowa700: #ffd600;$/;"	v
-yellowa700	src/colors/yellow.scss	/^$yellowa700: #ffd600;$/;"	v
+video	src/styles/reset.css	/^time, mark, audio, video {$/;"	s
+warning	src/components/Tile.js	/^  warning: PropTypes.string.isRequired,$/;"	p	class:Tile.propTypes
+webpack	package.json	/^    "webpack": "4.44.2",$/;"	s	object:devDependencies
+webpack-cli	package.json	/^    "webpack-cli": "3.3.12",$/;"	s	object:devDependencies
+webpack-dev-server	package.json	/^    "webpack-dev-server": "3.11.0"$/;"	s	object:devDependencies
+white	src/assets/palettes/gray.scss	/^$white: #ffffff;$/;"	v
+yellow	src/assets/palettes/gruvbox-dark.scss	/^$yellow: #d79921;$/;"	v
+yellow	src/assets/palettes/gruvbox-light.scss	/^$yellow: #d79921;$/;"	v
+yellow100	src/assets/palettes/yellow.scss	/^$yellow100: #fff9c4;$/;"	v
+yellow200	src/assets/palettes/yellow.scss	/^$yellow200: #fff59d;$/;"	v
+yellow300	src/assets/palettes/yellow.scss	/^$yellow300: #fff176;$/;"	v
+yellow400	src/assets/palettes/yellow.scss	/^$yellow400: #ffee58;$/;"	v
+yellow50	src/assets/palettes/yellow.scss	/^$yellow50: #fffde7;$/;"	v
+yellow500	src/assets/palettes/yellow.scss	/^$yellow500: #ffeb3b;$/;"	v
+yellow600	src/assets/palettes/yellow.scss	/^$yellow600: #fdd835;$/;"	v
+yellow700	src/assets/palettes/yellow.scss	/^$yellow700: #fbc02d;$/;"	v
+yellow800	src/assets/palettes/yellow.scss	/^$yellow800: #f9a825;$/;"	v
+yellow900	src/assets/palettes/yellow.scss	/^$yellow900: #f57f17;$/;"	v
+yellowa100	src/assets/palettes/yellow.scss	/^$yellowa100: #ffff8d;$/;"	v
+yellowa200	src/assets/palettes/yellow.scss	/^$yellowa200: #ffff00;$/;"	v
+yellowa400	src/assets/palettes/yellow.scss	/^$yellowa400: #ffea00;$/;"	v
+yellowa700	src/assets/palettes/yellow.scss	/^$yellowa700: #ffd600;$/;"	v

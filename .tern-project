@@ -1,0 +1,38 @@
+{
+  "libs": [
+    "browser",
+    "ecmascript",
+    "react"
+  ],
+  "dontload": [
+    ".cache/**",
+    ".git/**",
+    "node_modules/**"
+  ],
+  "ecmaversion": "10",
+  "plugins": {
+    "complete_strings": {},
+    "doc_comment": null,
+    "es_modules": {},
+    "modules": {},
+    "node": {},
+    "requirejs": {
+      "baseurl": "./",
+      "paths": {
+        "clr": "src/colors",
+        "cmp": "src/components/",
+        "data": "src/data",
+        "img": "src/img",
+        "lib": "src/lib",
+        "pgs": "src/pages",
+        "pst": "src/posts",
+        "sty": "src/styles",
+        "tmp": "src/templates",
+        "utl": "src/utils"
+      }
+    },
+    "webpack": {
+      "configpath": "webpack.config.js --env.development"
+    }
+  }
+}

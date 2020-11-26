@@ -1,20 +1,3 @@
 module.exports = {
-  presets: [
-    [
-      '@babel/preset-env',
-      {
-        targets: {
-          node: 'current',
-        },
-      },
-    ],
-  ],
-  plugins: [
-    [
-      'emotion',
-      {
-        labelFormat: '[filename]--[local]',
-      },
-    ],
-  ],
-};
+  presets: ['@babel/preset-react', '@babel/preset-env'],
+}

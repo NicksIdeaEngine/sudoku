@@ -1,9 +1,8 @@
-import React from 'react'
-import { Global, css } from '@emotion/core'
+import { createGlobalStyle } from 'styled-components'
 
 import color from '../assets/palettes/blue-gray.scss'
 
-const styles = css`
+const GlobalStyles = createGlobalStyle`
   * {
     font-family: 'Roboto', sans-serif;
   }
@@ -446,7 +445,5 @@ const styles = css`
     font: inherit;
   }
 `
-
-const GlobalStyles = () => <Global styles={styles} />
 
 export default GlobalStyles
