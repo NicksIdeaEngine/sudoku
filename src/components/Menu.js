@@ -35,8 +35,6 @@ class Menu extends Component {
       clearHighlight,
       setDifficulty,
       currentDifficulty,
-      toggleInsertMode,
-      insertMode,
     } = this.props
     const { showDifficultyMenu } = this.state
     const menuNumbers = []
@@ -49,17 +47,12 @@ class Menu extends Component {
     for (let i = 1; i <= 9; i += 1) {
       index = i
       numberButtonClass = ['menu-number-button']
-      if (index.toString() === insertMode)
-        numberButtonClass.push('menu-number-button-active')
       menuNumbers.push(
         <button
           key={`menu-number-btn-${i - 1}`}
           id={`menu-number-btn-${i - 1}`}
           type="button"
           className={numberButtonClass.join(' ')}
-          onClick={(e) => {
-            toggleInsertMode(e.target.value)
-          }}
           value={i}
         >
           {i}
@@ -93,9 +86,6 @@ class Menu extends Component {
                 className="menu-number-button menu-number-remove-btn"
                 type="button"
                 id="menu-number-remove-btn"
-                onClick={() => {
-                  toggleInsertMode('remove')
-                }}
               >
                 remove
               </button>
@@ -103,9 +93,6 @@ class Menu extends Component {
                 className="menu-number-button menu-number-switch-btn"
                 type="button"
                 id="menu-number-switch-btn"
-                onClick={() => {
-                  toggleInsertMode('switch')
-                }}
               >
                 switch
               </button>
@@ -161,8 +148,6 @@ Menu.propTypes = {
   clearHighlight: PropTypes.func.isRequired,
   setDifficulty: PropTypes.func.isRequired,
   currentDifficulty: PropTypes.string.isRequired,
-  toggleInsertMode: PropTypes.func.isRequired,
-  insertMode: PropTypes.string.isRequired,
 }
 
 export default Menu

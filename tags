@@ -484,10 +484,8 @@ indigoa200	src/assets/palettes/indigo.scss	/^$indigoa200: #536dfe;$/;"	v
 indigoa400	src/assets/palettes/indigo.scss	/^$indigoa400: #3d5afe;$/;"	v
 indigoa700	src/assets/palettes/indigo.scss	/^$indigoa700: #304ffe;$/;"	v
 ins	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
-insertMode	src/components/GameBoard.js	/^      insertMode: '',$/;"	p	class:super.state
 insertMode	src/components/Menu.js	/^  insertMode: PropTypes.string.isRequired,$/;"	p	class:Menu.propTypes
 insertMode	src/lib/board-functions/changeBoardState.js	/^  const insertMode = ''$/;"	C
-insertValue	src/components/GameBoard.js	/^      insertValue: '',$/;"	p	class:super.state
 jest	package.json	/^    "jest": "25.5.4",$/;"	s	object:devDependencies
 kbd	src/styles/reset.css	/^ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,$/;"	s
 keyCounter	src/components/Tile.js	/^  let keyCounter = 0$/;"	v
@@ -793,7 +791,6 @@ tiletext	src/components/Tile.js	/^  const tiletext = []$/;"	C
 tiletext	src/components/Tile.js	/^  tiletext: PropTypes.node.isRequired,$/;"	p	class:Tile.propTypes
 time	src/styles/reset.css	/^time, mark, audio, video {$/;"	s
 toggleDifficultyMenu	src/components/Menu.js	/^  toggleDifficultyMenu(event) {$/;"	m	class:Menu
-toggleInsertMode	src/components/GameBoard.js	/^  toggleInsertMode(value) {$/;"	m	class:GameBoard
 toggleInsertMode	src/components/Menu.js	/^  toggleInsertMode: PropTypes.func.isRequired,$/;"	p	class:Menu.propTypes
 toggleInsertMode	src/lib/board-functions/toggleInsertMode.js	/^function toggleInsertMode(prevState, value) {$/;"	f
 toggleTileState	src/lib/board-functions/toggleTileState.js	/^function toggleTileState(currentTile, newEffect) {$/;"	f

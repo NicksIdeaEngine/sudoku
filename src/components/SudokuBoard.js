@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Tile, { getTileText } from './Tile'
+import Tile from './Tile'
 
 class SudokuBoard extends Component {
   constructor(props) {
@@ -17,21 +17,7 @@ class SudokuBoard extends Component {
       const rowClassName = rowOfTiles.props.className
       const rowContents = rowOfTiles.props.children
       const tileBatch = rowContents.map((tile) => {
-        const {
-          id,
-          row,
-          column,
-          region,
-          value,
-          candidates,
-          className,
-          active,
-          highlight,
-          warning,
-          locked,
-        } = tile
-
-        const tiletext = getTileText(tile)
+        const { id, row, column, region, value, className } = tile
 
         return (
           <Tile
@@ -41,13 +27,7 @@ class SudokuBoard extends Component {
             column={column}
             region={region}
             value={value === '0' ? '' : value}
-            candidates={candidates}
-            tiletext={tiletext}
             className={className}
-            active={active}
-            highlight={highlight}
-            warning={warning}
-            locked={locked}
             handleClick={handleClick}
           />
         )
